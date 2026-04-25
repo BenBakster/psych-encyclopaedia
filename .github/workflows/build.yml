@@ -70,15 +70,15 @@ jobs:
           print('Flowchart graphs OK')
           PY
 
-      - name: Commit updated docs/database.js if changed (main only)
+      - name: Verify docs/database.js is up-to-date with source
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           if [[ -n $(git status --porcelain docs/database.js) ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add docs/database.js
-            git commit -m "ci: rebuild docs/database.js [skip ci]"
-            git push
+            echo "::warning::docs/database.js drifted from source — author should run build.py locally and commit before next push"
+            git diff --stat docs/database.js
           else
-            echo "docs/database.js unchanged — nothing to commit"
+            echo "docs/database.js is in sync with source"
           fi
+        # NOTE: workflow does NOT auto-commit (branch protection blocks bot push).
+        # Workflow: edit categories/, run python3 build.py locally (updates both
+        # docs/ and Инструменты_HTML/), commit + push.
