@@ -1289,5 +1289,119 @@
       "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
       "Klein D.F. Delineation of two drug-responsive anxiety syndromes. Psychopharmacologia 1964 (panic disorder concept)"
     ]
+  },
+  {
+    "id": "drug_phenelzine",
+    "cmd_alias": "phenelzine",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Фенелзин: ИМАО, refractory + atypical depression, ⚠ tyramine diet + interactions",
+    "tags": [
+      "фенелзин",
+      "phenelzine",
+      "Nardil",
+      "MAOI",
+      "monoamine oxidase",
+      "atypical depression",
+      "tyramine",
+      "hypertensive crisis",
+      "social phobia",
+      "panic",
+      "TRD"
+    ],
+    "related": [
+      "drug_imipramine",
+      "drug_amitriptyline",
+      "drug_clomipramine",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression"
+    ],
+    "description": "Hydrazine, неселективный irreversible MAO-A/B inhibitor. Один из старейших AD (1959). Особенно эффективен для atypical depression (мood reactivity, hyperphagia, hypersomnia, leaden paralysis, rejection sensitivity). Главные лимиты — ⚠ обязательная low-tyramine diet и many drug interactions (lethal hypertensive crisis at risk).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: гидразин неселективный irreversible MAOI.\nWarner-Lambert. FDA approval 1961.\n\nМЕХАНИЗМ:\n• Irreversible inhibition MAO-A и MAO-B\n• MAO-A метаболизирует 5-HT, NE, DA, tyramine\n• MAO-B метаболизирует DA, phenethylamine, tyramine\n• Блокада → ↑↑ levels этих нейромедиаторов в нейронах\n• Также влияет на periphery — отсюда tyramine danger:\n  – Tyramine из пищи normally быстро деградируется MAO в кишечной стенке\n  – При MAOI — ↑ системно tyramine → release ↑ NE → hypertensive crisis\n\nIRREVERSIBLE: восстановление функции MAO требует synthesis новых ферментов (~2 нед) — отсюда длительный wash-out."
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• Treatment-Resistant Depression (особенно atypical):\n  – Start 15 мг 3 р/сут\n  – Up by 15 мг каждые 2–4 нед\n  – Target 60–90 мг/сут\n  – Max 90 мг (или 1.2 мг/кг)\n• Atypical depression — preferred indication (Quitkin 1990 RCT)\n• Treatment-resistant panic disorder (off-label)\n• Treatment-resistant social phobia (off-label, hist. 1-я линия до SSRIs)\n\nFORMS: tablets 15 мг\n\nDOSING — careful titration:\n• Effect onset 2–4 нед\n• Full effect 4–6 нед\n• Принимать с едой если GI sensitive",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 2–4 ч\n• T½: 11.6 ч (но IRREVERSIBLE inhibition → effect длится ~2 нед после отмены)\n• Метаболизм: acetylation (slow vs fast acetylators)\n• Биодоступность variable\n\n⚠ WASH-OUT critically important:\n• До start serotonergic agents (SSRI, SNRI, TCA, tramadol, etc) — wait 2 нед после prefenelzine отмены\n• Из flu/окситоцин (длинный T½): 5 нед wash-out\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Quitkin 1990: phenelzine значимо лучше imipramine для atypical depression\n• Cipriani 2018: исключён из NM-A (low usage modern), но clinical data positive для refractory cases\n• Maudsley: \"after failure of ≥2 SSRI/SNRI + augmentation\"",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n⚠ TYRAMINE-INDUCED HYPERTENSIVE CRISIS:\n• \"Cheese effect\" — выраженно ↑ АД при приёме tyramine-rich foods\n• Лимит: ≤6 мг tyramine за приём\n• Симптомы: severe headache (occipital, throbbing), neck stiffness, palpitations, sweating, nausea, vomiting, photophobia\n• ⚠ MEDICAL EMERGENCY — может быть fatal (intracranial hemorrhage, stroke, MI)\n• Treatment: phentolamine 5 мг IV или nifedipine 10 мг SL\n• Patient must carry rescue meds + know warning signs\n\nDIETARY RESTRICTIONS — обязательно:\nForbidden:\n• Aged cheeses (cheddar, Stilton, Camembert, blue)\n• Cured/aged meats (salami, pepperoni, dry sausage, prosciutto)\n• Fermented soy (tofu fermented, soy sauce >small amounts)\n• Tap beer / красное wine large amounts (regular bottled OK in moderation)\n• Sauerkraut, kimchi\n• Бобы fermented (fava, broad)\n• MSG-loaded foods\n\nДРУГИЕ ПОБОЧНЫЕ ЭФФЕКТЫ:\n• Орthostatic hypotension (paradoxically — главное лимитирующее)\n• Бессонница / dreams\n• Прибавка веса\n• Сексуальная дисфункция\n• Гепатотоксичность (rare)\n• Headache\n• Тремор\n• Pyridoxine deficiency — supplement vitamin B6 50 мг\n\n⚠ DRUG INTERACTIONS — МАССА:\n⛔ SSRI/SNRI — серотониновый синдром (FATAL)\n⛔ TCA — серотониновый\n⛔ Tramadol, meperidine, methadone — серотониновый\n⛔ Бупропион — bipolar / hypertensive\n⛔ Стимуляторы (атомоксетин, methylphenidate, амфетамины, кокаин, MDMA) — гипертензивный\n⛔ Симпатомиметики (псевдоэфедрин, фенилэфрин) — гипертензивный\n⛔ Linezolid, methylene blue — серотониновый\n⛔ St. John's wort — серотониновый\n⛔ Levodopa — гипертензивный\n⛔ Carbamazepine — увеличение seizure risk?"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: ⛔ AVOID — limited data, potentially teratogenic\nЛАКТАЦИЯ: AVOID\nПОДРОСТКИ: not approved for pediatric use generally\nПОЖИЛЫЕ: ⚠ AVOID — фалла, ортостаз, polypharmacy interactions\nПЕЧЁНОЧНАЯ: AVOID при impairment\nПОЧЕЧНАЯ: ↓ доза\n\n⛔ ПРОТИВОПОКАЗАНИЯ:\n• Pheochromocytoma\n• Cardiovascular disease\n• Hepatic disease\n• Severe renal\n• ИМАО другие или recently discontinued\n• Серотонинерго в течение 5 нед\n• Pediatric (<16)\n\nКОГДА ВЫБИРАТЬ:\n• Atypical depression failure SSRI/SNRI\n• Severe TRD после ≥3 trials\n• Treatment-resistant social phobia (если SSRI/CBT failed)\n• Highly motivated, compliant patient + supportive family для diet adherence\n\nКОГДА ИЗБЕГАТЬ:\n• Anyone unable to follow strict diet\n• Polypharmacy с multiple serotonergic meds\n• Cognitive impairment (cannot understand restrictions)\n• Suicidal patient (overdose dangerous)\n• Pregnancy / breastfeeding\n• Unstable cardiovascular condition"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Quitkin F.M. et al. Phenelzine vs imipramine for atypical depression. Arch Gen Psychiatry 1990",
+      "Maudsley Prescribing Guidelines — MAOI section"
+    ]
+  },
+  {
+    "id": "drug_tranylcypromine",
+    "cmd_alias": "tranylcypromine",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Транилципромин: amphetamine-like ИМАО, fastest onset, более активирующий vs phenelzine",
+    "tags": [
+      "транилципромин",
+      "tranylcypromine",
+      "Parnate",
+      "MAOI",
+      "amphetamine-like",
+      "activating",
+      "TRD",
+      "hypertensive crisis",
+      "tyramine"
+    ],
+    "related": [
+      "drug_phenelzine",
+      "drug_imipramine",
+      "drug_amitriptyline",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression"
+    ],
+    "description": "Cyclopropylamine MAOI — структурно близок к amphetamine. Неселективный irreversible MAO-A/B inhibitor. Более активирующий и stimulating чем phenelzine (отсюда — лучше для retarded depression vs atypical). Более быстрый onset (1 нед). ⚠ Те же restrictions: tyramine diet + drug interactions.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: cyclopropylamine MAOI. SmithKline 1959.\n\nМЕХАНИЗМ:\n• Irreversible MAO-A и MAO-B inhibitor\n• Также имеет slight amphetamine-like properties (slight DA release / NE release) — отсюда активирующий профиль\n• Slightly less hepatotoxic чем phenelzine\n• Wash-out 1–2 нед"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• Treatment-Resistant Depression:\n  – Start 10 мг 2 р/сут (утром+обед)\n  – Up by 10 мг каждые 1–3 нед\n  – Target 30–60 мг/сут\n  – Max 60 мг (или 0.8 мг/кг)\n• Особенно при retarded/anhedonic depression (vs atypical — phenelzine)\n• Treatment-resistant panic / social phobia (off-label)\n\n⚠ Не принимать поздно вечером — активирующий профиль вызовет insomnia\nDOSING — последняя dose ≤14:00\n\nFORMS: tablets 10 мг\n\nDOSING — careful titration:\n• Effect onset faster чем phenelzine — 1 нед vs 2–4\n• Full effect 4 нед",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1–2 ч\n• T½: 2.5 ч (но IRREVERSIBLE → effect 1–2 нед после отмены)\n• Метаболизм: hepatic, оборота 50%\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cipriani 2018: исключён (low usage modern)\n• Heijnen 2010: tranylcypromine с лучшим profile vs phenelzine для some patient subgroups (более активирующий)\n• Used особенно когда phenelzine failed",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ — близки к phenelzine:\n\n⚠ TYRAMINE-INDUCED HYPERTENSIVE CRISIS — те же что phenelzine:\n• Same dietary restrictions (cheese, cured meats, tap beer, etc)\n• Same emergency management (phentolamine 5 мг IV)\n\n⚠ ОТЛИЧИЯ ОТ PHENELZINE:\n• Активирующий профиль:\n  – Insomnia более выражена\n  – Стимулирующий effect\n  – Раздражительность\n  – Tremor\n  – Anxiety\n• Меньше прибавки веса\n• Меньше hepatotoxicity (sometimes preferred over phenelzine)\n• Меньше ортостаза (relatively)\n• Меньше сексуальной дисфункции\n• Более быстрый onset effect\n\n⚠ Возможно outright more cardiovascular events чем phenelzine — particularly tachycardia\n\n⚠ DRUG INTERACTIONS — те же что phenelzine + ⚠ SPECIAL:\n⛔ В отличие от phenelzine — cocaine intoxication ↑↑ риск hypertensive crisis (theoretical, but reported)\n⚠ Buprenorphine — возможные interactions\n\nDISCONTINUATION:\n• Активирующий profile может вызвать withdrawal-like fatigue, dysphoria\n• Таперинг 2 нед"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: ⛔ AVOID\nЛАКТАЦИЯ: AVOID\nПОЖИЛЫЕ: ⚠ AVOID — те же reasons что phenelzine\nПЕЧЁНОЧНАЯ: AVOID при impairment\nПОЧЕЧНАЯ: ↓ доза\n\n⛔ ПРОТИВОПОКАЗАНИЯ — те же что phenelzine + анамнез stimulant abuse (amphetamine-like effects могут provoke)\n\nКОГДА ВЫБИРАТЬ:\n• TRD с retarded/anhedonic features (активирующий profile preferred)\n• Failure phenelzine (или intolerance to phenelzine GI/sedation)\n• Atypical depression as alternative phenelzine\n• Когда нужен фастер effect onset\n\nКОГДА ИЗБЕГАТЬ:\n• Те же что phenelzine\n• Активная anxiety / agitation\n• История amphetamine abuse\n• Insomnia уже значимая\n• Tachyarrhythmias"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Heijnen W.T. et al. Tranylcypromine in TRD: review. J Clin Psychopharmacol 2010",
+      "Maudsley Prescribing Guidelines — MAOI section"
+    ]
   }
 ]
