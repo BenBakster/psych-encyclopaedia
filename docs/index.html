@@ -49,9 +49,45 @@
             --bg: #fdf6e3; --panel: #ffffff; --panel-hover: #eee8d5;
             --red: #dc322f; --blue: #268bd2; --amber: #b58900; --orange: #cb4b16;
             --purple: #6c71c4; --teal: #2aa198; --pink: #d33682;
-            --white: #586e75; --grey: #93a1a1;
-            --border: #eee8d5;
+            --white: #073642; /* base03 — primary text (was base01, too faint on cream) */
+            --grey: #93a1a1;
+            --border: #d8d3bf;  /* slightly darker for visible borders */
         }
+        /* Override body color: in dark theme it's neon-green; on cream that's barely readable. */
+        body.theme-light { color: var(--white) !important; }
+        /* All places where var(--g) was used as PRIMARY text — switch to base03 for legibility */
+        body.theme-light .search-hero-title strong { color: var(--g-dark) !important; }
+        body.theme-light .search-bar { color: var(--g-dark) !important; }
+        body.theme-light .search-bar-wrap:focus-within .search-icon { color: var(--g-dark) !important; }
+        body.theme-light .search-bar-hint { color: var(--g-dim) !important; }
+        body.theme-light .search-bar::placeholder { color: var(--grey) !important; }
+        body.theme-light .badge-matrix { color: #4a5800; } /* Solarized green darkened for contrast on light bg */
+        body.theme-light .data-table th { background: rgba(133,153,0,0.10); color: var(--g-dark) !important; }
+        body.theme-light .flow-step-question { color: var(--g-dark) !important; }
+        body.theme-light .flow-info { color: var(--g-dim); }
+        body.theme-light .flow-option:hover { color: var(--g-dark) !important; background: rgba(133,153,0,0.10); border-color: var(--g); }
+        body.theme-light .flow-result-title { color: var(--g-dark) !important; }
+        body.theme-light .calc-result-big { color: var(--g-dark) !important; }
+        body.theme-light .calc-select, body.theme-light .calc-input { background: #fff; color: var(--g-dark); border-color: #d8d3bf; }
+        body.theme-light .back-btn { color: var(--g-dim); }
+        body.theme-light .back-btn:hover { color: var(--g-dark); border-color: var(--g); }
+        body.theme-light .content-tag { color: var(--g-dim); }
+        body.theme-light .content-tag:hover { color: var(--g-dark); border-color: var(--g); }
+        body.theme-light .node-current { box-shadow: 0 0 12px rgba(133,153,0,0.30); }
+        body.theme-light .header-btn { color: var(--g-dim); }
+        body.theme-light #header .logo { color: var(--g-dark); }
+        body.theme-light #header .logo span { color: var(--g-dim); }
+        body.theme-light #header .stats { color: var(--g-dim); }
+        body.theme-light .results-title { color: var(--g-dim); }
+        body.theme-light .results-count { color: var(--grey); }
+        body.theme-light .card-title { color: var(--g-dark); }
+        body.theme-light .card-desc, body.theme-light .card-category { color: var(--g-dim); }
+        body.theme-light .section-btn { color: var(--g-dim); }
+        body.theme-light .section-btn:hover { color: var(--g-dark); }
+        body.theme-light .section-btn.active { color: var(--amber); }
+        body.theme-light .content-meta, body.theme-light .content-desc, body.theme-light .content-related-title { color: var(--g-dim); }
+        body.theme-light a { color: var(--blue); }
+        body.theme-light a:hover { color: #155a96; }
         body.theme-light::after {
             /* Subtle scanlines, much lighter than dark theme */
             background: linear-gradient(rgba(253,246,227,0) 50%, rgba(0,43,54,0.025) 50%),
