@@ -27,14 +27,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Build database.js
+      - name: Build database.js (strict — warnings = errors)
         env:
           PSYCH_RENDERER_DIR: ${{ github.workspace }}/docs
         run: |
-          python3 build.py
-        # NOTE: --strict disabled until empty-sources tech debt is cleaned up
-        # (87 legacy entries with empty sources[] arrays).
-        # Once cleared: change to `python3 build.py --strict`
+          python3 build.py --strict
 
       - name: Validate flowchart graphs
         run: |
