@@ -45,13 +45,15 @@
            Accents: yellow #b58900, orange #cb4b16, red #dc322f, magenta #d33682,
                     violet #6c71c4, blue #268bd2, cyan #2aa198, green #859900 */
         body.theme-light {
-            --g: #859900; --g-dim: #586e75; --g-dark: #073642;
+            --g: #6a7a00; /* darkened green for any text use (was #859900, too low contrast) */
+            --g-dim: #3a4a50; /* secondary text: darker than base01 #586e75 for better contrast */
+            --g-dark: #002b36; /* base04 — even darker than base03 for max emphasis */
             --bg: #fdf6e3; --panel: #ffffff; --panel-hover: #eee8d5;
-            --red: #dc322f; --blue: #268bd2; --amber: #b58900; --orange: #cb4b16;
-            --purple: #6c71c4; --teal: #2aa198; --pink: #d33682;
-            --white: #073642; /* base03 — primary text (was base01, too faint on cream) */
-            --grey: #93a1a1;
-            --border: #d8d3bf;  /* slightly darker for visible borders */
+            --red: #b8252b; --blue: #1f6fa8; --amber: #8e6900; --orange: #a04510;
+            --purple: #5258a6; --teal: #006c63; --pink: #a82c5a;
+            --white: #002b36; /* base04 — primary text, max contrast */
+            --grey: #6c7a7a;  /* darkened from #93a1a1 for placeholders */
+            --border: #a89e80;  /* much darker borders for visible separation */
         }
         /* Override body color: in dark theme it's neon-green; on cream that's barely readable. */
         body.theme-light { color: var(--white) !important; }
@@ -107,21 +109,21 @@
         body.theme-light .badge-calculator { background: rgba(108,113,196,0.18); color: #4a4f8f; }
         body.theme-light .badge-checklist { background: rgba(42,161,152,0.18); color: #1d706a; }
         body.theme-light .badge-text { background: rgba(147,161,161,0.20); color: var(--g-dim); }
-        body.theme-light .result-card { background: rgba(238,232,213,0.5); border-color: #d8d3bf; }
-        body.theme-light .result-card:hover { background: rgba(133,153,0,0.06); border-color: var(--g); }
-        body.theme-light .section-btn { background: #fff; border-color: #d8d3bf; }
-        body.theme-light .section-btn:hover { background: rgba(133,153,0,0.04); }
-        body.theme-light .section-btn.active { background: rgba(181,137,0,0.10); border-color: var(--amber); }
-        body.theme-light .search-hero { background: rgba(238,232,213,0.55); }
-        body.theme-light .search-bar-wrap { background: #fff; border-color: #d8d3bf; }
+        body.theme-light .result-card { background: #f5efd0; border-color: #b8ac8e; }
+        body.theme-light .result-card:hover { background: #ede6c0; border-color: var(--g); }
+        body.theme-light .section-btn { background: #fff; border-color: #b8ac8e; color: var(--g-dim); }
+        body.theme-light .section-btn:hover { background: #f5efd0; color: var(--g-dark); }
+        body.theme-light .section-btn.active { background: #f0e4b8; border-color: var(--amber); color: var(--amber); }
+        body.theme-light .search-hero { background: #f5efd0; }
+        body.theme-light .search-bar-wrap { background: #fff; border-color: var(--g-dim); }
         body.theme-light input.search-bar { background: transparent; color: var(--g-dark); }
         body.theme-light input.search-bar::placeholder { color: var(--grey); }
-        body.theme-light .toolbar-btn { background: rgba(181,137,0,0.06); border-color: #d8d3bf; }
-        body.theme-light .toolbar-btn:hover { background: rgba(181,137,0,0.14); }
-        body.theme-light .article-section { background: rgba(238,232,213,0.40); border-color: #d8d3bf; }
-        body.theme-light pre, body.theme-light code { background: #eee8d5; color: var(--g-dark); }
-        body.theme-light .modal-content { background: #fdf6e3; border-color: #d8d3bf; box-shadow: 0 8px 32px rgba(0,43,54,0.18); }
-        body.theme-light .modal-overlay { background: rgba(253,246,227,0.85); }
+        body.theme-light .toolbar-btn { background: #f5efd0; border-color: #b8ac8e; color: var(--g-dim); }
+        body.theme-light .toolbar-btn:hover { background: #ede6c0; color: var(--g-dark); }
+        body.theme-light .article-section { background: #f5efd0; border-color: #b8ac8e; }
+        body.theme-light pre, body.theme-light code { background: #ede6c0; color: var(--g-dark); border: 1px solid #b8ac8e; }
+        body.theme-light .modal-content { background: #fdf6e3; border-color: #a89e80; box-shadow: 0 8px 32px rgba(0,43,54,0.30); }
+        body.theme-light .modal-overlay { background: rgba(0,43,54,0.30); }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
         html, body { height: 100%; overflow: hidden; }
