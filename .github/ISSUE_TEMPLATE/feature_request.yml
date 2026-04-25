@@ -1,0 +1,39 @@
+name: Feature request
+description: Предложить новую запись или расширение существующей
+title: "[feature] "
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Тип
+      options:
+        - Новая запись (entry)
+        - Расширение существующей
+        - Новая категория
+        - UI/UX улучшение в renderer
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Тип записи (если применимо)
+      options:
+        - matrix
+        - text
+        - table
+        - flowchart
+        - calculator
+        - checklist
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Почему это нужно
+      description: Какую клиническую задачу это решает
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Источники
+      description: Минимум 2 источника по уровням §1.5 BRIEF

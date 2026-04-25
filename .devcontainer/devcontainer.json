@@ -1,0 +1,28 @@
+{
+  "name": "psych-encyclopaedia",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "redhat.vscode-yaml",
+        "DavidAnson.vscode-markdownlint",
+        "github.vscode-pull-request-github"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python3",
+        "files.encoding": "utf8",
+        "files.eol": "\n"
+      }
+    }
+  },
+  "forwardPorts": [8090],
+  "portsAttributes": {
+    "8090": {
+      "label": "terminal1.html preview",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postCreateCommand": "echo 'Codespace ready. Run: python3 build.py && python3 -m http.server 8090 --directory docs'",
+  "remoteUser": "vscode"
+}

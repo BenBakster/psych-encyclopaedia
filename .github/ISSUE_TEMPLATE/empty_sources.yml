@@ -1,0 +1,25 @@
+name: Empty sources[]
+description: Запись существует, но sources[] пустой — нужно проставить
+title: "[sources] "
+labels: [tech-debt, sources]
+body:
+  - type: input
+    id: entry_id
+    attributes:
+      label: ID записи
+      placeholder: drug_lithium
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Категория
+      placeholder: Фармакотерапия (Нормотимики)
+  - type: textarea
+    id: candidates
+    attributes:
+      label: Кандидаты в источники
+      description: По §1.5 BRIEF — Maudsley, Stahl, NEUROP, Bazire, guidelines
+      placeholder: |
+        - Maudsley 14th ed., chapter X
+        - NEUROP/Riederer-Laux 2022 — Mood Stabilizers: Lithium chapter (p.1493)

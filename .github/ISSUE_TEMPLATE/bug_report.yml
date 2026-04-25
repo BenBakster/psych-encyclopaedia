@@ -1,0 +1,29 @@
+name: Bug report
+description: Что-то работает не так в энциклопедии
+title: "[bug] "
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что не так
+      description: Опиши, что увидел и что ожидал
+      placeholder: |
+        Запись alg_X открывается, но опция «Y» ведёт в 404...
+    validations:
+      required: true
+  - type: input
+    id: entry_id
+    attributes:
+      label: ID записи (если применимо)
+      placeholder: alg_acute_agitation
+  - type: textarea
+    id: expected
+    attributes:
+      label: Что должно было быть
+  - type: textarea
+    id: source
+    attributes:
+      label: Источник правильного ответа
+      description: Какой гайд / статья / справочник говорит иначе
+      placeholder: Maudsley 14th ed., chapter X — рекомендует Y, не Z

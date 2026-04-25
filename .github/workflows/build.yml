@@ -1,0 +1,85 @@
+name: build-and-validate
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'categories/**'
+      - 'build.py'
+      - 'schema.js'
+  pull_request:
+    paths:
+      - 'categories/**'
+      - 'build.py'
+      - 'schema.js'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build database.js
+        env:
+          PSYCH_RENDERER_DIR: ${{ github.workspace }}/docs
+        run: |
+          python3 build.py
+        # NOTE: --strict disabled until empty-sources tech debt is cleaned up
+        # (87 legacy entries with empty sources[] arrays).
+        # Once cleared: change to `python3 build.py --strict`
+
+      - name: Validate flowchart graphs
+        run: |
+          python3 - <<'PY'
+          import json, sys, glob
+          errors = 0
+          for path in glob.glob('categories/*.json'):
+              with open(path) as f:
+                  entries = json.load(f)
+              for e in entries:
+                  if e.get('type') != 'flowchart':
+                      continue
+                  fid = e['id']
+                  fc = e['flowchart']
+                  steps = fc['steps']
+                  if fc['start'] not in steps:
+                      print(f'ERROR [{fid}] start "{fc["start"]}" not in steps')
+                      errors += 1
+                  for sname, sdef in steps.items():
+                      for opt in sdef.get('options', []):
+                          if opt.get('next') not in steps:
+                              print(f'ERROR [{fid}] step {sname}: next "{opt.get("next")}" missing')
+                              errors += 1
+                      if sdef.get('result') is True:
+                          if not sdef.get('content'):
+                              print(f'ERROR [{fid}] result {sname} has no content')
+                              errors += 1
+                          if not sdef.get('title'):
+                              print(f'ERROR [{fid}] result {sname} has no title')
+                              errors += 1
+          if errors:
+              print(f'\nTotal: {errors} flowchart-graph errors')
+              sys.exit(1)
+          print('Flowchart graphs OK')
+          PY
+
+      - name: Commit updated docs/database.js if changed (main only)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          if [[ -n $(git status --porcelain docs/database.js) ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add docs/database.js
+            git commit -m "ci: rebuild docs/database.js [skip ci]"
+            git push
+          else
+            echo "docs/database.js unchanged — nothing to commit"
+          fi
