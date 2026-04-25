@@ -1048,5 +1048,246 @@
       "CANMAT Clinical Guidelines for the Management of Adults with MDD. Can J Psychiatry 2016",
       "Cipriani A. et al. Comparative efficacy of 21 antidepressants for adult MDD. Lancet 2018;391:1357–66"
     ]
+  },
+  {
+    "id": "drug_amitriptyline",
+    "cmd_alias": "amitriptyline",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Амитриптилин: TCA, седативный, классика украинской практики, ⚠ кардиотоксичность",
+    "tags": [
+      "амитриптилин",
+      "amitriptyline",
+      "Tryptizol",
+      "Saroten",
+      "TCA",
+      "tertiary amine",
+      "sedative",
+      "neuropathic pain",
+      "fibromyalgia",
+      "украинский формуляр",
+      "Авруцкий",
+      "антихолинергический",
+      "cardiac toxicity"
+    ],
+    "related": [
+      "drug_clomipramine",
+      "drug_nortriptyline",
+      "drug_imipramine",
+      "drug_mirtazapine",
+      "drug_sertraline",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "Третичный амин TCA, прототип seдативного TCA. Tofranil/Saroten 1961. Высокий антихолинергический + H1 burden — отсюда седация, прибавка веса, сухость во рту. ⚠ Кардиотоксичность — особенно при overdose. ВСЕГДА доступен (украинский формуляр §1.1 BRIEF).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: третичный амин TCA. Merck 1961. Брат имипрамина (различаются одной CH₂-группой).\n\nМЕХАНИЗМ:\n• 5-HT и NE reuptake inhibitor (более NE при высоких дозах)\n• Активный метаболит — нортриптилин (преимущественно NE)\n• Мощная M1-M5 muscarinic антихолинерго-блокада\n• Сильная H1 (отсюда седация и набор веса)\n• α1 блокада (отсюда ортостаз)\n• Na+ channel blockade (отсюда ↓ порог судорог + кардиальные эффекты)\n\nУ амитриптилина — самый сильный антихолин profile среди TCAs."
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ (Авруцкий 1979 + современные):\n\n• MDD: 75–150 мг/сут (start 25–50; up by 25 каждые 3 дня)\n  – Maudsley: target 100–150 мг для antidepressant; до 200–300 мг refractory\n  – Авруцкий 1979: при тяжёлой депрессии 150–300 мг/сут\n• Хроническая нейропатическая боль (off-label широко): 10–75 мг на ночь\n  – Diabetic neuropathy, postherpetic neuralgia, fibromyalgia\n• Migraine prophylaxis (off-label): 10–75 мг на ночь\n• Insomnia (off-label, low-dose): 10–25 мг — широко используется в Украине\n• Tension headache prophylaxis: 10–50 мг\n• Урологические — neurогенный мочевой пузырь: 10–25 мг\n• Cataplexy при narcolepsy (off-label): 25–75 мг",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 2–8 ч\n• T½: 10–25 ч (амитриптилин), 18–44 ч (нортриптилин — активный метаболит)\n• Метаболизм: CYP2D6 (главный) + CYP1A2 + CYP2C19 + CYP3A4\n• Биодоступность 30–60% (variable)\n\nTDM (Hiemke 2018): амитриптилин + нортриптилин сумма 80–200 нг/мл (>300 — toxicity)\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cipriani 2018 NM-A: top-3 эффективности, но bottom acceptability (high discontinuation due to AEs)\n• Cochrane на нейропатической боли: эффективен (Moore 2015)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n⚠ КАРДИОТОКСИЧНОСТЬ (главное):\n• ⚠ QTc удлинение, AV-блок\n• ⚠ Аритмии при overdose (тип 1A антиаритмический эффект — wide QRS)\n• ⚠ ОВЕРДОЗА — частая причина суицида при TCA prescription; lethal dose ~10× therapeutic (≈1500 мг)\n• ОБЯЗАТЕЛЬНО ECG до старта при возрасте >40, кардиальной патологии, или dose >150 мг\n\nАНТИХОЛИНЕРГИЧЕСКИЕ (мощные):\n• Сухость во рту (выраженная)\n• Запоры (риск илеуса при пожилых)\n• Размытое зрение, аккомодация\n• Задержка мочи\n• Когнитивные нарушения у пожилых\n• ⚠ Острый угол-замыкающий приступ глаукомы (при предрасположенности)\n• ⚠ ДЕЛИРИЙ у пожилых\n\nDрУГИЕ:\n• ⚠ Седация (выраженная) — польза в insomnia\n• Прибавка веса (3–7 кг за 6 мес)\n• Ортостатическая гипотензия (α1)\n• ⚠ ↓ Порог судорог\n• Сексуальная дисфункция\n• Тремор\n• ⚠ Bipolar induction (как все AD)\n• Сладкий привкус, изменение вкусов\n\nDISCONTINUATION SYNDROME: умеренный — таперинг 4 нед\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО — серотониновый, гипертензивный кризис\n⛔ Strong CYP2D6 inhibitors (флуоксетин, пароксетин, бупропион) — ↑↑ amitriptyline\n⛔ QTc-prolonging — additive\n⛔ Anticholinergic burden ↑ (другие AnticholiнерGetics, antihistamines, etc) — additive\n⛔ Альфа-агонисты (клонидин) — антагонизм AD effect"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, обычно избегать; SSRI предпочтителен\nЛАКТАЦИЯ: RID 1.5–2.8% — приемлемо\nПОЖИЛЫЕ: ⚠ AVOID (Beers Criteria) — anticholinergic burden, falls, delirium, кardiotoxicity\nПЕЧЁНОЧНАЯ: ↓ доза, мониторить ферменты\nПОЧЕЧНАЯ: minimal change\n\nКОГДА ВЫБИРАТЬ:\n• Депрессия + хроническая боль (двойной effect)\n• Депрессия + insomnia + потеря веса (sedative + weight gain помогают)\n• Migraine prophylaxis + depression\n• Когда бюджет минимальный (дешевый, доступный в Украине)\n• Когда SSRI failed\n\nКОГДА ИЗБЕГАТЬ:\n• Пожилые (Beers Criteria — высокий риск)\n• Cardiac patology / arrhythmias\n• Эпилепсия\n• Glaucoma narrow-angle\n• BPH с задержкой мочи\n• Suicidal patient — risk of overdose lethality\n• Bipolar (induction risk выше SSRI)\n• Делирий в анамнезе\n• Беременность/планирование"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Авруцкий Г.Я. Неотложная помощь в психиатрии. М.: Медицина, 1979",
+      "Cipriani A. et al. 21 antidepressants NM-A. Lancet 2018",
+      "Moore R.A. et al. Amitriptyline for neuropathic pain. Cochrane 2015"
+    ]
+  },
+  {
+    "id": "drug_clomipramine",
+    "cmd_alias": "clomipramine",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Кломипрамин: самый серотонинергический TCA, FDA для OCD, ⚠ судороги при дозе >250",
+    "tags": [
+      "кломипрамин",
+      "clomipramine",
+      "Anafranil",
+      "TCA",
+      "серотонинергический",
+      "OCD",
+      "panic",
+      "cataplexy",
+      "seizure",
+      "CYP2D6",
+      "TDM"
+    ],
+    "related": [
+      "drug_amitriptyline",
+      "drug_imipramine",
+      "drug_fluoxetine",
+      "drug_fluvoxamine",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "Третичный амин TCA, наиболее серотонинергический. Прототип для OCD-терапии (исторически предшествовал SSRI). FDA approved для OCD. ⚠ Главный лимит — судорожный риск при дозах >250 мг и кардиотоксичность.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: третичный амин TCA, 3-Cl analog имипрамина. Geigy 1966.\n\nМЕХАНИЗМ:\n• 5-HT reuptake inhibitor (мощный — самый серотонинергический TCA, sequential to SSRI в потенциале)\n• Активный метаболит — desmethylclomipramine — преимущественно NE reuptake\n• Антихолинергическое (умеренно сильное)\n• H1, α1 (умеренно)\n• Na+ channel block"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• OCD (FDA approved): 100–250 мг/сут (start 25; max 250)\n  – ⚠ >250 мг — резко ↑ риск судорог\n  – Принимать с едой\n• MDD: 100–250 мг/сут\n• Panic disorder: 25–150 мг (off-label)\n• Cataplexy при narcolepsy (off-label): 25–75 мг\n• Premature ejaculation (off-label, low-dose): 10–25 мг 4–6 ч до акта\n\nFORMS: tablets 10/25/50/75 мг; IV (rare clinical use)\n\nПодростки (FDA OCD): 10–17 лет — старт 25 мг, max 200 мг или 3 мг/кг (что меньше)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 2–6 ч\n• T½: 32 ч (clomipramine), 70 ч (desmethyl-clomipramine)\n• Метаболизм: CYP2D6 (clomipramine→desmethyl), CYP1A2, CYP3A4\n• CYP2D6 poor metabolizers — ↑↑ levels\n\nTDM (Hiemke 2018): clomipramine + desmethyl-clomipramine сумма 230–450 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• OCD pivotal: ≈ или slightly > SSRI (Cochrane Skapinakis 2016)\n• Cipriani 2018: средняя effectiveness, низкая acceptability\n• Резерв при OCD-резистентных к 2+ SSRI (CANMAT 2014)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n⚠ СУДОРОГИ — главный лимит:\n• 0.5% при <250 мг\n• 1.5–2% при 250–300 мг\n• Резко ↑ при overdose\n• Не назначать при эпилепсии\n\n⚠ КАРДИОТОКСИЧНОСТЬ:\n• QTc, AV-блок (как амитриптилин)\n• Overdose lethality\n\nАнтихолинергические:\n• Сухость во рту, запоры, размытое зрение, задержка мочи\n• Меньше амитриптилина, но всё ещё значимы\n\nДругие:\n• Седация (умеренная)\n• Прибавка веса\n• Ортостаз\n• ⚠ Сексуальная дисфункция (anorgasmia → отсюда off-label premature ejaculation use)\n• Тремор\n• Гипергидроз\n• Bipolar induction\n\nDISCONTINUATION SYNDROME: умеренный\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО, linezolid — серотониновый\n⛔ CYP2D6 inhibitors (флуоксетин, пароксетин) — ↑↑\n⛔ QTc-prolonging\n⛔ ↓ Порог судорог aggravators (трамадол, бупропион в больших дозах)"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, не первая линия\nЛАКТАЦИЯ: RID 1.6% — приемлемо\nПОДРОСТКИ: FDA OCD approval ≥10 лет\nПОЖИЛЫЕ: ⚠ AVOID (Beers) — anticholinergic + cardiac\nПЕЧЁНОЧНАЯ: ↓ доза\nПОЧЕЧНАЯ: minimal\n\nКОГДА ВЫБИРАТЬ:\n• OCD резистентное к ≥2 SSRI\n• Резистентная депрессия с обсессивно-компульсивной составляющей\n• Premature ejaculation как primary indication (low-dose)\n\nКОГДА ИЗБЕГАТЬ:\n• Эпилепсия\n• Cardiac patology\n• Suicidal с risk of overdose\n• Пожилые\n• Беременность"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Skapinakis P. et al. Pharmacological and psychotherapeutic interventions for management of OCD in adults: meta-analysis. Cochrane 2016",
+      "Авруцкий Г.Я. Неотложная помощь в психиатрии. М.: Медицина, 1979"
+    ]
+  },
+  {
+    "id": "drug_nortriptyline",
+    "cmd_alias": "nortriptyline",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Нортриптилин: вторичный амин TCA, меньше антихолин, predictable для пожилых",
+    "tags": [
+      "нортриптилин",
+      "nortriptyline",
+      "Pamelor",
+      "TCA",
+      "secondary amine",
+      "NE reuptake",
+      "меньше антихолин",
+      "TDM target",
+      "therapeutic window",
+      "пожилые"
+    ],
+    "related": [
+      "drug_amitriptyline",
+      "drug_imipramine",
+      "drug_clomipramine",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "Вторичный амин TCA — активный метаболит амитриптилина. Преимущественно NE reuptake inhibitor (меньше серотонин). Меньше антихолин и кардиотоксичность чем амитриптилин — отсюда лучший выбор среди TCA для пожилых. Имеет терапевтическое окно (50–150 нг/мл) — важен TDM.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: вторичный амин TCA. Активный метаболит амитриптилина (амитриптилин → нортриптилин через CYP2D6 demethylation).\n\nМЕХАНИЗМ:\n• NE reuptake inhibitor (мощный)\n• 5-HT reuptake inhibitor (слабый — vs амитриптилин)\n• Меньше антихолинергическая активность чем амитриптилин\n• Меньше H1 (меньше седации)\n• Меньше α1 (меньше ортостаз)\n• Na+ channel block (как все TCAs)\n\nКЛИНИЧЕСКОЕ ОТЛИЧИЕ ОТ АМИТРИПТИЛИНА:\n• \"Cleaner\" profile — меньше anticholin/sedative burden\n• Лучше переносится, особенно пожилыми\n• Активирующий профиль (NE-mediated)"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• MDD: 50–150 мг/сут (start 25; up by 25 каждые 3 дня)\n  – Therapeutic window: 50–150 нг/мл — TDM-управляемая терапия\n  – >150 нг/мл — paradoxically worse efficacy + ↑ AEs (\"window\" effect)\n• Neuropathic pain (off-label): 10–75 мг на ночь — preferred over амитриптилина у elderly\n• Smoking cessation (FDA approved off-label): 75–150 мг\n• Headache prophylaxis: 25–75 мг\n• ADHD adult (off-label, second-line): 25–100 мг\n\nFORMS: capsules 10/25/50/75 мг, oral solution",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 6–10 ч\n• T½: 18–44 ч (long → можно 1 раз в сутки)\n• Метаболизм: CYP2D6 (главный)\n• CYP2D6 poor metabolizers — significantly ↑ levels\n\nTDM (Hiemke 2018): 70–170 нг/мл\n• ⚠ THERAPEUTIC WINDOW unique для нортриптилина:\n  – <50 нг/мл — субtherapeutic\n  – 50–150 нг/мл — оптимально\n  – >150 нг/мл — paradoxically ↓ efficacy + ↑ AEs\n• Это означает — если doza высокая а response плохой, ↓ дозу до therapeutic window\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cipriani 2018: средняя effectiveness; better acceptability чем amitriptyline\n• Cochrane на нейропатической боли: эффективен ≈ amitriptyline с лучшей переносимостью\n• Smoking cessation RCT: ≥ placebo, but ↓ varenicline",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n• Антихолинергические — УМЕРЕННЫЕ (значимо меньше амитриптилина, но больше SSRIs)\n• ⚠ КАРДИОТОКСИЧНОСТЬ — менее выражена амитриптилина, но всё ещё:\n  – QTc, AV-блок\n  – ⚠ Overdose risk\n• Седация: УМЕРЕННАЯ (меньше амитриптилина)\n• Ортостаз: умеренный\n• Прибавка веса: умеренная (1–3 кг)\n• ⚠ ↓ Порог судорог\n• Сексуальная дисфункция\n• Тремор\n• Bipolar induction\n• Гипонатриемия (less common)\n\nDISCONTINUATION: умеренный\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО, linezolid\n⛔ Strong CYP2D6 inhibitors (флуоксетин, пароксетин, бупропион) — ↑↑\n⛔ QTc-prolonging"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, не первая линия\nЛАКТАЦИЯ: RID 1.7% — приемлемо\nПОЖИЛЫЕ: ✅ TCA OF CHOICE если TCA необходим (least anticholinergic + cardiac vs other TCAs)\n• 25 мг старт, target 50–75 мг с TDM\nПЕЧЁНОЧНАЯ: ↓ доза\nПОЧЕЧНАЯ: minimal\n\nКОГДА ВЫБИРАТЬ:\n• Депрессия + neuropathic pain у пожилого пациента\n• Когда нужен TCA с минимальными side effects\n• Migraine prophylaxis у возрастного\n• Smoking cessation 2-я линия\n• TCA-naive пациент с предпочтением \"вторичных аминов\"\n\nКОГДА ИЗБЕГАТЬ:\n• Cardiac patology (хотя меньше amitriptyline)\n• Suicidal с overdose risk (всё ещё lethal в больших дозах)\n• Беременность (limited data)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62"
+    ]
+  },
+  {
+    "id": "drug_imipramine",
+    "cmd_alias": "imipramine",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Имипрамин: первый TCA, прототип, FDA для энуреза у детей",
+    "tags": [
+      "имипрамин",
+      "imipramine",
+      "Tofranil",
+      "TCA",
+      "first AD",
+      "tertiary amine",
+      "panic disorder",
+      "childhood enuresis",
+      "prototype",
+      "Authent"
+    ],
+    "related": [
+      "drug_amitriptyline",
+      "drug_clomipramine",
+      "drug_nortriptyline",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "ПЕРВЫЙ tricyclic антидепрессант (Geigy 1958, Kuhn). Прототип всего класса. FDA approved для MDD + childhood nocturnal enuresis (≥6 лет). Сегодня вытеснен SSRI/SNRI, но по-прежнему useful для panic disorder и enuresis. Меньше седации чем амитриптилин.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: третичный амин TCA. Geigy 1958, Kuhn описал antidepressant effect 1958 — первое лекарство от депрессии (вместе с iproniazid).\n\nМЕХАНИЗМ:\n• 5-HT и NE reuptake inhibitor (более balanced чем amitriptyline)\n• Активный метаболит — дезипрамин (преимущественно NE reuptake)\n• Антихолинергическое (умеренное, меньше amitriptyline)\n• H1 (меньше amitriptyline — отсюда меньше седации)\n• α1\n• Na+ channel block"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• MDD: 75–200 мг/сут (start 25–50; up by 25 каждые 3 дня)\n  – Maudsley target 100–150 мг\n  – Refractory до 300 мг\n• Panic disorder: 75–225 мг (off-label, but well-evidenced)\n• Childhood nocturnal enuresis (FDA, ≥6 лет): 25–75 мг на ночь\n  – Дозa по возрасту: 6–7 лет — 25 мг; 8–11 — 50 мг; 12+ — 75 мг\n  – Только short-term (3 мес max), high relapse rate\n• ADHD (off-label, adults): 50–150 мг\n• Bulimia nervosa (off-label)\n\nFORMS: tablets/capsules 10/25/50/75/100/125/150 мг; pamoate (depot, IM, redko используется)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1–2 ч\n• T½: 6–18 ч (imipramine), 12–60 ч (desipramine — активный метаболит)\n• Метаболизм: CYP2D6 (главный) + CYP1A2 + CYP2C19 + CYP3A4\n• Биодоступность 22–77% (high variability)\n\nTDM (Hiemke 2018): imipramine + desipramine сумма 175–300 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cipriani 2018: средняя effectiveness, низкая acceptability\n• Panic disorder: эффективен ≈ alprazolam (Klein 1962 был основоположником panic-pharma)\n• Childhood enuresis: short-term effect; high relapse",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ — TCA class effects:\n\n• Антихолинергические (умеренные)\n• Седация (МЕНЬШЕ амитриптилина)\n• Ортостаз\n• ⚠ Кардиотоксичность (как все TCA):\n  – QTc, AV-блок\n  – ⚠ ОВЕРДОЗА — частая cause of suicide death при TCA prescription\n• ⚠ ↓ Порог судорог\n• Прибавка веса (умеренная)\n• Сексуальная дисфункция\n• Тремор\n• Bipolar induction\n• Гипергидроз\n\nDISCONTINUATION SYNDROME: умеренный\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО, linezolid — серотонинерго-катехолaminergic\n⛔ Strong CYP2D6 inhibitors\n⛔ QTc-prolonging\n⛔ Антихолинергический burden ↑"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, обычно избегать\nЛАКТАЦИЯ: limited data\nДЕТИ ≥6 лет (enuresis): FDA approved, но только short-term (≤3 мес); ⚠ overdose lethality concern если ребёнок имеет access\nПОЖИЛЫЕ: ⚠ AVOID (Beers Criteria) — anticholinergic + cardiac + falls\nПЕЧЁНОЧНАЯ: ↓ доза\n\nКОГДА ВЫБИРАТЬ:\n• Panic disorder резистентное к SSRI\n• Childhood nocturnal enuresis (limited use, после behavioral)\n• Депрессия с panic features\n• MDD когда SSRI/SNRI failed\n\nКОГДА ИЗБЕГАТЬ:\n• Пожилые\n• Cardiac patology\n• Suicidal patient (overdose)\n• Беременность\n• Эпилепсия\n• BPH с задержкой мочи / glaucoma"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Klein D.F. Delineation of two drug-responsive anxiety syndromes. Psychopharmacologia 1964 (panic disorder concept)"
+    ]
   }
 ]

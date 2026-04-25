@@ -647,5 +647,259 @@
       "Морозов Г.В., 1983 — классификация стадий классического делирия по Liebermeister",
       "ВОЗ МКБ-10, F10.3 и F10.4 рубрики (включая пятизначные коды F10.30, F10.31, F10.40, F10.41)"
     ]
+  },
+  {
+    "id": "drug_naltrexone",
+    "cmd_alias": "naltrexone",
+    "type": "matrix",
+    "category": "Наркология",
+    "title": "Налтрексон: μ-opioid antagonist, AUD + OUD первая линия, ⚠ опиоиды абсолютно противопоказаны",
+    "tags": [
+      "налтрексон",
+      "naltrexone",
+      "ReVia",
+      "Vivitrol",
+      "μ-opioid antagonist",
+      "AUD",
+      "OUD",
+      "heavy drinking days",
+      "Sinclair method",
+      "kudzu",
+      "COMBINE",
+      "PTSD-AUD overlap",
+      "Petrakis 2006",
+      "Vivitrol",
+      "депо"
+    ],
+    "related": [
+      "drug_acamprosate",
+      "drug_disulfiram",
+      "drug_nalmefene",
+      "alg_alcohol_withdrawal",
+      "alcohol_dependency",
+      "alg_alcohol_withdrawal",
+      "metalcohol_delirium"
+    ],
+    "description": "Чистый μ-opioid receptor antagonist. FDA approved для AUD (1994) и OUD (1984). Снижает positive reinforcement алкоголя через блокаду эндогенных опиоидов. ⚠ ABSOLUTELY contraindicated с любыми опиоидами (включая кодеин, трамадол, метадон) — спровоцирует withdrawal. Депо-форма Vivitrol q4 weeks.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: opioid receptor antagonist.\nDuPont (Bristol-Myers Squibb). FDA approval: OUD 1984, AUD 1994 (oral), Vivitrol depot 2006.\n\nМЕХАНИЗМ:\n• μ-opioid receptor antagonist (мощный) — блокирует endogenous opioid release\n• κ-opioid (умеренная блокада)\n• δ-opioid (минимальная)\n• НЕ агонист — не вызывает euphoria, не вызывает зависимости\n\nКАК РАБОТАЕТ ПРИ AUD:\n• Алкоголь stimuluет endogenous opioid release (β-endorphin)\n• Это вносит вклад в \"high\" и reinforcement\n• Налтрексон блокирует этот эффект — ↓ алкогольное craving + ↓ heavy drinking\n• Не убивает ВСЁ удовольствие от алкоголя — только опиоид-mediated component"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• AUD (FDA approved):\n  – PO: 50 мг/сут (single dose; принимать в одно время)\n  – Sinclair method (off-label, EU pragmatically): 50 мг 1 ч до alcohol use, не каждый день — для гедонистического употребления (не для абстинентного режима)\n  – Vivitrol IM depot: 380 мг q4 нед — gluteal IM (предпочтительно при compliance issues)\n• OUD (FDA approved): 50 мг/сут после полной детоксикации (≥7-10 дней без опиоидов)\n  – Vivitrol IM 380 мг q4 нед\n• Self-injurious behavior в ID/autism (off-label, low evidence)\n• Pruritus холестатический (off-label): 25–50 мг\n\n⚠ ПЕРЕД СТАРТОМ — naloxone challenge test для исключения активного opioid use\n⚠ ПЕРЕД START — должен быть opioid-free 7–10 дней (короткая T½ агентов) или 10–14 дней (метадон)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax PO: 1 ч\n• T½: 4 ч (naltrexone), 13 ч (6-β-naltrexol — активный метаболит)\n• Метаболизм: главный — глюкуронидация (UGT2B7); CYP minimal\n• Биодоступность 5–40% (massive first-pass)\n• Vivitrol: peak в 2 ч + plateau 14 дней + decline ~30 дней\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• AUD COMBINE study (Anton 2006): naltrexone значимо ↓ heavy drinking days vs placebo\n• Cochrane Rösner 2010: ↓ relapse rate, ↓ heavy drinking days\n• PTSD-AUD overlap (Petrakis 2006): особенно эффективен\n• Vivitrol IM (Garbutt 2005): ↓ heavy drinking days vs placebo, лучше compliance",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n⚠ ABSOLUTE CONTRAINDICATION с опиоидами:\n• ЛЮБЫЕ opioid agonists / partial agonists — precipitated withdrawal\n• Кодеин, трамадол, морфин, оксикодон, метадон, бупренорфин, фентанил\n• Если пациент нуждается в опиоид-аналгезии — STOP naltrexone, wait 72ч, потом opioids\n• ⚠ После Vivitrol — naltrexone в системе 30 дней, opioid-аналgesia не работает в этот период\n\n⚠ HEPATOTOXICITY:\n• Dose-dependent ↑ ALT/AST\n• ⚠ FDA black box при доза >300 мг/сут (clinical doses 50 мг — низкий риск)\n• Мониторить ферменты baseline + 1 мес + затем q6 мес\n• ПРОТИВОПОКАЗАНО при острый гепатит / печёночная недостаточность\n\nДРУГИЕ:\n• Тошнота (~30%)\n• Headache\n• Sleep disturbance\n• Anxiety\n• Снижение аппетита\n• Иньекционные реакции (при Vivitrol — boil, induration)\n• ⚠ Suicidality (FDA warning — small but signifient signal at population level)"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, использовать только если польза > риск\nЛАКТАЦИЯ: limited data, generally avoid\nПОЖИЛЫЕ: usable, watch hepatic\nПЕЧЁНОЧНАЯ: ⚠ AVOID при острый гепатит / печёночная недостаточность\nПОЧЕЧНАЯ: minimal change\n\nКОГДА ВЫБИРАТЬ:\n• AUD первая линия (особенно \"reduction\" goal — ↓ heavy drinking days, не абсолютная abstinence)\n• PTSD-AUD overlap\n• Compliance плохая → Vivitrol IM depot\n• Neither pregnancy nor breastfeeding\n\nКОГДА ИЗБЕГАТЬ:\n• Любая активная opioid-терапия (chronic pain) или зависимость\n• Plan для surgery в ближайшие 30 дней (will block opioid analgesia)\n• Острый гепатит\n• Беременность (limited data)\n• Суицидальный пациент (signal в FDA warning)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Anton R.F. et al. COMBINE Study: combined pharmacotherapies for AUD. JAMA 2006",
+      "Petrakis I.L. et al. Naltrexone and disulfiram for AUD-PTSD comorbidity. Biol Psychiatry 2006",
+      "Cochrane: Rösner S. et al. Opioid antagonists for alcohol dependence 2010",
+      "Garbutt J.C. et al. Naltrexone IM depot for AUD. JAMA 2005"
+    ]
+  },
+  {
+    "id": "drug_acamprosate",
+    "cmd_alias": "acamprosate",
+    "type": "matrix",
+    "category": "Наркология",
+    "title": "Акампросат: NMDA modulator, AUD anti-craving, безопасный профиль, требует абстиненции",
+    "tags": [
+      "акампросат",
+      "acamprosate",
+      "Campral",
+      "NMDA",
+      "glutamate",
+      "calcium acetylhomotaurinate",
+      "AUD",
+      "abstinence-supporting",
+      "renal",
+      "Cochrane",
+      "Mason 2006"
+    ],
+    "related": [
+      "drug_naltrexone",
+      "drug_disulfiram",
+      "drug_nalmefene",
+      "alcohol_dependency",
+      "alg_alcohol_withdrawal",
+      "metalcohol_delirium"
+    ],
+    "description": "Calcium acetylhomotaurinate — структурный аналог GABA. Модулятор NMDA glutamate receptors. FDA approved для AUD (2004, EU значимо раньше). Поддерживает абстиненцию (не ↓ heavy drinking, как налтрексон). Безопасный профиль — main лимит — ужасный compliance (3 раза в сутки PO + начало после абстиненции).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: NMDA receptor modulator.\nLipha. EU approval 1989, FDA 2004.\n\nМЕХАНИЗМ:\n• NMDA glutamate receptor modulator (хроническое употребление алкоголя ↑ NMDA → withdrawal hyperexcitability)\n• Восстанавливает GABA/glutamate balance\n• Не агонист и не антагонист — рестабилизатор\n• Совершенно НЕ влияет на opioid receptors (отличие от налтрексона) — можно применять с опиоидами\n\nКАК РАБОТАЕТ ПРИ AUD:\n• Уменьшает сохранение \"protracted withdrawal\" симптомов (anxiety, insomnia, dysphoria)\n• Через это поддерживает абстиненцию\n• Не influence drinking когда выпито (не \"заставит\" перестать пить)"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• AUD (FDA approved): 1998 мг/сут разделено на 3 приёма\n  – 333 мг 2 таблетки 3 р/сут (= 1998 мг/сут — 666 мг каждый раз)\n  – Принимать с едой\n  – ⚠ Нужна compliance — 3 раза в сутки\n\nDOSING для compliance:\n• Утром 666 мг (с завтраком)\n• Днём 666 мг (с обедом)\n• Вечером 666 мг (с ужином)\n\nЕсли вес <60 кг — ↓ доза до 1332 мг (4 таблетки/сут)\n\n⚠ START AFTER abstinence achieved (5–7 дней без алкоголя)\n• Не работает как acute детоксикация — это \"maintenance\" препарат\n• Если пациент возобновил drinking — продолжать акампросат, не отменять",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 5–7 ч\n• T½: 20–33 ч\n• Метаболизм: НЕТ — выводится unchanged через почки\n• Биодоступность: 11% (low and variable, отсюда нужны 3 dose/сут)\n• Не индуцирует / не ингибирует CYP\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Mason 2006 (n=601): значимо больше abstinent days vs placebo\n• Cochrane Rösner 2010: ↓ relapse, ↑ abstinence rate\n• Lawrence 2014 NM-A: as effective как naltrexone overall, но different mechanism (abstinence-supporting vs anti-craving)\n• Кокрановский Recommend для пациентов с goal = абсолютная абстиненция",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ — главный аргумент в его пользу:\n\n✅ ИСКЛЮЧИТЕЛЬНО БЕЗОПАСНЫЙ ПРОФИЛЬ:\n• Не влияет на алкоголь metabolism\n• Не вызывает hepatotoxicity\n• Не вызывает зависимости\n• Не provoke withdrawal\n• Можно применять с опиоидами\n• Можно применять с другими AD/AP/etc — minimum interactions\n\nЧТО МОЖЕТ ВЫЗВАТЬ:\n• ⚠ ДИАРЕЯ (главное, ~17%) — может купироваться через 1–2 нед, но иногда discontinuation reason\n• Тошнота\n• Прибавка веса (минимальная)\n• Sleep disturbance (insomnia or somnolence variable)\n• Зуд кожи\n• Снижение либидо (минимальное)\n• ⚠ Suicidality (FDA warning — small population-level signal)\n\nВЗАИМОДЕЙСТВИЯ:\n• ✅ ОТСУТСТВУЮТ значимые interactions через CYP\n• Renal excretion — может потребоваться dose adjustment при ↓ СКФ"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data; теоретически безопаснее налтрексон/дисульфирам, но first-line не\nЛАКТАЦИЯ: limited data\nПОЖИЛЫЕ: ↓ доза при ↓ СКФ\nПЕЧЁНОЧНАЯ: ✅ NO adjustment (не печёночный метаболизм)\nПОЧЕЧНАЯ: ⚠ adjustment:\n• СКФ 30–50: ↓ дозу 50%\n• СКФ <30: ⛔ ПРОТИВОПОКАЗАНО\n\nКОГДА ВЫБИРАТЬ:\n• AUD с goal = абсолютная абстиненция (не reduction)\n• Печёночная патология (нет hepatotoxicity)\n• Полипрагмазия с CYP-чувствительными drugs (no interactions)\n• Пациент на хронической опиоид-терапии (не противопоказан, в отличие от налтрексона)\n• Compliance с 3-times-daily реальна\n\nКОГДА ИЗБЕГАТЬ:\n• Compliance issues (3 dose/сут — самый плохой compliance препарат)\n• Severe renal impairment\n• Goal = ↓ heavy drinking без abstinence (preferable налтрексон)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Mason B.J. et al. Acamprosate for AUD: 6-month, double-blind RCT. Arch Gen Psychiatry 2006",
+      "Cochrane: Rösner S. et al. Acamprosate for alcohol dependence 2010",
+      "Jonas D.E. et al. Pharmacotherapy for adults with AUD in outpatient settings: systematic review and meta-analysis. JAMA 2014;311:1889–900"
+    ]
+  },
+  {
+    "id": "drug_disulfiram",
+    "cmd_alias": "disulfiram",
+    "type": "matrix",
+    "category": "Наркология",
+    "title": "Дисульфирам: ALDH inhibitor, аверсивная терапия AUD, ⚠ требует supervised compliance",
+    "tags": [
+      "дисульфирам",
+      "disulfiram",
+      "Antabuse",
+      "Tetrazepam",
+      "Esperal",
+      "ALDH",
+      "aldehyde dehydrogenase",
+      "aversive",
+      "DER",
+      "disulfiram-ethanol reaction",
+      "supervised",
+      "subcutaneous implant",
+      "эспераль",
+      "торпеда",
+      "украинская практика",
+      "aлкогольная имплантация"
+    ],
+    "related": [
+      "drug_naltrexone",
+      "drug_acamprosate",
+      "drug_nalmefene",
+      "alg_alcohol_withdrawal",
+      "alcohol_dependency",
+      "alg_alcohol_withdrawal",
+      "metalcohol_delirium"
+    ],
+    "description": "Aldehyde dehydrogenase (ALDH) inhibitor — блокирует second step метаболизма алкоголя → накопление acetaldehyde → unpleasant reaction (DER) при употреблении. FDA approved для AUD 1949 (один из старейших AD-meds). Aversion-based — работает только при supervision. ⚠ Subcutaneous implant (\"торпеда\", \"эспераль\") — широкая постсоветская практика.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: aldehyde dehydrogenase inhibitor.\nWyeth. FDA approval 1949 (после accidental discovery в Danish industrial workers).\n\nМЕХАНИЗМ:\n• Блокирует ALDH2 (mitochondrial aldehyde dehydrogenase)\n• Алкоголь → acetaldehyde → нет dehydrogen → накопление acetaldehyde в крови\n• Acetaldehyde — токсичный intermediate; вызывает DER (Disulfiram-Ethanol Reaction)\n• Также блокирует dopamine-β-hydroxylase (slight) — может ↓ DA-mediated craving\n\nDER ПРИ УПОТРЕБЛЕНИИ АЛКОГОЛЯ:\n• Появляется через 10–30 мин после приёма\n• Длится 30 мин – несколько часов\n• Симптомы: hot flushing, throbbing headache, palpitations, tachycardia, hypotension, nausea, vomiting, weakness, dyspnea, anxiety, в severe — arrhythmias, MI, death (rare)\n• Severity зависит от: dose disulfiram, dose alcohol, individual sensitivity\n• Смертельный риск возможен (rare) — особенно с >120 мг alcohol при доза disulfiram >500 мг"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• AUD только в supervised режиме (FDA approved):\n  – Start 250 мг/сут × 1–2 нед (loading)\n  – Maintenance 125–500 мг/сут\n  – Чаще всего 250 мг 1 р/сут\n  – Принимать в одно время каждый день (компонент supervision)\n\n• ⚠ ЭСПЕРАЛЬ-ИМПЛАНТ (постсоветская специфика):\n  – Subcutaneous implantation 800–1000 мг тaблеток в подкожную жировую клетчатку (живот/ягодица)\n  – Действие 6–12 мес (variable absorption)\n  – Российская/украинская популярная практика (\"торпеда\", \"вшит\")\n  – ⚠ Limited evidence для эффективности vs PO (ASAM/Maudsley не recommend)\n  – Supraspatial reaction плохо предсказуема\n  – Может вызвать chronic local infection\n  – Извлечение — хирургическое\n\nWORKS BEST WITH: supervised administration (родственник видит приём ежедневно)\nWORKS POORLY WITH: unsupervised — пациент не примет таблетку перед drinking",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 8–10 ч\n• T½: 60–120 ч (long → даже 2 недели после отмены ALDH ингибиция сохраняется)\n• Метаболизм: hepatic — bioactivation к диэтилдитиокарбамату → CS₂\n• Биодоступность 80%\n\nЭффект на ALDH:\n• Полное ингибирование к 12 ч после первой дозы\n• Сохраняется ≥2 нед после отмены — ⚠ алкоголь будет вызывать DER даже спустя 2 недели после прекращения\n• Это критически важно — пациент должен знать!\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cochrane Skinner 2014: эффективен ТОЛЬКО при supervised use; unsupervised — placebo-equivalent\n• Jorgensen 2011 NM-A: лучше unblinded RCT (because aversion knowledge мощный motivator)\n• ASAM 2020: \"medication of last resort\"; Maudsley — \"not first-line\"",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n⚠ DER REACTION (главное — ожидаемое, но контролируемое):\n• Severity dose-dependent (dose alcohol)\n• Может быть severe или fatal в rare cases\n• ⚠ Острая медицинская emergency при severe DER:\n  – Respiratory support\n  – Hypotension management\n  – Antihistamines, vitamin C IV — palliative\n• ⚠ ОБРАЗОВАНИЕ ПАЦИЕНТА — ОБЯЗАТЕЛЬНО:\n  – Лекарства содержащие алкоголь (cough syrups, vanilla extract, mouthwash) — могут вызвать DER\n  – Cosmetics с alcohol (after-shave, perfume — топически абсорбируется)\n  – Несколько недель wait после последней дозы перед alcohol exposure\n\n⚠ DRUG-INDUCED HEPATITIS:\n• Idiosyncratic, rare, но fatal possible\n• Мониторить ALT/AST baseline + 2 нед + ежемесячно\n• Stop при >3× ULN\n\nДРУГИЕ:\n• Сонливость / fatigue (transient, начало терапии)\n• Headache\n• Acne-подобные высыпания\n• Металлический привкус\n• Сексуальная дисфункция (редко)\n• ⚠ Психоз (rare) — особенно при дозах >500 мг\n• ⚠ Optic neuritis (rare)\n• Полинейропатия (rare, при long-term high-dose)\n\nВЗАИМОДЕЙСТВИЯ (МНОГО):\n⛔ Strong CYP3A4 inhibitor — ↑ levels многих drugs:\n• Варфарин — ↑ INR\n• Phenytoin — ↑ levels\n• Бензодиазепины (диазепам, хлордиазепоксид) — ↑ levels\n• Трициклики — ↑ levels\n• Метронидазол — psychotic episode reports\n⛔ Алкоголь-содержащие препараты (см. выше)\n⛔ Изониазид — additive psychotic effects"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: ⛔ AVOID — ассоциация с congenital malformations\nЛАКТАЦИЯ: AVOID\nПОЖИЛЫЕ: cardiac risk при DER ↑↑ — обычно AVOID\nПЕЧЁНОЧНАЯ: ⛔ AVOID при острый гепатит\nПОЧЕЧНАЯ: AVOID при severe\n\nКОГДА ВЫБИРАТЬ:\n• AUD с goal = абсолютная абстиненция + supervised setting\n• Высоко мотивированный пациент с поддержкой родственников\n• Failure naltrexone/acamprosate\n• Структурированная программа (rehab residential)\n\nКОГДА ИЗБЕГАТЬ:\n• Cardiac patology (DER может быть fatal)\n• Беременность\n• Печёночная патология\n• Психоз в анамнезе\n• Полипрагмазия с CYP-чувствительными drugs\n• Cognitive impairment (не понимает risks DER)\n• Unsupervised — без супервизора\n• ⚠ Острая интоксикация ВСЕГДА — никогда не давать пациенту в опьянении\n\nПРИМЕЧАНИЕ ПОСТСОВЕТСКОЙ ПРАКТИКИ:\nЭспераль-implant (\"торпеда\") и горячо рекламируемые \"кодирование\" — в большинстве случаев это disulfiram implant. Limited evidence от placebo, но психотерапевтический effect supervision/contract значим. Основная польза — мотивационная, через self-imposed deterrent."
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Cochrane: Skinner M.D. et al. Disulfiram efficacy in AUD 2014",
+      "Petrakis I.L. et al. Disulfiram-naltrexone for AUD-PTSD. Biol Psychiatry 2006",
+      "Чуприков А.П., Педак А.А. Клиническая наркология",
+      "Авруцкий Г.Я. Неотложная помощь в психиатрии. М.: Медицина, 1979"
+    ]
+  },
+  {
+    "id": "drug_nalmefene",
+    "cmd_alias": "nalmefene",
+    "type": "matrix",
+    "category": "Наркология",
+    "title": "Налмефен: μ/δ-opioid antagonist + κ-partial agonist, EU only, AS-NEEDED dosing",
+    "tags": [
+      "налмефен",
+      "nalmefene",
+      "Selincro",
+      "μ-opioid antagonist",
+      "δ-opioid antagonist",
+      "κ-partial agonist",
+      "AUD",
+      "reduction",
+      "as-needed",
+      "DRL",
+      "drinking risk level",
+      "EU only",
+      "NICE",
+      "Soyka"
+    ],
+    "related": [
+      "drug_naltrexone",
+      "drug_acamprosate",
+      "drug_disulfiram",
+      "alcohol_dependency",
+      "alg_alcohol_withdrawal",
+      "metalcohol_delirium"
+    ],
+    "description": "Тройной opioid receptor modulator: μ + δ antagonist + κ partial agonist. Approved EU (2013) для AUD reduction (НЕ абсолютная абстиненция). Уникальная concept — \"as-needed\" dosing (per Sinclair-like method): принимать только когда есть risk of drinking, не каждый день. ⚠ Не FDA approved в US.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: opioid receptor modulator (триплет действий).\nLundbeck. EU approval 2013.\n\nМЕХАНИЗМ:\n• μ-opioid antagonist (как налтрексон)\n• δ-opioid antagonist (umеренный)\n• κ-opioid PARTIAL AGONIST — ключевое отличие от налтрексона\n  – κ-stimulation в малых дозах может ↓ negative emotional drinking (anti-stress effect)\n  – Vs naltrexone — pure κ-antagonist что может indirectly ↑ stress\n\nКЛИНИЧЕСКОЕ ОТЛИЧИЕ ОТ НАЛТРЕКСОНА:\n• \"As-needed\" dosing — innovative концепция\n• Targeted at \"reduction of consumption\", не \"abstinence\"\n• Может быть лучше для high-DRL but high-functioning пациентов\n• Не первая линия в USA (нет FDA approval); first-line/second-line в EU"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• AUD reduction (EU approved): 18 мг по требованию\n  – Как принимать: 1–2 ч ДО ожидаемой ситуации drinking risk\n  – Не каждый день\n  – Если выпил без приёма — принять как можно скорее\n  – Goal: ↓ heavy drinking days (HDD), ↓ total alcohol consumption\n  – Continued for as long as appropriate (no defined endpoint)\n\nDRINKING RISK LEVEL (DRL) тarget:\n• High DRL: men >60 г/day, women >40 г/day\n• Very high DRL: men >100 г/day, women >60 г/day\n• Налмефен showed best data в High и Very High DRL groups\n\n⚠ Не одобрен FDA US — основная причина low usage globally despite EU approval",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1.5 ч\n• T½: 13 ч\n• Метаболизм: глюкуронидация (UGT2B7) — нет CYP\n• Биодоступность 41%\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• ESENSE 1, 2, SENSE trials (Mann 2013, Gual 2013): значимо ↓ HDD vs placebo при high-DRL пациентах\n• Cochrane Palpacuer 2018: модерeт effect на drinking reduction; some controversy на study quality\n• NICE TA325 2014 — recommend для adults с AUD при mild dependence + high-DRL\n• Soyka NEUROP 2022: useful для пациентов отказывающихся от ежедневной therapy",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ — близки к налтрексону:\n\n⚠ ABSOLUTE CONTRAINDICATION с опиоидами (как налтрексон):\n• Любые opioid agonists/partial agonists — precipitated withdrawal\n• Если нужны опиоиды для аналгезии — STOP nalmefene\n\nНАИБОЛЕЕ ЧАСТЫЕ:\n• Тошнота (~22%)\n• Головокружение (~18%)\n• Бессонница (~16%)\n• Headache\n• Усталость\n• Снижение аппетита\n• Vomiting\n\nMODERATE:\n• ⚠ Hepatotoxicity (меньше выражено налтрексона) — мониторить ферменты\n• Иньекционные реакции (нет — PO only, no depot формы)\n• Депрессия / suicidality (FDA warning style, EU equivalent)\n\nВЗАИМОДЕЙСТВИЯ:\n• ⛔ Опиоиды (любая форма) — withdrawal\n• Минимум CYP-driven interactions (UGT-метаболизм)\n• ⚠ Алкоголь — paradoxically может потенцировать налмефен side effects (тошнота)"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, обычно избегать\nЛАКТАЦИЯ: limited data\nПОЖИЛЫЕ: usable, мониторить hepatic\nПЕЧЁНОЧНАЯ: ⚠ AVOID при severe (Child-Pugh C); mild-moderate — monitor\nПОЧЕЧНАЯ: minimal change\n\nКОГДА ВЫБИРАТЬ:\n• AUD high-functioning + High-DRL без motivation для абсолютной абстиненции\n• Пациент в EU country (FDA US — недоступен)\n• Reduction goal предпочтителен\n• Failure or non-compliance с daily naltrexone\n• Concept of \"controlled drinking\" приемлем для pacient/clinician\n\nКОГДА ИЗБЕГАТЬ:\n• Опиоиды (любые)\n• US (недоступен)\n• Goal = абсолютная абстиненция (acamprosate/disulfiram лучше)\n• Severe hepatic impairment\n• Беременность"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Mann K. et al. Nalmefene RCT for AUD reduction (ESENSE 1). Biol Psychiatry 2013",
+      "Gual A. et al. Nalmefene 1-year RCT (SENSE). Eur Neuropsychopharmacol 2013",
+      "Cochrane: Palpacuer C. et al. Pharmacologically controlled drinking in AUD 2018",
+      "NICE TA325 (2014): Nalmefene for reducing alcohol consumption",
+      "Soyka M. NEUROP — Pharmacotherapy of AUD chapter 2022 (p.4303)"
+    ]
   }
 ]
