@@ -395,5 +395,195 @@
       "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part IV Mood Stabilizers (p.1425)",
       "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — mood stabilizer entries"
     ]
+  },
+  {
+    "id": "drug_carbamazepine",
+    "cmd_alias": "carbamazepine",
+    "type": "matrix",
+    "category": "Фармакотерапия (Нормотимики)",
+    "title": "Карбамазепин: классика для BAR + AED, мощный CYP индуктор, ⚠ агранулоцитоз/SJS",
+    "tags": [
+      "карбамазепин",
+      "carbamazepine",
+      "Tegretol",
+      "Finlepsin",
+      "CBZ",
+      "mood stabilizer",
+      "AED",
+      "trigeminal neuralgia",
+      "CYP3A4 inducer",
+      "autoinduction",
+      "SJS",
+      "HLA-B*1502",
+      "DRESS",
+      "SIADH"
+    ],
+    "related": [
+      "drug_oxcarbazepine",
+      "drug_valproate",
+      "drug_lithium",
+      "drug_lamotrigine",
+      "alg_bipolar_depression",
+      "drug_clozapine",
+      "drug_lithium",
+      "drug_valproate",
+      "drug_lamotrigine",
+      "preg_mood_stabilizers"
+    ],
+    "description": "Iminostilbene, mood stabilizer + AED. Эффективен при BAR-mania (особенно RC, mixed). FDA approved AED + bipolar mania. ⚠ Один из мощнейших CYP3A4 inducers — много interactions, autoinducrion. ⚠ HLA-B*1502 screen перед началом (Asians) — риск SJS. ПРОТИВОПОКАЗАН с клозапином (агранулоцитоз).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: iminostilbene (структурно близок к ТЦА). Geigy 1962 (anticonvulsant). Bipolar mania FDA approval 2004 (extended-release).\n\nМЕХАНИЗМ:\n• Voltage-gated Na⁺ channel blockade — главный effect (use-dependent → ↓ нейрональная excitability при high firing)\n• Блокирует L-type Ca²⁺ channels\n• Adenosine receptor antagonist — отсюда некоторые psychotropic effects\n• ↓ Glutamate release\n• Активный метаболит CBZ-10,11-эпоксид — также активный\n\nИндукция CYP3A4 (главный) + CYP1A2 + CYP2C9 + CYP2C19 + UGT — отсюда МАССА interactions.\n⚠ AUTO-INDUCTION — карбамазепин индуцирует свой собственный метаболизм. T½ снижается с 30+ часов в начале терапии до 12–17 ч после 3–4 нед — нужна dose adjustment."
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• Bipolar mania (acute and maintenance): 600–1200 мг/сут разделено на 2–4 приёма\n  – Start 200 мг 2 р/сут\n  – Up by 200 мг q3–5 дней\n  – Target по plasma levels (4–12 мкг/мл)\n• Bipolar depression: меньше evidence чем для mania (Bazire)\n• Бar acute psychotic features: comparable lithium\n• Rapid cycling BAR: эффективен (Maudsley)\n• Mixed episodes: эффективен\n• AED indications:\n  – Partial seizures: 400–1200 мг/сут\n  – Generalized tonic-clonic: 400–1200 мг\n• Trigeminal neuralgia (FDA approved): 400–1200 мг\n• Diabetic neuropathy (off-label)\n• Аlcohol withdrawal (off-label, Bazire mention): 600–800 мг/сут × 7 дней\n• ⚠ Klüver-Bucy syndrome / impulse control / aggression in dementia (off-label)\n\nFORMS:\n• IR tablets (200/400 мг)\n• Chewable (100 мг)\n• Suspension (100 мг/5 мл)\n• ER tablets (200/400 мг — Tegretol XR, Finlepsin Retard)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: IR 4–8 ч; ER 4–8 ч (smoothier)\n• T½: 30–40 ч initial → ↓ до 12–17 ч после autoinduction\n• Метаболизм: CYP3A4 (главный, к 10,11-epoxide) + UGT\n• Биодоступность 80%\n• Активный метаболит: 10,11-epoxide\n\nTDM:\n• 4–12 мкг/мл (стабильное окно)\n• Toxicity >12: ataxia, diplopia, nystagmus, ↓ Na+\n• Toxicity >15: severe — somnolence, coma\n\n⚠ Важно: после старта — измерить levels через 5 дней + повторно через 4 нед (auto-induction может ↓ уровень дропом)\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• BAR mania: эффективность ≈ литий, ≈ valproate (CANMAT 2018)\n• BAR maintenance: ↓ relapse vs placebo, equivalent or slightly inferior to lithium\n• Naturalistic studies — high discontinuation due to AEs",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n⚠ ОПАСНЫЕ:\n• ⚠ STEVENS-JOHNSON SYNDROME / TEN (rare, ~6/10000):\n  – Высокий риск у Asian patients с HLA-B*1502 — MANDATORY screening\n  – Появляется обычно в первые 6 нед\n  – ЛЮБАЯ СЫПЬ → отмена немедленно\n• ⚠ DRESS (Drug Reaction with Eosinophilia and Systemic Symptoms): rare, life-threatening\n• ⚠ АГРАНУЛОЦИТОЗ / aplastic anemia: rare (1/10000–1/125000)\n• ⚠ HEPATIC INJURY — мониторить ферменты\n• ⚠ HYPONATREMIA / SIADH — частый (~25% долгосрочно), особенно пожилые\n• ⚠ Cardiac conduction effects (AV block) — особенно с другими conduction-blockers\n\nЧАСТЫЕ:\n• Атаксия\n• Дiplopia\n• Тремор\n• Drowsiness\n• Тошнота\n• Cognitive slowing\n• Прибавка веса (умеренная)\n• Hyperлipидемия\n\n⚠ INTERACTIONS — МАССА (CYP3A4 induction):\n\n⛔ ⚠ КЛОЗАПИН — ABSOLUTELY CONTRAINDICATED (↑↑ агранулоцитоз)\n⛔ Контрацептивы oral — ↓ effectiveness; добавить барьерный\n⛔ Варфарин — ↓ INR\n⛔ Кветиапин — ↓ levels на 80% (Grimm 2006, Bazire)\n⛔ Ламотриджин — ↓ levels (двойная скорость титрации)\n⛔ Vальпроат — взаимная сложная, обычно ↑ epoxide (toxicity)\n⛔ Доксициклин, antibiотики macrolides\n⛔ Phenytoin\n⛔ Many ART drugs (ритонавир)\n\n⛔ CYP3A4 inhibitors (кларитромицин, кетоконазол, грейпфрутовый сок) — ↑↑ carbamazepine toxicity"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: ⚠ TERATOGENIC (Class D) — neural tube defects, особенно spina bifida (1%); cardiac defects, cleft palate; ИЗБЕГАТЬ при возможности; если необходимо — folate supplementation 5 мг/сут pre-conception; preferred — lamotrigine для bipolar in pregnancy\nЛАКТАЦИЯ: RID 3.8% — приемлемо, мониторить ребёнка\nПОЖИЛЫЕ: ↓ доза; ⚠ hyponatremia особенно; cardiac monitoring\nПЕЧЁНОЧНАЯ: ↓ доза, мониторить ферменты\nПОЧЕЧНАЯ: minimal change\n\nDISCONTINUATION: taper over 4+ нед (rebound seizure risk при AED indication)\n\nКОГДА ВЫБИРАТЬ:\n• BAR mania / mixed когда литий + valproate failed\n• Rapid cycling BAR\n• AED indication + BAR comorbidity\n• Trigeminal neuralgia (1-я линия)\n• Aggressive behavior при ID/dementia (off-label)\n\nКОГДА ИЗБЕГАТЬ:\n• Беременность / планирование\n• На клозапине (ABSOLUTELY)\n• На oral контрацептивах (или добавить барьерные)\n• Asian patients без HLA-B*1502 screening\n• Cardiac conduction issues\n• Полипрагмазия с CYP3A4 substrates"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT and ISBD 2018 Guidelines (Yatham 2018)",
+      "Bazire S. Psychotropic Drug Directory 2020/21",
+      "Grimm S.W. et al. Pharmacokinetic interaction quetiapine-CBZ. Br J Clin Pharmacol 2006"
+    ]
+  },
+  {
+    "id": "drug_oxcarbazepine",
+    "cmd_alias": "oxcarbazepine",
+    "type": "matrix",
+    "category": "Фармакотерапия (Нормотимики)",
+    "title": "Окскарбазепин: \"карбамазепин-light\", без autoinduction, BAR off-label",
+    "tags": [
+      "окскарбазепин",
+      "oxcarbazepine",
+      "Trileptal",
+      "Apydan",
+      "keto-derivative",
+      "CBZ analog",
+      "SIADH risk",
+      "HLA-B*1502",
+      "BAR off-label",
+      "minimal CYP induction"
+    ],
+    "related": [
+      "drug_carbamazepine",
+      "drug_valproate",
+      "drug_lithium",
+      "drug_lamotrigine",
+      "drug_lithium",
+      "drug_valproate",
+      "drug_lamotrigine",
+      "preg_mood_stabilizers"
+    ],
+    "description": "10-keto аналог карбамазепина. Метаболизируется до 10-OH-derivative (MHD/eslicarbazepine). Преимущества vs CBZ: НЕТ autoinduction, СЛАБЕЕ CYP induction, меньше hematologic AEs, НЕ требует TDM рутинно. ⚠ НО: hyponatremia/SIADH — выше CBZ (~30% частоты).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: keto-derivative iminostilbene. Novartis 2000.\n\nМЕХАНИЗМ:\n• Voltage-gated Na⁺ channel blockade (как CBZ)\n• Активный метаболит — 10-OH-derivative (MHD = monohydroxy-derivative); расщеплен на S-(+)- и R-(-)- enantiomers\n• Eslicarbazepine acetate (Aptiom, FDA approved 2013) — pure S-enantiomer of MHD\n• Без auto-induction\n• Слабая CYP3A4 induction (~50% от CBZ)"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• Partial seizures (FDA approved): 600–2400 мг/сут разделено на 2 приёма\n  – Start 300 мг 2 р/сут\n• Bipolar disorder (off-label, but used in clinical practice):\n  – 600–1800 мг/сут\n  – Maudsley: альтернатива CBZ при BAR mania, особенно при непереносимости CBZ\n  – Adjunct or monotherapy\n  – CANMAT 2018 — third-line\n• Trigeminal neuralgia (off-label): 300–1800 мг/сут\n• Aggression / impulse control (off-label)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Oxcarbazepine быстро превращается в MHD (active form)\n• T½ MHD: 9 ч\n• Метаболизм: cytosolic reductase (NOT CYP) → MHD; затем UGT glucuronidation\n• Биодоступность: 95%\n• Linear PK\n\nTDM (10-OH MHD): 3–35 мкг/мл (если используется TDM, не рутинно)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n⚠ ОПАСНЫЕ (меньше CBZ, но возможны):\n• ⚠ HYPONATREMIA / SIADH — ВЫШЕ CBZ (~25–30% долгосрочно)\n  – Особенно у пожилых\n  – Мониторинг Na+ baseline + 1, 3 мес + при симптомах\n  – ↓ доза или switch при <130 ммоль/л\n• ⚠ SJS / TEN: HLA-B*1502 screening Asian patients — есть пересекаемая cross-reactivity\n• Реже DRESS чем CBZ\n• Реже agranulocytosis чем CBZ\n• Реже hepatic чем CBZ\n\nЧАСТЫЕ:\n• Головокружение\n• Седация\n• Тошнота\n• Атаксия (умеренная)\n• Diplopia\n• Cognitive slowing\n• Тремор\n• Прибавка веса (минимальная)\n\nВЗАИМОДЕЙСТВИЯ — МЕНЬШЕ CBZ:\n⚠ Слабый CYP3A4 inducer (~50% от CBZ):\n• ↓ contraceptives effect (но меньше чем CBZ)\n• ↓ valproate, lamotrigine\n• Сильнее на CYP2C19 (↑ phenytoin, fluvastatin)\n⚠ Без значимого autoinduction\n\nВЗАИМОДЕЙСТВИЯ ВСЁ ЕЩЁ ЕСТЬ — ПРОВЕРИТЬ:\n⛔ Strong CYP3A4 inducers (рифампицин, фенитоин) — ↓ MHD\n⛔ Не использовать с клозапином routinely (хотя меньше agranulocytosis risk чем CBZ — но безопаснее избегать)"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: ⚠ TERATOGENIC — neural tube defects (как CBZ); folate 5 мг/сут pre-conception; preferred — lamotrigine for BAR\nЛАКТАЦИЯ: limited data; вероятно как CBZ\nПОЖИЛЫЕ: ⚠ HYPONATREMIA RISK ВЫШЕ — мониторинг строже\nПЕЧЁНОЧНАЯ: ↓ доза\nПОЧЕЧНАЯ: ↓ доза при СКФ <30\n\nDISCONTINUATION: taper 4+ нед\n\nКОГДА ВЫБИРАТЬ:\n• Пациент на CBZ с побочками — switch на oxcarbazepine (\"CBZ-light\")\n• BAR adjunct когда CBZ-like effect нужен без CBZ-AEs\n• Trigeminal neuralgia с непереносимостью CBZ\n• Без необходимости в TDM (не рутинно)\n\nКОГДА ИЗБЕГАТЬ:\n• Пожилые с history hyponatremia\n• Беременность (хотя CBZ хуже, lamotrigine предпочтительнее)\n• Asian patients без screening\n• Пациент стабилен на CBZ (не switch без причины)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT and ISBD 2018 Guidelines (Yatham 2018)",
+      "Bazire S. Psychotropic Drug Directory 2020/21"
+    ]
+  },
+  {
+    "id": "drug_topiramate",
+    "cmd_alias": "topiramate",
+    "type": "matrix",
+    "category": "Фармакотерапия (Нормотимики)",
+    "title": "Топирамат: GABA+AMPA, AED + adjunct для BAR/AW/migraine, ⚠ \"dopamax\" cognitive",
+    "tags": [
+      "топирамат",
+      "topiramate",
+      "Topamax",
+      "AED",
+      "weight loss",
+      "migraine",
+      "alcohol use disorder",
+      "adjunct",
+      "dopamax",
+      "cognitive",
+      "ангидроз",
+      "нефрокальциноз",
+      "метаболический ацидоз"
+    ],
+    "related": [
+      "drug_carbamazepine",
+      "drug_valproate",
+      "drug_lamotrigine",
+      "alg_alcohol_withdrawal",
+      "alg_bipolar_depression",
+      "alg_combat_ptsd_circuits",
+      "drug_lithium",
+      "drug_valproate",
+      "drug_lamotrigine",
+      "preg_mood_stabilizers"
+    ],
+    "description": "Sulfa-derivative AED. ↑ GABA-mediated activity + AMPA/kainate antagonism + Na/Ca channel blockade + carbonic anhydrase inhibition. FDA AED + migraine prophylaxis. ⚠ В психиатрии — adjunct для BAR weight loss, AUD, PTSD. Главный минус — \"dopamax\" cognitive impairment.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: sulfa-derivative AED. J&J 1996.\n\nМЕХАНИЗМ — multiple:\n• ↑ GABA-mediated chloride flux (PAM)\n• AMPA/kainate glutamate receptor antagonist\n• Voltage-gated Na+ channel blockade (use-dependent)\n• L-type Ca++ channel blockade\n• Carbonic anhydrase inhibition (slight) — отсюда renal stones risk + metabolic acidosis\n\nUNIQUE среди AEDs — combines GABA enhancement + glutamate antagonism + ion channel effects."
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• Partial / generalized seizures (FDA): 200–400 мг/сут разделено на 2 приёма\n  – Start 25 мг на ночь\n  – Up by 25–50 мг q1 нед\n• Migraine prophylaxis (FDA): 100 мг/сут (50 мг 2 р/сут)\n• Weight loss / obesity (off-label, в комбинации):\n  – Phentermine + topiramate (Qsymia, FDA 2012): 7.5/46 → 15/92 мг\n  – Standalone off-label: 25–200 мг\n• Bipolar disorder adjunct (Maudsley/CANMAT third-line):\n  – 100–200 мг/сут — особенно когда нужно противостоять weight gain от valproate/atypical AP\n  – Не как monotherapy для bipolar — limited evidence\n• Alcohol use disorder (off-label, Maudsley):\n  – 200–300 мг/сут — Johnson 2007 RCT positive для craving + drinking days\n• PTSD adjunct (off-label) — Akuchi 2007\n• Binge eating disorder (off-label)\n• Essential tremor (off-label)\n• Cluster headache prophylaxis",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 2 ч\n• T½: 21 ч\n• Метаболизм: minimal (70% renal неизменённого)\n• Биодоступность 80%\n• Не индуцирует / не ингибирует CYP значимо\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• AED: эффективен, но cognitive AEs limit use\n• AUD (Johnson 2007): ↓ heavy drinking days, ↓ craving — 1 of 5 evidence-based meds for AUD (Maudsley)\n• Weight loss: real and dose-dependent (~5 кг за год)\n• Bipolar mania monotherapy: NEGATIVE in RCTs (Kushner 2006, Roy Chengappa 2006); only adjunct value",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n⚠ ГЛАВНОЕ — \"DOPAMAX\":\n• ⚠ COGNITIVE IMPAIRMENT: word-finding difficulty, slowed processing, memory issues\n• Доза-зависимое (заметно с 100+ мг)\n• Reversible при отмене / ↓ дозы\n• Часто причина discontinuation\n• Pharmaкологический mechanism — точно неизвестен (возможно AMPA antagonism)\n\nЧАСТЫЕ:\n• Парestezии (онемение, покалывание) — ангидротический эффект (carbonic anhydrase)\n• ↓ Аппетит → потеря веса (для bipolar часто желательно)\n• Тошнота\n• Headache\n• Седация / drowsiness\n• Атаксия\n• Расстройства настроения (depression rare)\n\n⚠ ОПАСНЫЕ (rare):\n• ⚠ ANGLE-CLOSURE GLAUCOMA — острое (rare, FDA warning) — глазная боль, размытое зрение → стоп\n• ⚠ KIDNEY STONES (3% частота) — drink fluids; carbonic anhydrase inhibition\n• ⚠ METABOLIC ACIDOSIS (carbonic anhydrase) — мониторинг bicarbonate\n• ⚠ ОЛИГОГИДРОЗ (hypohidrosis, особенно дети) — overheating risk\n• ⚠ Hyperammonemia при комбинации с valproate (additive)\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Valproate — ↑ hyperammonemic encephalopathy риск\n⛔ Pernhydrase inhibitors (acetazolamide) — additive metabolic acidosis\n⚠ Oral contraceptives — ↓ effectiveness на дозах >200 мг (CYP3A4 modest induction)"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: ⚠ TERATOGENIC — cleft lip/palate, hypospadias; folate 5 мг/сут; не первая линия для BAR\nЛАКТАЦИЯ: RID 3–24% (variable); возможна, мониторить ребёнка\nПОЖИЛЫЕ: ↓ доза; cognitive AEs могут быть severe\nПЕЧЁНОЧНАЯ: ↓ доза\nПОЧЕЧНАЯ: ↓ доза 50% при СКФ <70\n\nDISCONTINUATION: taper 1–2 нед (rebound seizure risk)\n\nКОГДА ВЫБИРАТЬ:\n• Bipolar adjunct + желание ↓ вес (overcome AP/valproate weight gain)\n• Alcohol use disorder + bipolar comorbidity (Maudsley well-evidenced для AUD)\n• Migraine prophylaxis + psychiatric comorbidity\n• PTSD adjunct\n• Binge eating disorder\n• Essential tremor\n\nКОГДА ИЗБЕГАТЬ:\n• Cognitive demands high — словесная работа, экзамены, etc\n• Возраст с baseline cognitive impairment\n• Kidney stones в анамнезе\n• Глаукома\n• Беременность / планирование\n• Активная eating disorder с anorexia или low weight (потеря веса противопоказана)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Maudsley Prescribing Guidelines 14th ed.",
+      "Johnson B.A. et al. Topiramate for treating alcohol dependence: a randomized controlled trial. JAMA 2007;298:1641–51",
+      "CANMAT and ISBD 2018 Guidelines (Yatham 2018)"
+    ]
   }
 ]

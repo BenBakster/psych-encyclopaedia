@@ -1191,5 +1191,192 @@
       "Durgam S. et al. Cariprazine for bipolar depression. Am J Psychiatry 2016",
       "Earley W. et al. Cariprazine TRD adjunct. J Clin Psychiatry 2018"
     ]
+  },
+  {
+    "id": "drug_chlorpromazine",
+    "cmd_alias": "aminazin",
+    "type": "matrix",
+    "category": "Фармакотерапия (АП)",
+    "title": "Аминазин (хлорпромазин): первый АП, low-potency FGA, седативный, литическая смесь",
+    "tags": [
+      "аминазин",
+      "хлорпромазин",
+      "chlorpromazine",
+      "Largactil",
+      "FGA",
+      "фенотиазин",
+      "low-potency",
+      "седативный",
+      "острая агитация",
+      "литическая смесь",
+      "украинский формуляр",
+      "Авруцкий",
+      "α1",
+      "H1",
+      "M1",
+      "ортостаз",
+      "печёночный"
+    ],
+    "related": [
+      "drug_haloperidol",
+      "drug_levomepromazine",
+      "drug_trifluoperazine",
+      "alg_acute_agitation",
+      "alg_alcohol_withdrawal",
+      "pharma_receptors",
+      "calc_cpz",
+      "preg_antipsychotics"
+    ],
+    "description": "ПЕРВЫЙ антипсихотик в истории (Delay & Deniker 1952). Алифатический фенотиазин. Low-potency FGA = много α1/H1/M1 побочек, но и низкий EPS. Главный седативный АП постсоветской практики. ВСЕГДА доступен (украинский формуляр §1.1 BRIEF).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: алифатический фенотиазин, FGA. Rhône-Poulenc 1950, первое клиническое использование Delay & Deniker 1952 — открыло эру психофармакологии.\n\nРЕЦЕПТОРЫ — broad spectrum:\n• D2 antagonist (умеренный, ниже галоперидола)\n• 5-HT2A antagonist (умеренный)\n• α1-adrenergic antagonist (МОЩНЫЙ — отсюда сильная гипотензия)\n• H1 antagonist (МОЩНЫЙ — отсюда выраженная седация)\n• M1 muscarinic antagonist (МОЩНЫЙ — отсюда антихолинергические эффекты, но защищает от EPS)\n• 5-HT2C antagonist — отсюда weight gain\n• D3, D4 — умеренная\n\nLOW-POTENCY = высокие дозы нужны (200–800 мг vs haloperidol 5–20 мг), но broad receptor coverage → широкий спектр побочек, но низкий EPS-риск."
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ (Авруцкий 1979 + NEUROP):\n\n• Острая ажитация / психомоторное возбуждение IM:\n  – 50–100 мг IM (2–4 мл 2.5% раствора) — старт\n  – При резком возбуждении 150–200 мг\n  – Повтор через 3–4 ч с +25–50 мг\n  – Суточная 200–300 мг (до 400–500 при отсутствии соматических п/п)\n• Шизофрения acute PO: 200–800 мг/сут разделено на 3–4 приёма\n• Maintenance: 100–400 мг/сут\n• Терминальный delirium / симптоматический контроль (онкология): 25–100 мг IM/PO\n• Hiccups (резистентная икота — FDA approved): 25–50 мг 3–4 р/сут\n• Литическая смесь (Чуприков, при гипертермии 39–40°C):\n  – 2 мл 2.5% аминазина + 2 мл 50% анальгина + 2 мл 2.5% пипольфена\n  – Под контролем АД",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax PO: 2–4 ч; IM: 30–60 мин\n• T½: 16–30 ч\n• Метаболизм: extensive hepatic via CYP2D6 + CYP1A2\n• Биодоступность PO: 30% (massive first-pass)\n• Активные метаболиты: 7-OH-chlorpromazine\n\nTDM (Hiemke 2018): 30–300 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cochrane: эффективен, но ↑ adverse effects vs новых АП\n• Bazire 2020: «still useful when sedation desired and atypicals unsuitable»",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ (broad due to broad receptor profile):\n\n• ⚠ ОРТОСТАТИЧЕСКАЯ ГИПОТЕНЗИЯ (α1) — главное лимитирующее для пожилых, при IV/IM\n• ⚠ Седация (H1) — сильная, особенно начало\n• ⚠ Антихолинергические (M1):\n  – Сухость во рту, констипация, размытое зрение\n  – Задержка мочи у пожилых\n  – ⚠ Cognitive impairment / делирий у пожилых\n• EPS: ниже галоперидола, но dose-dependent\n• Гиперпролактинемия: умеренная\n• ⚠ ↓ ПОРОГ СУДОРОГ — особенно высокие дозы; CONTRA при эпилепсии\n• Метаболические: умеренная прибавка веса\n• Cardiac: dose-dependent QTc удлинение\n• ⚠ HEPATOTOXICITY:\n  – Cholestatic jaundice ~1% (лёгкая, обычно self-limiting)\n  – Иногда elevated transaminases\n  – Контроль ферментов после 1 мес\n• ⚠ PHOTOSENSITIVITY — выраженная, sunscreen + одежда\n• Меланоз кожи (рuрple-grey) при very long-term high-dose use\n• Корнеальные/lens deposits long-term\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Strong CYP2D6 inhibitors (паrоксетин, флуоксетин) — ↑ chlorpromazine\n⛔ Алкоголь — потенцирует седацию + гипотензию\n⛔ Анти-гипертензивные — additive hypotension\n⛔ Антихолинергические — additive\n⛔ ⚠ ИЗБЕГАТЬ при делирии (антихолин углубляет помрачение)\n⛔ ⚠ ИЗБЕГАТЬ при алкогольном делирии (↓ порог судорог + холинолитика)"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, использовался десятилетиями; преimущество перед high-potency FGAs — меньше EPS у новорождённого\nЛАКТАЦИЯ: RID 0.3% — приемлемо\nПОЖИЛЫЕ: ⚠ ИЗБЕГАТЬ — anticholinergic burden, ортостаз, falls; preferred — рисперидон/галоперидол низкие дозы\nПЕЧЁНОЧНАЯ: ↓ доза, контроль ферментов\nПОЧЕЧНАЯ: minimal change\n\nКОГДА ВЫБИРАТЬ:\n• Острая агитация при психотическом расстройстве (украинский формуляр)\n• Седативный эффект желателен (insomnia + agitation)\n• Терминальная онкология — паллиативная седация / hiccups\n• Литическая смесь при гипертермии\n• Пациент НЕ переносит галоперидол EPS\n• Когда атипичные недоступны\n\nКОГДА ИЗБЕГАТЬ:\n• Алкогольный делирий / интоксикация (↓ порог судорог + антихолин)\n• Эпилепсия в анамнезе\n• Пожилые (особенно с кognitive issues)\n• Severe orthostatic hypotension / cardiac risk\n• Photoсенситивный пациент (вне дома)\n• Печёночная патология"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Авруцкий Г.Я. Неотложная помощь в психиатрии. М.: Медицина, 1979",
+      "Bazire S. Psychotropic Drug Directory 2020/21",
+      "Чуприков А.П., Педак А.А. Клиническая наркология"
+    ]
+  },
+  {
+    "id": "drug_levomepromazine",
+    "cmd_alias": "tizercin",
+    "type": "matrix",
+    "category": "Фармакотерапия (АП)",
+    "title": "Тизерцин (левомепромазин): мощно седативный фенотиазин, постсоветская классика",
+    "tags": [
+      "тизерцин",
+      "левомепромазин",
+      "levomepromazine",
+      "methotrimeprazine",
+      "Nozinan",
+      "FGA",
+      "фенотиазин",
+      "максимальный седативный",
+      "α1",
+      "H1",
+      "низкие дозы для сна",
+      "украинский формуляр",
+      "Авруцкий"
+    ],
+    "related": [
+      "drug_chlorpromazine",
+      "drug_haloperidol",
+      "drug_trifluoperazine",
+      "alg_acute_agitation",
+      "pharma_receptors",
+      "calc_cpz",
+      "preg_antipsychotics"
+    ],
+    "description": "Aliphatic фенотиазин, методиметоксифеноthiazine. Самый седативный АП постсоветской/украинской практики. Используется для агрессивно-возбуждённых пациентов и для sleep induction в низких дозах. ВСЕГДА доступен (украинский формуляр §1.1).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: aliphatic phenothiazine, FGA. Synthetic 1955. Brand: Nozinan, Levoprome, Тизерцин (постсоветский).\n\nРЕЦЕПТОРЫ:\n• α1 antagonist (СИЛЬНЫЙ — даже сильнее chlorpromazine)\n• H1 antagonist (МОЩНЫЙ — самый седативный среди FGAs)\n• M1 antagonist (умеренный)\n• 5-HT2A antagonist\n• D2 antagonist (low-potency, как chlorpromazine)\n• Также аналгетический эффект (5-HT effects + sigma-1)"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ (Авруцкий 1979):\n\n• Острая ажитация / возбуждение IM:\n  – 25–50 мг IM, повтор через 4–6 ч\n  – Особенно эффективен при резкой агрессии и тревожно-возбужденном состоянии\n  – Когда хлорпромазин недостаточно седирует\n• Шизофрения PO: 100–400 мг/сут\n• Maintenance: 50–200 мг/сут\n• Insomnia (низкие дозы, off-label): 12.5–50 мг на ночь\n  – Пожилым: 6.25–12.5 мг\n• Терминальная агитация в паллиативе: 25–100 мг IM/SC q4–6ч\n• Аналгезия (off-label): 12.5–25 мг — особенно при cancer pain не отвечающей опиоидам",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax PO: 2 ч; IM: 30–90 мин\n• T½: 15–30 ч\n• Метаболизм: hepatic CYP\n• Биодоступность PO: 50%\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Bazire 2020: «one of the most sedating antipsychotics; useful when other agents have failed»\n• Используется в Maudsley palliative care guidelines",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n• ⚠ МАКСИМАЛЬНАЯ СЕДАЦИЯ среди FGAs — главная характеристика\n• ⚠ ВЫРАЖЕННАЯ ОРТОСТАТИЧЕСКАЯ ГИПОТЕНЗИЯ (особенно IM/IV)\n• Антихолинергические (M1) — meinetwegen умеренные\n• EPS: ниже галоперидола, dose-dependent\n• ⚠ ↓ ПОРОГ СУДОРОГ — как chlorpromazine\n• ⚠ Photoсенситивность\n• Cardiac: QTc dose-dependent\n• Гиперпролактинемия: умеренная\n• Hepatic: cholestatic jaundice rare\n• Меньше EPS чем галоперидол, но больше anticholin/седации\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Алкоголь — выраженно потенцирует\n⛔ Опиоиды — потенцирует\n⛔ Анти-гипертензивные\n⛔ ⚠ ИЗБЕГАТЬ при делирии (антихолин углубит)"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data; общий phenothiazine profile\nЛАКТАЦИЯ: limited data\nПОЖИЛЫЕ: ⚠ ИЗБЕГАТЬ — falls, ортостаз, antiхолин cognitive\nПЕЧЁНОЧНАЯ: ↓ доза\n\nКОГДА ВЫБИРАТЬ:\n• Острая агрессия с tactic «нужна максимальная седация СЕЙЧАС»\n• Когда другие АП недостаточно седируют\n• Терминальная агитация\n• Insomnia в shorter-term при невозможности использовать BDZ/Z-drug (substance use, etc)\n\nКОГДА ИЗБЕГАТЬ:\n• Алкогольное состояние / делирий\n• Эпилепсия\n• Пожилые с фоновым cognitive impairment\n• Severe cardiac patology"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Авруцкий Г.Я. Неотложная помощь в психиатрии. М.: Медицина, 1979",
+      "Bazire S. Psychotropic Drug Directory 2020/21"
+    ]
+  },
+  {
+    "id": "drug_trifluoperazine",
+    "cmd_alias": "triftazin",
+    "type": "matrix",
+    "category": "Фармакотерапия (АП)",
+    "title": "Трифтазин (трифлуоперазин): пиперазин-фенотиазин, активирующий, классика для шизофрении",
+    "tags": [
+      "трифтазин",
+      "трифлуоперазин",
+      "trifluoperazine",
+      "Stelazine",
+      "FGA",
+      "piperazine-phenothiazine",
+      "high-potency",
+      "активирующий",
+      "negative symptoms",
+      "классика шизофрении",
+      "украинский формуляр",
+      "Авруцкий"
+    ],
+    "related": [
+      "drug_chlorpromazine",
+      "drug_levomepromazine",
+      "drug_haloperidol",
+      "pharma_receptors",
+      "calc_cpz",
+      "preg_antipsychotics"
+    ],
+    "description": "Piperazine-фенотиазин. High-potency FGA — низкие дозы, выше EPS, но активирующий профиль (полезен при апатичных-резерват картинах). Постсоветская классика для шизофрении (\"трифтазин-аминазин\" комбинация). Украинский формуляр.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: piperazine-фенотиазин, FGA. SmithKline 1958.\n\nРЕЦЕПТОРЫ — high-potency profile:\n• D2 antagonist (СИЛЬНЫЙ — high-potency, как haloperidol)\n• 5-HT2A antagonist (умеренный)\n• α1 antagonist (УМЕРЕННЫЙ — меньше chlorpromazine)\n• H1 antagonist (СЛАБЫЙ — отсюда меньше седации)\n• M1 (СЛАБЫЙ — отсюда меньше антихолин-побочек, НО ↑ EPS)\n\nКЛИНИЧЕСКИЙ ПРОФИЛЬ:\n• Активирующий (vs седативный chlorpromazine/levomepromazine)\n• Полезен при апатично-абулическом состоянии\n• Постсоветская традиция — используется при доминирующих негативных симптомах"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ (Авруцкий 1979):\n\n• Шизофрения PO: 5–40 мг/сут разделено на 2–3 приёма\n  – Start 2–5 мг 2 р/сут\n  – Target 15–20 мг для большинства\n  – Refractory до 40 мг/сут\n• Шизофрения IM: 1–2 мг (0.5–1 мл 0.2% раствора) 2–3 р/сут\n• Generalized anxiety (low-dose, off-label EU): 1–2 мг 2 р/сут — иногда используется (Bazire)\n• Tourette / chronic tics: 1–10 мг/сут\n\nКомбинация \"трифтазин + аминазин\" — постсоветская классика:\n• Утром трифтазин (для активации)\n• Вечером аминазин (для седации)\n• Сейчас редко — атипичные предпочтительнее, но в украинском формуляре остаётся",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax PO: 2–4 ч\n• T½: 12–24 ч\n• Метаболизм: hepatic\n• Биодоступность 50%\n\nTDM: 1–2.3 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cochrane: эффективен ≥ chlorpromazine для positive симптомов\n• Возможно лучше при negative симптомах (limited evidence)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n• ⚠ EPS — высокий риск (high-potency FGA, как haloperidol):\n  – Акатизия — частая\n  – Острая дистония\n  – Паркинсонизм\n  – Поздняя дискинезия\n• ⚠ Гиперпролактинемия — умеренно-выраженная\n• Седация: МИНИМАЛЬНАЯ (преимущество)\n• Ортостаз: МИНИМАЛЬНЫЙ (преимущество)\n• Антихолинергические: МИНИМАЛЬНЫЕ\n• Метаболические: МИНИМАЛЬНЫЕ\n• ↓ Порог судорог: меньше chlorpromazine\n• Photoсенситивность: умеренная\n• Меланоз кожи long-term\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Анти-холинергические (трициклики, циклодол) — может маскировать EPS\n⛔ Антигипертензивные (минимально)\n⛔ Алкоголь"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data; high-potency FGA, alternative haloperidol предпочтителен (больше data)\nЛАКТАЦИЯ: limited data\nПОЖИЛЫЕ: ↓ доза 1–2 мг старт; ⚠ EPS особенно tardive dyskinesia при long-term\nПЕЧЁНОЧНАЯ: ↓ доза\n\nКОГДА ВЫБИРАТЬ:\n• Шизофрения с доминирующими негативными симптомами и активирующая терапия желательна\n• Когда нужен FGA без седации (driver, professional roles)\n• Анксиолитик в очень низких дозах (off-label, Bazire mention)\n• Постсоветская комбинация трифтазин+аминазин (если коллегой запрошена)\n\nКОГДА ИЗБЕГАТЬ:\n• Пациент склонен к EPS\n• Парkинсонизм в анамнезе\n• Tardive dyskinesia history\n• Беспокойство — может ↑ akathisia\n• Беременность (haloperidol предпочтителен)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Авруцкий Г.Я. Неотложная помощь в психиатрии. М.: Медицина, 1979",
+      "Bazire S. Psychotropic Drug Directory 2020/21"
+    ]
   }
 ]
