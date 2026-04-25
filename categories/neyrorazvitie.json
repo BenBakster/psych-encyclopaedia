@@ -26,5 +26,174 @@
       "Sadock B.J., Sadock V.A., Ruiz P. Kaplan & Sadock's Synopsis of Psychiatry, 12th ed. (2021) — Child and Adolescent Psychiatry section",
       "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Children/Adolescents chapter (p.4383)"
     ]
+  },
+  {
+    "id": "drug_methylphenidate",
+    "cmd_alias": "methylphenidate",
+    "type": "matrix",
+    "category": "Нейроразвитие",
+    "title": "Метилфенидат: 1-я линия ADHD, NDRI, Schedule II, IR/SR/OROS формы",
+    "tags": [
+      "метилфенидат",
+      "methylphenidate",
+      "Ritalin",
+      "Concerta",
+      "Medikinet",
+      "NDRI",
+      "stimulant",
+      "ADHD",
+      "Schedule II",
+      "narcolepsy",
+      "abuse potential",
+      "CYP-minimal"
+    ],
+    "related": [
+      "drug_atomoxetine",
+      "drug_lisdexamfetamine",
+      "drug_bupropion",
+      "adhd_overview"
+    ],
+    "description": "Норадреналин-дофамин reuptake inhibitor (NDRI). FDA approved для ADHD (1955) — старейший stimulant. 1-я линия для ADHD у детей и взрослых (Cortese 2018 NM-A). Schedule II controlled substance. Множество форм с разной длительностью: IR (3-5ч), SR (6-8ч), OROS osmotic (10-12ч).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: NDRI stimulant. Ciba 1944; FDA approval 1955. Структурный analog amphetamine, но другой mechanism.\n\nМЕХАНИЗМ:\n• Norepinephrine reuptake inhibitor (NET) — главный\n• Dopamine reuptake inhibitor (DAT) — главный\n• Slight ↑ DA release (vs amphetamines с массивным DA release)\n• Не serotonergic\n\nВ ADHD: ↑ DA/NE в prefrontal cortex → улучшает attention, working memory, executive function, ↓ impulsivity."
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• ADHD (FDA approved):\n  – Дети 6+ и подростки\n  – Взрослые\n\nFORMS И DOSING:\n• IR (immediate-release): 5–20 мг 2–3 р/сут (до 60 мг/сут)\n  – Tmax 1–2 ч; T½ 3 ч; effect 3–5 ч\n  – Преимущество: дешёвый, быстрая титрация\n  – Недостаток: rebound, multiple doses\n• SR (sustained-release): 20 мг 1 р/сут утром\n• OROS (Concerta osmotic): 18–72 мг 1 р/сут утром\n  – Tmax 6–8 ч; effect 10–12 ч\n  – Smooth release — minimum rebound\n• Patch (Daytrana, FDA approved): 10–30 мг через 9 ч носки patch\n\nDOSING approach:\n• Start low (5–10 мг IR утром), up каждые 7 дней\n• Target effect ≈ 0.5–1 мг/кг/сут (children) или 60–80 мг/сут (adults)\n• Принимать УТРОМ (last dose ≤14:00 чтобы избежать insomnia)\n\n• Narcolepsy (FDA approved): IR 5–60 мг/сут\n• Refractory depression в gериатrии (off-label, low-dose 2.5–10 мг утром) — boost energy",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax IR: 1–2 ч\n• T½: 2–4 ч (IR), 6–8 ч (SR), линейно для OROS\n• Метаболизм: hepatic carboxylesterase (CES1) — в основном НЕ CYP\n• Биодоступность 11–55% (variable)\n• Активный метаболит — ритaлиновая кислота (минимально активная)\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cortese 2018 NM-A (133 RCTs): methylphenidate top для children, amphetamines top для adults\n• MTA Cooperative Group 1999: comparable behavioral therapy + medication\n• Faraone 2019 NM-A: stimulants ↑↑ effective vs non-stimulants для ADHD",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\nЧАСТЫЕ:\n• ↓ Аппетит, потеря веса (особенно у детей)\n• Бессонница (если поздняя dose)\n• Headache\n• Тошнота\n• Тахикардия / palpitations\n• ↑ АД (умеренно, dose-dependent)\n• Раздражительность\n• Тремор\n• Сухость во рту\n• Pricarda — крайне редко (ssудорогами не вызывает)\n• Tic exacerbation (controversial — может ухудшить tics, может улучшить — variable)\n\n⚠ ОПАСНЫЕ (rare):\n• ⚠ КАРДИАЛЬНЫЕ events (sudden cardiac death — VERY rare):\n  – Pre-existing cardiac patology — ⛔ COMPLETE workup перед стартом\n  – Семейный анамнез early sudden death — caution\n• ⚠ Психоз / hallucinations — rare, dose-dependent\n• ⚠ Tics worsening (if pre-existing Tourette)\n• Замедление роста у детей при long-term — катch-up при отмене\n• ⚠ ABUSE POTENTIAL — Schedule II:\n  – Crushing + insufflation, IV — abuse pathway\n  – ⚠ Patient screening for SUD history before prescribing\n  – Contracts + monitoring рекомендованы\n\nDISCONTINUATION:\n• Не имеет withdrawal syndrome в strict смысле\n• \"Crash\" — fatigue, dysphoria — rare после long-term high-dose\n• Можно прервать без таперинга\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО — гипертензивный кризис, серотониновый\n⛔ Anticonvulsants — изменчивые effects (некоторые stimulants ↓ porog seizure, некоторые neutral)\n⚠ Алкоголь — additive cardiovascular effects"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, обычно continue если matter, но weigh risks\nЛАКТАЦИЯ: RID 0.2–0.4% — приемлемо\nДЕТИ: ✅ FDA approved ≥6 лет (most-evidence-base medication для child ADHD)\nПОЖИЛЫЕ: cardiac risk особенно — workup ECG, baseline BP/HR; обычно low-dose\nПЕЧЁНОЧНАЯ: minor adjustment\nПОЧЕЧНАЯ: minor adjustment\n\n⛔ ПРОТИВОПОКАЗАНИЯ:\n• Glaucoma\n• Severe anxiety\n• Серьёзные cardiac patologies\n• История psychotic disorder\n• История substance abuse (relative)\n• Pheochromocytoma\n• ИМАО в течение 14 дней\n\nКОГДА ВЫБИРАТЬ:\n• ADHD у детей ≥6 лет — first-line (Cortese 2018)\n• Adult ADHD\n• Narcolepsy\n• Refractory гериатрическая depression (low-dose, energy boost)\n\nКОГДА ИЗБЕГАТЬ:\n• Cardiac patology без cardiology clearance\n• Active substance abuse\n• Психотическое расстройство\n• Tourette syndrome (relative — может exacerbate)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Cortese S. et al. Comparative efficacy and tolerability of medications for ADHD in children, adolescents, and adults: NM-A. Lancet Psychiatry 2018;5:727–38",
+      "Faraone S.V., Banaschewski T. et al. The World Federation of ADHD International Consensus Statement. Neurosci Biobehav Rev 2021"
+    ]
+  },
+  {
+    "id": "drug_atomoxetine",
+    "cmd_alias": "atomoxetine",
+    "type": "matrix",
+    "category": "Нейроразвитие",
+    "title": "Атомоксетин: NRI, NON-stimulant, ADHD без abuse potential, CYP2D6",
+    "tags": [
+      "атомоксетин",
+      "atomoxetine",
+      "Strattera",
+      "NRI",
+      "norepinephrine",
+      "non-stimulant",
+      "ADHD",
+      "CYP2D6",
+      "poor metabolizer",
+      "no abuse potential",
+      "slow onset"
+    ],
+    "related": [
+      "drug_methylphenidate",
+      "drug_lisdexamfetamine",
+      "drug_bupropion",
+      "adhd_overview"
+    ],
+    "description": "Selective norepinephrine reuptake inhibitor (NRI). FDA approved для ADHD 2002 — первый non-stimulant. NOT controlled substance — без abuse potential. Slow onset (4-8 нед for full effect). Главный лимит — slower onset чем stimulants и lower effect size, но useful когда stimulants противопоказаны.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: selective norepinephrine reuptake inhibitor (NRI), non-stimulant.\nEli Lilly. FDA approval 2002.\n\nМЕХАНИЗМ:\n• Selective NET inhibitor (как венлафаксин в low doses, но без 5-HT)\n• ↑ NE и DA в prefrontal cortex (DA ↑ только в PFC, не в striatum/nucleus accumbens — отсюда нет abuse potential)\n• Нет direct effect на DA receptors\n\nКЛИНИЧЕСКОЕ ОТЛИЧИЕ ОТ STIMULANTS:\n• Не вызывает euphoria → нет abuse potential\n• 24-hour coverage (длинный T½) — не нужно multiple doses\n• Slower onset — full effect 4–8 нед\n• Lower effect size в head-to-head с stimulants"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• ADHD (FDA approved):\n  – Дети ≥6 и подростки <70 кг: start 0.5 мг/кг/сут × 7 дней → 1.2 мг/кг/сут (target)\n    – Max 1.4 мг/кг или 100 мг (whichever lower)\n  – >70 кг и взрослые: 40 мг/сут × 7 дней → 80 мг/сут\n    – Max 100 мг (взрослые)\n  – Можно 1 раз в сутки утром или 2 раза (утро+вечер)\n  – Принимать с/без еды\n\n• Effect onset: 1–2 нед на ↓ симптомов, 4–8 нед на full effect (significantly slower than stimulants)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1–2 ч\n• T½: 5 ч (extensive metabolizers), 22 ч (poor metabolizers — CYP2D6)\n• Метаболизм: CYP2D6 (главный)\n• Биодоступность 63%\n\nCYP2D6 GENOTYPING:\n• Poor metabolizers (~7% Caucasians) — ↑↑ levels, ↑ AEs\n• Если signs of toxicity при low dose — рассмотреть CYP2D6 testing\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Michelson 2002 RCT: значимо ↓ ADHD-RS vs placebo\n• Cortese 2018 NM-A: lower effect size чем stimulants для children, но better tolerability profile\n• Используется как preferred non-stimulant (vs guanfacine, clonidine)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\nЧАСТЫЕ:\n• ↓ Аппетит\n• Тошнота / vomiting (transient)\n• Усталость / sedation (paradox для stimulant indication, но возможно)\n• Insomnia\n• Headache\n• Раздражительность\n• Сухость во рту\n• Запоры\n• Ортостатическая тахикардия / palpitations\n• ↑ АД (умеренно)\n• Сексуальная дисфункция (взрослые)\n• ↓ Либидо\n\n⚠ ОПАСНЫЕ (rare):\n• ⚠ Suicidal ideation в детях/подростках (FDA black box) — мониторить особенно первые недели\n• ⚠ Hepatotoxicity (rare, idiosyncratic) — мониторить ферменты при появлении jaundice/dark urine/RUQ pain\n• ⚠ Cardiovascular events (sudden death rare; cardiac workup перед стартом если risks)\n• Aggression / psychotic symptoms (rare)\n\n✅ ОТСУТСТВУЕТ:\n• Abuse potential\n• Withdrawal syndrome\n• Schedule controlled status — можно prescribe quantity больше / refills\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО (как все NE-агенты)\n⛔ Strong CYP2D6 inhibitors (флуоксетин, пароксетин, бупропион) — ↑↑ atomoxetine; ↓ дозу 50%\n⚠ QTc-prolonging агенты — additive\n⚠ Albuterol — additive sympathomimetic effects"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, обычно избегать; SSRI/non-pharma alternatives\nЛАКТАЦИЯ: RID 1% — приемлемо, мониторить ребёнка\nДЕТИ: ✅ FDA approved ≥6 лет\nПОЖИЛЫЕ: limited data, осторожно с cardiac\nПЕЧЁНОЧНАЯ: ↓ доза 50% при Child-Pugh B; AVOID при C\nПОЧЕЧНАЯ: minor change\n\nКОГДА ВЫБИРАТЬ:\n• ADHD когда stimulants противопоказаны (substance abuse history, severe anxiety, tics)\n• ADHD + tic disorder (atomoxetine — neutral on tics)\n• ADHD + comorbid anxiety (atomoxetine — slight anxiolytic effect)\n• Compliance issues с multiple-dose stimulants (24-hr coverage)\n• Семьи с concerns о stimulant abuse / diversion\n• Стимулант non-responder\n\nКОГДА ИЗБЕГАТЬ:\n• Когда нужен быстрый effect (4-8 нед onset)\n• Severe hepatic impairment\n• Pheochromocytoma\n• Closed-angle glaucoma\n• Severe cardiovascular disorders\n• Известные CYP2D6 poor metabolizers без careful titration"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Michelson D. et al. Atomoxetine in adults with ADHD: pivotal trial. Biol Psychiatry 2003",
+      "Cortese S. et al. Comparative efficacy. Lancet Psychiatry 2018;5:727–38"
+    ]
+  },
+  {
+    "id": "drug_lisdexamfetamine",
+    "cmd_alias": "lisdexamfetamine",
+    "type": "matrix",
+    "category": "Нейроразвитие",
+    "title": "Лиздексамфетамин: prodrug d-amphetamine, smoothed release, Schedule II",
+    "tags": [
+      "лиздексамфетамин",
+      "lisdexamfetamine",
+      "Vyvanse",
+      "Elvanse",
+      "prodrug",
+      "d-amphetamine",
+      "Schedule II",
+      "binge eating disorder",
+      "ADHD",
+      "smoothed PK",
+      "gut conversion"
+    ],
+    "related": [
+      "drug_methylphenidate",
+      "drug_atomoxetine",
+      "drug_bupropion",
+      "adhd_overview"
+    ],
+    "description": "Pro-drug d-amphetamine — лизин-конъюгат превращается в active d-amphetamine только в кишечнике через ферментативное расщепление (rate-limited). Это даёт smoothed pharmacokinetics + ↓ abuse potential (нельзя insufflate / injecte эффективно). FDA approved: ADHD (2007), binge eating disorder (2015 — единственный stimulant для BED).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: amphetamine pro-drug. Shire/Takeda. FDA approval 2007 (ADHD), 2015 (BED).\n\nМЕХАНИЗМ:\n• Pro-drug: lisdexamfetamine = l-lysine + d-amphetamine\n• Cleaved by RBC enzymes (predominantly) → active d-amphetamine\n• Rate-limited conversion → smoother release than IR amphetamine\n• Active d-amphetamine: NE и DA reuptake inhibitor + ↑ release (vesicular)\n\nABUSE-RESISTANT DESIGN:\n• Cannot быть быстро converted в bloodstream (must pass через GI enzymes)\n• Insufflation / injection — не дают acceleration\n• Therefore lower abuse potential vs immediate-release amphetamines"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• ADHD (FDA approved):\n  – Дети 6–17 лет: 30 мг/сут утром (start), max 70 мг/сут\n  – Взрослые: 30 мг/сут (start), target 50–70 мг/сут\n  – 1 раз в сутки утром (последняя dose ≤8:00–10:00 чтобы избежать insomnia)\n  – Принимать с/без еды\n  – Capsules можно открыть и contents растворить в воде\n\n• Moderate-to-severe Binge Eating Disorder (FDA 2015 — UNIQUELY APPROVED stimulant для BED): 50–70 мг/сут\n  – Вес часто uplifts modest\n  – Long-term efficacy unclear после 12 нед\n\n• Off-label: residual ADHD-like symptoms в depression, narcolepsy",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1 ч (lisdexamfetamine), 3.5 ч (active d-amphetamine)\n• T½: <1 ч (lisdex), 9–12 ч (d-amphetamine)\n• Метаболизм: hydrolysis by RBC peptidases (no CYP, no UGT)\n• Биодоступность: very high\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cortese 2018: amphetamines top для adult ADHD effectiveness\n• McElroy 2015 BED RCT: значимо ↓ binge episodes vs placebo (FDA approval basis)\n• Долгосрочная safety и эффективность хорошо изучены",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ — близки к methylphenidate, но возможно более выражены:\n\nЧАСТЫЕ:\n• ↓ Аппетит, потеря веса (выше methylphenidate)\n• Бессонница (если поздняя dose)\n• Сухость во рту\n• Тревога / раздражительность\n• Тошнота\n• Тахикардия\n• ↑ АД\n• Headache\n\n⚠ ОПАСНЫЕ:\n• ⚠ КАРДИАЛЬНЫЕ events (как methylphenidate)\n• ⚠ Психоз / hallucinations rare (более чем methylphenidate at high doses)\n• ⚠ Серотониновый синдром при сочетании с серотонинергическими\n• Aggression\n• Замедление роста у детей\n• ⚠ ABUSE POTENTIAL — Schedule II (хотя меньше IR amphetamine)\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО — hypertensive crisis (14-day washout требуется)\n⛔ Серотонинерго (SSRI/SNRI) — серотониновый риск\n⚠ Антациды — ↑ amphetamine absorption\n⚠ Кислоты (vitamin C большие дозы, орангевый сок) — ↓ amphetamine\n⚠ TCAs — additive cardiovascular effects"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, обычно избегать; teratogenic signals в high doses\nЛАКТАЦИЯ: amphetamines passed in breast milk — usually avoid\nДЕТИ: ✅ FDA ADHD ≥6 лет\nПОЖИЛЫЕ: limited data; cardiac caution\nПЕЧЁНОЧНАЯ: limited data\nПОЧЕЧНАЯ: ↓ дозу при severe (50% if СКФ <30; AVOID при <15)\n\n⛔ ПРОТИВОПОКАЗАНИЯ — те же что methylphenidate + история amphetamine abuse\n\nКОГДА ВЫБИРАТЬ:\n• Adult ADHD (amphetamines > methylphenidate per Cortese 2018)\n• Когда нужен 12-hour coverage без multiple doses\n• Binge Eating Disorder moderate-severe\n• Stimulant abuse concern в семье — abuse-resistant design\n• Methylphenidate non-responder\n\nКОГДА ИЗБЕГАТЬ:\n• Cardiac patology\n• Substance abuse (хотя abuse-resistant — но не bullet-proof)\n• Психоз\n• Severe anxiety\n• Беременность"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "Cortese S. et al. Comparative efficacy. Lancet Psychiatry 2018",
+      "McElroy S.L. et al. Lisdexamfetamine for moderate-to-severe BED: 11-week, multicenter RCT. JAMA Psychiatry 2015"
+    ]
   }
 ]
