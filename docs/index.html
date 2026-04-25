@@ -346,6 +346,13 @@
         .matrix-col { flex: 1; display: flex; flex-direction: column; gap: 10px; }
         .matrix-col.center { flex: 1.5; }
         .matrix-col-title { text-align: center; font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; padding-bottom: 8px; margin-bottom: 5px; border-bottom: 1px dashed; }
+        /* Matrix column themes — replaced inline styles for theme-awareness */
+        .matrix-col-past { color: var(--grey); border-color: var(--grey); }
+        .matrix-col-active { color: var(--g); border-color: var(--g); }
+        .matrix-col-future { color: var(--blue); border-color: var(--blue); }
+        body.theme-light .matrix-col-past { color: var(--g-dim); border-color: var(--g-dim); }
+        body.theme-light .matrix-col-active { color: var(--g-dark); border-color: var(--g); }
+        body.theme-light .matrix-col-future { color: #155a96; border-color: var(--blue); }
         .node { background: rgba(0,0,0,0.6); border: 1px solid; padding: 14px; }
         .node-past { border-color: var(--grey); opacity: 0.8; }
         .node-current { border-color: var(--g); box-shadow: 0 0 12px rgba(0,255,65,0.15); }
@@ -627,28 +634,28 @@
                     {article.description && <div className="content-desc">{article.description}</div>}
                     <div className="matrix-container">
                         <div className="matrix-col">
-                            <div className="matrix-col-title" style={{color: 'var(--grey)', borderColor: 'var(--grey)'}}>ПРЕКУРСОРЫ (T−1)</div>
+                            <div className="matrix-col-title matrix-col-past">ПРЕКУРСОРЫ (T−1)</div>
                             {m.past.map((node, i) => (
                                 <div key={i} className="node node-past">
-                                    <div className="node-title" style={{color:'var(--grey)'}}>{node.title}</div>
+                                    <div className="node-title matrix-col-past">{node.title}</div>
                                     <div className="node-text">{node.desc}</div>
                                 </div>
                             ))}
                         </div>
                         <div className="matrix-col center">
-                            <div className="matrix-col-title" style={{color: 'var(--g)', borderColor: 'var(--g)'}}>АКТИВНАЯ ФАЗА (T=0)</div>
+                            <div className="matrix-col-title matrix-col-active">АКТИВНАЯ ФАЗА (T=0)</div>
                             <div className="node node-current">
-                                <div className="node-title" style={{color:'var(--g)'}}>{m.current.title}</div>
+                                <div className="node-title matrix-col-active">{m.current.title}</div>
                                 {m.current.pheno && <React.Fragment><div className="node-label pheno">ФЕНОМЕНОЛОГИЯ</div><div className="node-text">{m.current.pheno}</div></React.Fragment>}
                                 {m.current.neuro && <React.Fragment><div className="node-label neuro">НЕЙРОСЕТИ</div><div className="node-text">{m.current.neuro}</div></React.Fragment>}
                                 {m.current.tactic && <React.Fragment><div className="node-label tactic">ТАКТИКА / ФАРМАКОЛОГИЯ</div><div className="node-text">{m.current.tactic}</div></React.Fragment>}
                             </div>
                         </div>
                         <div className="matrix-col">
-                            <div className="matrix-col-title" style={{color: 'var(--blue)', borderColor: 'var(--blue)'}}>ЭВОЛЮЦИЯ (T+1)</div>
+                            <div className="matrix-col-title matrix-col-future">ЭВОЛЮЦИЯ (T+1)</div>
                             {m.future.map((node, i) => (
                                 <div key={i} className="node node-future">
-                                    <div className="node-title" style={{color:'var(--blue)'}}>{node.title}</div>
+                                    <div className="node-title matrix-col-future">{node.title}</div>
                                     <div className="node-text">{node.desc}</div>
                                 </div>
                             ))}
