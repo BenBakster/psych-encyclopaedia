@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*~
+
+# Stray binaries / docs that don't belong in source
+*.gif
+*.zip
+*.pdf
+*.docx
+*.doc
