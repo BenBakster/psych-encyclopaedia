@@ -377,5 +377,676 @@
       "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants (p.1099)",
       "CANMAT Clinical Guidelines for the Management of Adults with Major Depressive Disorder (2016)"
     ]
+  },
+  {
+    "id": "drug_sertraline",
+    "cmd_alias": "sertraline",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Сертралин: SSRI, FDA-approved для PTSD, кардиально безопасен, беременность OK",
+    "tags": [
+      "сертралин",
+      "sertraline",
+      "Zoloft",
+      "Asentra",
+      "SSRI",
+      "PTSD",
+      "MDD",
+      "OCD",
+      "panic",
+      "social anxiety",
+      "PMDD",
+      "CYP2C19",
+      "кардиология",
+      "беременность"
+    ],
+    "related": [
+      "drug_paroxetine",
+      "drug_escitalopram",
+      "drug_fluoxetine",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "Один из двух SSRIs FDA-approved для ПТСР (вместе с пароксетином). Один из лучших по кардиальному и беременностному профилям. Безопасный после ИМ/инсульта (SADHART trial).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: SSRI. Pfizer, FDA approval 1991.\n\nРЕЦЕПТОРЫ:\n• 5-HT reuptake inhibitor — главное\n• Слабая блокада dopamine reuptake (DAT) — отличает от других SSRIs\n• Минимальная сродство к мускариновым, гистаминовым, α-adrenergic"
+        }
+      ],
+      "current": {
+        "title": "Дозы, показания, эффективность",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• MDD: 50–200 мг/сут (start 25–50)\n• OCD: 50–200 мг (часто на верхней границе)\n• PTSD: 50–200 мг (FDA approved)\n• Panic disorder: 25–200 мг\n• Social anxiety: 25–200 мг\n• PMDD: 50–150 мг (cyclic или continuous)\n• Подростки 6–17 (только OCD): 25–200 мг\n• Принимать с едой (улучшает абсорбцию ~25%)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 4–8 ч с едой\n• T½: 22–36 ч\n• Метаболизм: CYP2C19 (главный) + 2D6 + 3A4 — диверсифицированный, мало interactions\n• Стабильные plasma levels к 1 нед\n\nTDM (Hiemke 2018): 10–150 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cipriani 2018 NM-A (21 АД): top-3 по efficacy и acceptability\n• SADHART trial: безопасен после ИМ\n• PTSD pivotal: FDA 1999",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• ⚠ ДИАРЕЯ — самый частый GI side effect (выше других SSRIs из-за DAT-эффекта)\n• Сексуальная дисфункция (~40%)\n• Бессонница / седация (variable)\n• Тремор\n• Тошнота (transient)\n• ↑ потливость\n• Гипонатриемия (SIADH) — пожилые особенно\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО — серотониновый синдром\n⛔ Tramadol, linezolid, methylene blue — серотониновый риск\n⚠ Пимозид — QTc\n✅ Минимум CYP-driven interactions vs пароксетин/флуоксетин"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции",
+          "desc": "БЕРЕМЕННОСТЬ: ✅ один из лучших профилей; minimal teratogenicity; неонатальный adaptation syndrome возможен в III триместре\nЛАКТАЦИЯ: ✅ RID 0.5–2% — идеальный\nПОЖИЛЫЕ: 25 мг старт, до 100 мг target; гипонатриемия особый риск\nПЕЧЁНОЧНАЯ НЕДОСТАТОЧНОСТЬ: ↓ дозу (Child-Pugh A: 1/2; B-C: избегать)\nПОЧЕЧНАЯ НЕДОСТАТОЧНОСТЬ: без коррекции\nDISCONTINUATION: умеренный — таперинг 4 нед\n\nКОГДА ВЫБИРАТЬ:\n• PTSD (FDA approved)\n• Кардиальный риск, постинфарктная депрессия\n• Беременность\n• Социальная фобия с panic\n• Активирующий профиль предпочтителен"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT Clinical Guidelines for the Management of Adults with MDD. Can J Psychiatry 2016",
+      "Cipriani A. et al. Comparative efficacy of 21 antidepressants for adult MDD. Lancet 2018;391:1357–66"
+    ]
+  },
+  {
+    "id": "drug_escitalopram",
+    "cmd_alias": "escitalopram",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Эсциталопрам: SSRI, top-2 эффективности (Cipriani 2018), QTc dose-dependent",
+    "tags": [
+      "эсциталопрам",
+      "escitalopram",
+      "Lexapro",
+      "Cipralex",
+      "SSRI",
+      "S-enantiomer",
+      "циталопрам",
+      "CYP2C19",
+      "QTc",
+      "minimum interactions"
+    ],
+    "related": [
+      "drug_sertraline",
+      "drug_paroxetine",
+      "drug_fluoxetine",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "S-энантиомер циталопрама. Минимальные drug-drug interactions среди SSRIs. Одна из самых эффективных Cipriani 2018. ⚠ FDA 2011 ограничил max до 20 мг из-за QTc-сигнала.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: SSRI, S-энантиомер циталопрама. R-энантиомер не активен (но в рацемическом citalopram \"мешает\").\nLundbeck/Forest. FDA approval 2002.\n\nРЕЦЕПТОРЫ:\n• Самый селективный SSRI для SERT vs других monoaminтransporters\n• Минимальные сродства к остальным рецепторам — отсюда низкий interactions profile"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• MDD: 10–20 мг/сут\n• GAD: 10–20 мг\n• Panic disorder, OCD, social anxiety — off-label но эффективен\n• Подростки 12–17 (MDD): 10–20 мг (FDA)\n\n⚠ FDA 2011: max 20 мг (был 30) из-за dose-dependent QTc удлинения\n⚠ Пожилые: max 10 мг (FDA)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 4–5 ч\n• T½: 27–32 ч\n• Метаболизм: CYP2C19 (главный) + 2D6 (минор)\n• Стабильные plasma levels к 1–2 нед\n\nTDM (Hiemke 2018): 15–80 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cipriani 2018 NM-A: TOP-2 по эффективности (после агомелатина) и top-1 acceptability\n• > пароксетин в head-to-head trials\n• > сертралин в эффективности (small effect)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• Один из лучших переносимых SSRIs (Cipriani 2018)\n• Тошнота: умеренная\n• Сексуальная дисфункция: ~30% (меньше пароксетина)\n• Бессонница / седация: легкая\n• Гипергидроз\n• Гипонатриемия (особенно пожилые)\n• ⚠ QTc dose-dependent — особенно при >20 мг\n\nВЗАИМОДЕЙСТВИЯ — МИНИМУМ:\n• Не значимо ингибирует CYP-ферменты\n⛔ ИМАО, tramadol — серотониновый\n⚠ QTc-prolonging drugs"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции",
+          "desc": "БЕРЕМЕННОСТЬ: используется (limited data на эсциталопрам vs много данных на циталопрам — экстраполяция)\nЛАКТАЦИЯ: RID 5–6% — приемлемо\nПОЖИЛЫЕ: max 10 мг (FDA), QTc особенно\nПЕЧЁНОЧНАЯ: max 10 мг при Child-Pugh A-B\nПОЧЕЧНАЯ: без коррекции при mild-moderate, осторожно при severe\nDISCONTINUATION: умеренный\n\nКОГДА ВЫБИРАТЬ:\n• Полипрагмазия, сложный пациент с многими меdications (минимум CYP)\n• Пожилые без QTc проблем\n• MDD/GAD с тревожной компонентой\n• Когда нужна максимальная efficacy + минимум побочек"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT Clinical Guidelines for the Management of Adults with MDD. Can J Psychiatry 2016",
+      "Cipriani A. et al. Comparative efficacy of 21 antidepressants for adult MDD. Lancet 2018;391:1357–66"
+    ]
+  },
+  {
+    "id": "drug_paroxetine",
+    "cmd_alias": "paroxetine",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Пароксетин: SSRI, FDA-approved для ПТСР, выраженный discontinuation, ⚠ беременность D",
+    "tags": [
+      "пароксетин",
+      "paroxetine",
+      "Paxil",
+      "Seroxat",
+      "SSRI",
+      "PTSD",
+      "social anxiety",
+      "CYP2D6 inhibitor",
+      "discontinuation syndrome",
+      "Ebstein anomaly",
+      "беременность D",
+      "tamoxifen"
+    ],
+    "related": [
+      "drug_sertraline",
+      "drug_escitalopram",
+      "drug_fluoxetine",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "SSRI с самым выраженным discontinuation syndrome (короткий T½ + active reuptake recovery). FDA approved для ПТСР. ⚠ Беременность Class D (Ebstein anomaly при I триместре). Сильный CYP2D6 ингибитор — много interactions (особенно tamoxifen — НЕЛЬЗЯ).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: SSRI. GSK. FDA approval 1992.\n\nРЕЦЕПТОРЫ:\n• 5-HT reuptake (мощный)\n• Слабая M-холинолитическая активность (отсюда сухость во рту, констипация — выше других SSRIs)\n• Слабая NE reuptake inhibition (на высоких дозах)"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• MDD: 20–50 мг/сут (start 20, immediate-release)\n• Paxil CR (controlled-release): 25–62.5 мг\n• OCD: 40–60 мг\n• Panic disorder: 10–60 мг (start low — может ↑ panic)\n• Social anxiety: 20–60 мг\n• GAD: 20–50 мг\n• PTSD: 20–60 мг (FDA approved)\n• PMDD: 12.5–25 мг (CR)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 5–7 ч\n• T½: ~21 ч (но non-linear — ↑ дозы → ↑↑ levels)\n• Метаболизм: CYP2D6 (auto-inhibition!) — пароксетин блокирует свой собственный метаболизм\n• Нет активных метаболитов\n\nTDM (Hiemke 2018): 30–120 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cipriani 2018: ниже сертралина и эсциталопрама по efficacy + acceptability\n• PTSD pivotal trials FDA",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• ⚠ DISCONTINUATION SYNDROME — самый выраженный среди SSRIs\n  – Электрические \"shocks\" в голове\n  – Грипп-подобные симптомы, головокружение\n  – Ажитация, эмоциональная нестабильность\n  – Возникают через 24–48 ч после пропуска\n  – Обязательный медленный таперинг (4–8 нед)\n• ⚠ Сексуальная дисфункция — самый высокий из SSRIs (>50%)\n• ⚠ Прибавка веса (3–5 кг через год)\n• Седация (антихолинергический + H1)\n• Сухость во рту, констипация (антихолин)\n• Гипонатриемия (пожилые)\n\nВЗАИМОДЕЙСТВИЯ — много через CYP2D6 inhibition:\n⛔ TAMOXIFEN — пароксетин ↓ конверсию в эндоксифен (active form) → ↓ эффективности рака молочной железы → ИЗБЕГАТЬ при онкологии\n⛔ Метопролол, тимолол — ↑ levels\n⛔ ТЦА (амитриптилин, нортриптилин) — ↑ levels (CYP2D6)\n⛔ Кодеин, трамадол — ↓ конверсия в morphine/o-desmethyltramadol → ↓ analgesia\n⛔ ИМАО"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции",
+          "desc": "⚠ БЕРЕМЕННОСТЬ — CLASS D (FDA):\n• I триместр: ↑ риск кардиальных мальформаций, особенно Ebstein anomaly (трикуспидальная клапанная атрезия)\n• Если возможно — switch на сертралин/флуоксетин до зачатия\n• III триместр: PPHN (persistent pulmonary hypertension of newborn) + adaptation syndrome\n\nЛАКТАЦИЯ: RID 1–3% — приемлемо\nПОЖИЛЫЕ: 10 мг старт, до 40 мг; гипонатриемия + антихолинергическая нагрузка особенно\nПЕЧЁНОЧНАЯ: ↓ дозу при severe\nПОЧЕЧНАЯ: ↓ дозу при СКФ <30\nDISCONTINUATION: МЕДЛЕННЫЙ — 8 нед минимум\n\nКОГДА ВЫБИРАТЬ:\n• PTSD (FDA approved, особенно если нет ответа на сертралин)\n• Социальная фобия с anticipatory anxiety (седация может помочь)\n\nКОГДА ИЗБЕГАТЬ:\n• Беременность или планирование\n• Tamoxifen\n• Полипрагмазия с CYP2D6 substrates\n• Пациенты пропускающие дозы (discontinuation)\n• Пожилые с антихолинергическим риском"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT Clinical Guidelines for the Management of Adults with MDD. Can J Psychiatry 2016",
+      "Cipriani A. et al. Comparative efficacy of 21 antidepressants for adult MDD. Lancet 2018;391:1357–66"
+    ]
+  },
+  {
+    "id": "drug_fluoxetine",
+    "cmd_alias": "fluoxetine",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Флуоксетин: SSRI с длинным T½, активирующий, FDA-approved у подростков",
+    "tags": [
+      "флуоксетин",
+      "fluoxetine",
+      "Prozac",
+      "Fluval",
+      "SSRI",
+      "activating",
+      "long T½",
+      "norfluoxetine",
+      "CYP2D6 inhibitor",
+      "Symbyax",
+      "bulimia",
+      "подростки 8+",
+      "самостоятельный таперинг"
+    ],
+    "related": [
+      "drug_sertraline",
+      "drug_escitalopram",
+      "drug_paroxetine",
+      "drug_olanzapine",
+      "alg_bipolar_depression",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "Самый длинный T½ среди SSRIs (4–6 дней parent + 7–15 дней norfluoxetine). Активирующий — лучший при апатии. FDA approved для подростков от 8 лет (MDD/OCD). Не требует таперинга при отмене.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: SSRI. Eli Lilly. FDA approval 1987 — первый SSRI на рынке.\n\nРЕЦЕПТОРЫ:\n• 5-HT reuptake (главное)\n• 5-HT2C antagonist (умеренный, отсюда активирующий + анорексогенный эффект)\n• NE reuptake (минимальный)\n• Минимальные другие affinities"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, длинный T½",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• MDD: 20–80 мг/сут (start 20)\n• OCD: 40–80 мг\n• Bulimia nervosa: 60 мг (FDA approved — единственный SSRI с этой индикацией)\n• Panic disorder: 10–80 мг (start 10 — может ↑ panic в начале)\n• PMDD: 20 мг (cyclic)\n• Treatment-resistant depression: + olanzapine (Symbyax 6/25 или 12/25)\n• Подростки 8–17 (MDD): 10–60 мг (FDA)\n• Подростки 7–17 (OCD): 10–60 мг (FDA)\n\nDOSING ALTERNATIVES (uniquely possible due to long T½):\n• Weekly dosing 90 мг 1×/нед — после стабилизации (Prozac Weekly)",
+        "neuro": "ФАРМАКОКИНЕТИКА — УНИКАЛЬНАЯ:\n• T½ fluoxetine: 4–6 дней\n• T½ norfluoxetine (active metabolite): 7–15 дней\n• Стабильные plasma levels к 4–5 нед!\n• Любая dose change — оценка через минимум 4 нед\n• Метаболизм: CYP2D6 (главный) + CYP3A4\n\n⚠ Discontinuation: НЕ требует таперинга — \"self-taper\" из-за длинного T½ метаболита\n\nTDM (Hiemke 2018): сумма fluoxetine + norfluoxetine 120–500 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cipriani 2018: средняя эффективность (top-12 of 21)\n• Лучше для подростков по profile (другие SSRIs ↑ suicidality в подростках, флуоксетин более безопасен)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• АКТИВИРУЮЩИЙ — БЕССОННИЦА, тревога, ажитация (особенно в начале)\n• Принимать утром\n• ↓ Аппетит, потеря веса (5-HT2C antagonism)\n• Сексуальная дисфункция (~40%)\n• ⚠ Bipolar induction — особенно у подростков и при недиагностированном БАР-2\n\nВЗАИМОДЕЙСТВИЯ — много через CYP2D6 inhibition:\n⛔ Tamoxifen (как пароксетин)\n⛔ ТЦА — ↑ levels\n⛔ Кодеин, трамадол — ↓ conversion (но менее выражено чем пароксетин)\n⛔ ИМАО — ⚠ wash-out 5–6 нед перед началом ИМАО (из-за длинного T½ норфлуоксетина)\n⛔ Pimozide — QTc"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции",
+          "desc": "БЕРЕМЕННОСТЬ: один из самых long-data SSRIs; minimal teratogenicity; некоторые исследования показывают signals для cardiac defects на high doses; preferred over пароксетина\nЛАКТАЦИЯ: RID 1–7% — accept (norfluoxetine накапливается у ребёнка с длинным T½, мониторить)\nПОДРОСТКИ: ✅ FDA approved 8+ для MDD, 7+ для OCD\nПОЖИЛЫЕ: 10 мг старт, до 60 мг; гипонатриемия особенно (T½ длинный, kombulation)\nПЕЧЁНОЧНАЯ: ↓ дозу или alternate-day dosing\nПОЧЕЧНАЯ: minimal change\n\nКОГДА ВЫБИРАТЬ:\n• Подростковая депрессия (FDA-approved, лучше data чем другие SSRIs)\n• Bulimia nervosa\n• Пациенты с проблемами compliance / часто пропускают дозы (длинный T½ \"прощает\")\n• Апатическая депрессия (активирующий)\n• Пациент хочет потерять вес\n\nКОГДА ИЗБЕГАТЬ:\n• Беспокойная депрессия с бессонницей и тревогой (выберите пароксетин/миртазапин)\n• Скоро планируется ИМАО (5+ нед wash-out)\n• Пожилые с гипонатриемией в анамнезе\n• Bipolar (низкий-disclosed) с риском induction"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT Clinical Guidelines for the Management of Adults with MDD. Can J Psychiatry 2016",
+      "Cipriani A. et al. Comparative efficacy of 21 antidepressants for adult MDD. Lancet 2018;391:1357–66"
+    ]
+  },
+  {
+    "id": "drug_fluvoxamine",
+    "cmd_alias": "fluvoxamine",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Флувоксамин: SSRI, FDA approved для ОКР, мощный CYP1A2/2C19 ингибитор",
+    "tags": [
+      "флувоксамин",
+      "fluvoxamine",
+      "Luvox",
+      "Fevarin",
+      "SSRI",
+      "OCD",
+      "CYP1A2 inhibitor",
+      "CYP2C19 inhibitor",
+      "interactions",
+      "clozapine"
+    ],
+    "related": [
+      "drug_sertraline",
+      "drug_escitalopram",
+      "drug_clozapine",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "SSRI с самым большим количеством drug-drug interactions из-за мощного ингибирования CYP1A2 и CYP2C19. FDA approved для ОКР. Высокий GI-побочный профиль. Используется off-label для COVID-19 (sigma-1 receptor activity).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: SSRI. Solvay. FDA approval 1994 (для OCD).\n\nРЕЦЕПТОРЫ:\n• 5-HT reuptake (главное)\n• Sigma-1 receptor agonist (умеренный) — отличает от других SSRIs; может быть relevant для cognitive effects + COVID-19 reports (Lenze 2020 STOP-COVID trial)\n• Нет значимых других affinities"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• OCD: 100–300 мг/сут (start 50, разделено на 2 приёма >100 мг)\n• MDD: 100–300 мг (off-label US, approved EU)\n• Social anxiety, panic, PTSD — off-label\n• Подростки 8–17 (OCD): 25–200 мг (FDA)\n• ⚠ Off-label COVID-19: 100 мг 2 р/сут (Lenze 2020 RCT — ↓ hospitalization)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 3–8 ч\n• T½: 15–22 ч\n• Метаболизм: CYP2D6 (минимально), CYP3A4\n• ⚠ САМ pumblishет ингибирование CYP1A2 и CYP2C19\n\nTDM (Hiemke 2018): 60–230 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cochrane OCD: ≥ кломипрамин при лучшей переносимости\n• Cipriani 2018: средняя эффективность\n• STOP-COVID (Lenze 2020): off-label COVID-19 prevent hospitalization (sigma-1 activation)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• ⚠ ТОШНОТА / РВОТА — самый высокий GI profile из SSRIs (>20% discontinuation rate)\n• Седация (выше других SSRIs)\n• Запоры\n• Сексуальная дисфункция\n• Бессонница\n• Тремор\n• ↑ потливость\n\n⚠⚠ ВЗАИМОДЕЙСТВИЯ — САМЫЙ \"ОПАСНЫЙ\" SSRI ПО CYP:\n\n⛔ КЛОЗАПИН: ↓ дозу клозапина 2–3× (мощный CYP1A2 inhibitor) — иначе токсические уровни клозапина\n⛔ ТЕОФИЛЛИН — ↓ дозу 2× (CYP1A2)\n⛔ Caffeine — ↑ effects, аритмии\n⛔ Варфарин — ↑ эффект (CYP2C19)\n⛔ Diazepam — ↑ levels (CYP2C19)\n⛔ Methadone — ↑ levels\n⛔ ТЦА — ↑ levels\n⛔ Tizanidine — серьёзное ↑ levels (контр)\n⛔ Pimozide — QTc\n⛔ ИМАО — серотониновый\n⚠ Курение — индукция CYP1A2; флувоксамин потенциально reverses этот эффект"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции",
+          "desc": "БЕРЕМЕННОСТЬ: limited data — не первая линия среди SSRIs, но без выраженных negative signals\nЛАКТАЦИЯ: RID 1–2% — приемлемо\nПОДРОСТКИ: FDA approved 8+ для OCD\nПОЖИЛЫЕ: ↓ доза, особый риск седации и interactions\nПЕЧЁНОЧНАЯ: ↓ дозу\nПОЧЕЧНАЯ: minimal change\nDISCONTINUATION: умеренный — таперинг 4 нед\n\nКОГДА ВЫБИРАТЬ:\n• OCD (особенно у подростков — FDA approved)\n• Когда нужна sedating SSRI (бессонница + тревога)\n• Off-label: COVID-19 outpatient (рассмотреть в первые 7 дней)\n\nКОГДА ИЗБЕГАТЬ:\n• Полипрагмазия (особенно с клозапином, варфарином, ТЦА)\n• История GI sensitivity\n• Активный курильщик с непредсказуемым CYP1A2 statusом"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT Clinical Guidelines for the Management of Adults with MDD. Can J Psychiatry 2016",
+      "Cipriani A. et al. Comparative efficacy of 21 antidepressants for adult MDD. Lancet 2018;391:1357–66"
+    ]
+  },
+  {
+    "id": "drug_mirtazapine",
+    "cmd_alias": "mirtazapine",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Миртазапин: NaSSA, седативный (15 мг > 30 мг), ↑ аппетит, без сексуальных побочек",
+    "tags": [
+      "миртазапин",
+      "mirtazapine",
+      "Remeron",
+      "Calixta",
+      "NaSSA",
+      "α2-antagonist",
+      "H1",
+      "↑ аппетит",
+      "инсомния",
+      "пожилые",
+      "без сексуальных побочек",
+      "catatonia"
+    ],
+    "related": [
+      "drug_sertraline",
+      "drug_paroxetine",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "Norepinephrine and Specific Serotonergic Antidepressant (NaSSA). Парадоксальная dose-response: 15 мг более седативен чем 30 мг. ↑ аппетит и седация — недостатки или достоинства в зависимости от пациента. Без сексуальных побочек, без discontinuation syndrome.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: NaSSA — Noradrenergic and Specific Serotonergic Antidepressant.\nOrganon → Schering-Plough. FDA approval 1996.\n\nРЕЦЕПТОРЫ:\n• α2-adrenergic ANTAGONIST (постsинaptic) — отсюда ↑ NE и 5-HT release (вторично через autoreceptor blockade)\n• 5-HT2A ANTAGONIST — ↓ insomnia, ↓ anxiety, ↓ sexual side effects\n• 5-HT2C ANTAGONIST — ↑ аппетит, ↑ вес\n• 5-HT3 ANTAGONIST — anti-emetic effect, может помочь при tошноте от других SSRIs\n• H1 ANTAGONIST (мощный) — седация\n\nПАРАДОКС ДОЗЫ:\n• 7.5–15 мг: H1 эффект доминирует → выраженная седация + ↑ аппетит\n• 30–45 мг: NE/5-HT эффект пересиливает H1 → менее седации, но антидепрессивный эффект"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• MDD: 15–45 мг (start 15 на ночь, при недостаточной эффективности → 30→45)\n• Insomnia (off-label): 7.5–15 мг на ночь (часто эффективен сам по себе)\n• PTSD-related insomnia / nightmares (off-label)\n• Anorexia nervosa / cachexia при онкологии (off-label, для ↑ аппетита)\n• Catatonia (off-label, при benzo-resistant)\n• Добавочно к SSRI/SNRI при insomnia (\"California rocket fuel\" = mirtaz + venlafaxine)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1–2 ч\n• T½: 20–40 ч\n• Метаболизм: CYP2D6, 1A2, 3A4 — диверсифицированный\n• Биодоступность 50%\n\nTDM (Hiemke 2018): 30–80 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cipriani 2018: top-3 эффективности\n• MERIT trial: comparable к SSRI с лучшей переносимостью\n• Быстрее onset чем многие SSRIs (1–2 нед на сон, 2–4 нед на mood)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• ⚠ СЕДАЦИЯ — главное (15 мг особенно)\n• ⚠ ↑ АППЕТИТ + ВЕС: +3–4 кг за 6 мес типично\n• Сухость во рту (M-блокада минимум, скорее H1)\n• Запоры\n• Головокружение, ортостаз\n• Редко: агранулоцитоз (1/1000 — редко, но monitoring рекомендован при появлении лихорадки/болезни)\n• Парадоксальный нарушение сна: на >30 мг — иногда insomnia\n\n✅ ОТСУТСТВУЕТ:\n• Сексуальная дисфункция (5-HT2A antagonism защищает)\n• Discontinuation syndrome (T½ длинный + механизм отличается)\n• ⚠ Серотониновый синдром редок (5-HT3 antagonism)\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО (но менее серотонинергично, риск ниже чем SSRI)\n⚠ Алкоголь — потенцирует седацию\n✅ Минимум CYP-driven interactions"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, общий профиль безопасности приемлемый\nЛАКТАЦИЯ: RID 1.6% — приемлемо\nПОЖИЛЫЕ: ✅ ОТЛИЧНЫЙ ПРОФИЛЬ — седация и ↑ аппетит часто помогают (cachexia, insomnia, без anticholinergic burden)\n• 7.5–15 мг старт, до 30 мг\nПЕЧЁНОЧНАЯ: ↓ доза\nПОЧЕЧНАЯ: ↓ доза\nDISCONTINUATION: ✅ минимальный\n\nКОГДА ВЫБИРАТЬ:\n• Пожилой пациент с депрессией + бессонницей + потерей веса\n• Депрессия с anxiety + insomnia (sedative profile)\n• Сексуальная дисфункция от SSRI — switch на mirtazapine\n• Анорексия / cachexia\n• Депрессия после онкотерапии (anti-emetic effect bonus)\n• PTSD with predominant nightmares\n\nКОГДА ИЗБЕГАТЬ:\n• Пациент с ожирением / metabolic syndrome\n• Пациент должен сохранить активность днём (профессиональный driver, etc)\n• Депрессия с апатией без insomnia (рассмотреть бупропион)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT Clinical Guidelines for the Management of Adults with MDD. Can J Psychiatry 2016",
+      "Cipriani A. et al. Comparative efficacy of 21 antidepressants for adult MDD. Lancet 2018;391:1357–66"
+    ]
+  },
+  {
+    "id": "drug_bupropion",
+    "cmd_alias": "bupropion",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Бупропион: NDRI, активирующий, без сексуальных побочек, ⚠ судорожный порог",
+    "tags": [
+      "бупропион",
+      "bupropion",
+      "Wellbutrin",
+      "Zyban",
+      "NDRI",
+      "activating",
+      "без седации",
+      "без прибавки веса",
+      "без сексуальных побочек",
+      "smoking cessation",
+      "булимия противопоказана",
+      "судороги",
+      "seizure threshold"
+    ],
+    "related": [
+      "drug_sertraline",
+      "drug_mirtazapine",
+      "drug_fluoxetine",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "Norepinephrine-Dopamine Reuptake Inhibitor (NDRI). Уникален среди АД — НЕТ сексуальных побочек, НЕТ прибавки веса, НЕТ седации. Активирующий — лучший при апатии. Approved для smoking cessation. ⚠ Снижает порог судорог — противопоказан при булимии/анорексии.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: NDRI (atypical АД).\nGSK. FDA approval: 1985 (instant release), 1996 (SR), 2003 (XL).\nZyban variant 1997 для smoking cessation.\n\nРЕЦЕПТОРЫ:\n• Norepinephrine reuptake inhibitor (NET)\n• Dopamine reuptake inhibitor (DAT) — слабее NET, но достаточно для clinical effect\n• Никотиновых рецепторов антагонист — основа для smoking cessation\n• МИНИМУМ 5-HT effects — отсюда отсутствие сексуальной дисфункции и discontinuation syndrome"
+        }
+      ],
+      "current": {
+        "title": "Дозы, формы, эффективность",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\nFORMS — три релиза:\n• Immediate Release (IR): 75–100 мг 3 р/сут (max 450/сут)\n• Sustained Release (SR): 100–200 мг 2 р/сут (max 400)\n• Extended Release (XL): 150–450 мг 1 р/сут\n\nMDD:\n• Start: 150 мг/сут (XL), через 3+ дня → 300 мг (target)\n• Refractory: 450 мг (max — выше дозо-зависимо ↑ риск судорог)\n\nДРУГИЕ ИНДИКАЦИИ:\n• Smoking cessation (Zyban): 150 мг ×1 на 3 дня → 150 мг ×2 (target). 7–12 нед\n• Seasonal Affective Disorder (XL preferred)\n• MDD-associated sexual dysfunction (от SSRI) — switch или add-on\n• Off-label: ADHD adult, weight loss (особенно с naltrexone — Contrave)\n• ⚠ НЕ ПОКАЗАН для GAD/panic/OCD (может ухудшить тревогу)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: IR 2 ч, SR 3 ч, XL 5 ч\n• T½: 21 ч (parent), 20–37 ч (active metabolite hydroxybupropion)\n• Метаболизм: CYP2B6 (главный — необычно для psychiatric drug)\n• 3 активных метаболита\n\nTDM (Hiemke 2018): bupropion 850–1500 нг/мл (или сумма с метаболитами)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n⚠ ГЛАВНЫЕ:\n• Бессонница (особенно если принять поздно)\n• Тревога / ажитация\n• Тремор\n• Сухость во рту\n• Запоры\n• Головная боль\n\n⚠ КРИТИЧЕСКОЕ — ↓ ПОРОГ СУДОРОГ:\n• ~0.4% при 450 мг/сут\n• ~4% при дозах >450 мг/сут (категорически избегать)\n• IR более судорожно-генный чем SR/XL (peak уровни)\n• ⛔ ПРОТИВОПОКАЗАНИЯ:\n  – Эпилепсия в анамнезе\n  – Bulimia / anorexia (известные триггеры судорог + low BMI ↑ levels)\n  – CNS tumor / ЧМТ\n  – Алкогольная абстиненция / БДЗ withdrawal\n  – ИМАО\n\n✅ ОТСУТСТВУЕТ:\n• Сексуальная дисфункция (нет 5-HT)\n• Прибавка веса (наоборот, ↓ вес)\n• Седация\n• Discontinuation syndrome\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО — серотонинерго-катехоламинергический риск\n⛔ Bupropion is moderate CYP2D6 inhibitor — ↑ levels of metoprolol, тимолола, ТЦА, рисперидона, тамоксифена\n⚠ Smoking cessation (varenicline + bupropion) — может потенцировать побочки"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции",
+          "desc": "БЕРЕМЕННОСТЬ: limited data; некоторые сигналы для cardiac defects (low quality); чаще используется чем SSRIs не подошли\nЛАКТАЦИЯ: RID 0.2% — приемлемо\nПОЖИЛЫЕ: ↓ доза (200 мг XL), осторожно — судорожный риск + ↑ levels (CYP)\nПЕЧЁНОЧНАЯ: severe — max 150 мг XL alternate-day (CYP2B6 печёночный)\nПОЧЕЧНАЯ: ↓ дозу (метаболиты накапливаются)\nDISCONTINUATION: ✅ минимальный (не серотонинерго)\n\nКОГДА ВЫБИРАТЬ:\n• Апатическая депрессия (без anxiety)\n• Депрессия + smoking dependence (двойной effect)\n• Сексуальная дисфункция от SSRI — switch или augmentation\n• Атипическая депрессия (гипер sleep, hyperphagia) — ↓ вес\n• MDD у пациента с metabolic risk (без weight gain)\n• ADHD adult — augment\n\nКОГДА ИЗБЕГАТЬ:\n• Eating disorders (bulimia, anorexia) — ⚠ ПРОТИВОПОКАЗАНО\n• Эпилепсия / ЧМТ / brain tumor\n• Алкогольная зависимость с risk of withdrawal\n• Депрессия с anxiety / agitation (может ухудшить)\n• Inability tolerate insomnia"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT Clinical Guidelines for the Management of Adults with MDD. Can J Psychiatry 2016",
+      "Cipriani A. et al. Comparative efficacy of 21 antidepressants for adult MDD. Lancet 2018;391:1357–66"
+    ]
+  },
+  {
+    "id": "drug_vortioxetine",
+    "cmd_alias": "vortioxetine",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Вортиоксетин: multimodal, прокогнитивный (FDA), минимум сексуальных побочек",
+    "tags": [
+      "вортиоксетин",
+      "vortioxetine",
+      "Trintellix",
+      "Brintellix",
+      "multimodal",
+      "5-HT3",
+      "5-HT7",
+      "cognitive",
+      "когнитивный",
+      "CYP2D6",
+      "minimum sexual",
+      "minimum discontinuation"
+    ],
+    "related": [
+      "drug_sertraline",
+      "drug_escitalopram",
+      "drug_mirtazapine",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "Multimodal AD — комбинирует SERT-ингибирование с прямым modulationм 5-HT receptor subtypes (1A agonist, 1B partial agonist, 1D/3/7 antagonist). FDA approved для cognitive function в MDD (единственный с этой индикацией). Лундбек/Takeda. Минимум сексуальных побочек, минимум discontinuation syndrome.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: multimodal AD (не SSRI/SNRI/SARI/etc — собственный класс).\nLundbeck/Takeda. FDA approval 2013.\n\nРЕЦЕПТОРНЫЕ ЭФФЕКТЫ — \"multimodal\":\n• 5-HT reuptake inhibitor (SERT)\n• 5-HT1A agonist\n• 5-HT1B partial agonist\n• 5-HT1D antagonist\n• 5-HT3 antagonist (anti-emetic; уменьшает SSRI tошноту через этот рецептор)\n• 5-HT7 antagonist (cognitive enhancement, anxiolytic)\n\nКаждый из этих эффектов вносит вклад в overall profile."
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• MDD: 5–20 мг/сут (start 10, через 1 нед — 20)\n• MDD с cognitive dysfunction: 10–20 мг (FDA-recognized — единственный AD с этой specific indication)\n• GAD (off-label, EU approved): 5–20 мг\n• Принимать с едой или без",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 7–11 ч\n• T½: 66 ч (long → not many drug-drug interactions practically)\n• Метаболизм: CYP2D6 (главный) + CYP3A4, 2A6, 2C9, 2C19\n• Биодоступность 75%\n\nTDM (Hiemke 2018): 10–40 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cipriani 2018: средняя эффективность, top-quintile acceptability\n• FOCUS trial (Mahableshwarkar 2015): значимый pro-cognitive effect (DSST measure) — первый AD с этим\n• HEAT trial (Christensen 2018): cognitive improvement vs duloxetine\n• Frampton 2016: post-marketing surveillance — sexual dysfunction <5% при 5–10 мг (значимо ниже SSRI)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• Тошнота — главный (~20–30%, dose-related); часто transient\n• Головная боль\n• Сухость во рту\n• Запоры\n• Бессонница / седация — variable\n\n✅ МИНИМУМ:\n• Сексуальная дисфункция: <5% при 5–10 мг, ~15% при 20 мг (vs 40% у SSRI)\n• Discontinuation syndrome: minimal (длинный T½)\n• Прибавка веса: minimal\n• Седация: minimal\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО — серотониновый риск\n⛔ Strong CYP2D6 inhibitors (флуоксетин, пароксетин, бупропион) — ↑ vortioxetine; max 10 мг\n⛔ Strong CYP2D6 inducers (рифампицин, карбамазепин) — ↓ vortioxetine; ↑ доза до 20\n⛔ Tramadol, methylene blue — серотониновый\n• CYP2D6 poor metabolizers — ↑ levels"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, не первая линия — экстраполировать как SSRI; в первые два триместра — преимущественно сертралин/флуоксетин\nЛАКТАЦИЯ: limited data\nПОЖИЛЫЕ: ✅ хороший профиль — особенно cognitive aspect; 5–10 мг старт\nПЕЧЁНОЧНАЯ: severe — limited data\nПОЧЕЧНАЯ: minimal change\nDISCONTINUATION: ✅ минимальный\n\nКОГДА ВЫБИРАТЬ:\n• MDD с cognitive dysfunction (FDA approved — единственный)\n• Пожилой пациент с депрессией + cognitive complaints\n• Депрессия с предшествующей сексуальной дисфункцией от SSRI\n• Пациент не переносящий SSRI таперинг\n• Resistant к SSRI с прокогнитивным потенциалом\n\nКОГДА ИЗБЕГАТЬ:\n• Стоимость — относительно дорогой даже как brand-only\n• Тошнота в анамнезе как issue\n• CYP2D6 polypharmacy с unclear management"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT Clinical Guidelines for the Management of Adults with MDD. Can J Psychiatry 2016",
+      "Cipriani A. et al. Comparative efficacy of 21 antidepressants for adult MDD. Lancet 2018;391:1357–66"
+    ]
+  },
+  {
+    "id": "drug_agomelatine",
+    "cmd_alias": "agomelatine",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Агомелатин: MT1/MT2 + 5-HT2C, циркадный AD, ⚠ гепатотоксичность — мониторинг ферментов",
+    "tags": [
+      "агомелатин",
+      "agomelatine",
+      "Valdoxan",
+      "Thymanax",
+      "melatonin agonist",
+      "MT1",
+      "MT2",
+      "5-HT2C antagonist",
+      "циркадные ритмы",
+      "hepatotoxicity",
+      "печёночные ферменты",
+      "Servier"
+    ],
+    "related": [
+      "drug_sertraline",
+      "drug_mirtazapine",
+      "drug_vortioxetine",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "Уникальный AD — мелатонергический MT1/MT2 agonist + 5-HT2C antagonist. Реcинхронизирует circadian rhythms. EU only (FDA не одобрил из-за hepatic concerns). НЕТ сексуальных побочек, НЕТ прибавки веса, НЕТ discontinuation, НЕТ инфузии. НО: гепатотоксичность — обязательный ОАК ALT/AST baseline + 3, 6, 12, 24 нед.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: melatonergic AD — единственный в своём классе.\nServier. EU approval 2009. ⚠ FDA: rejected 2011 due to hepatic safety signal.\n\nРЕЦЕПТОРЫ:\n• MT1 agonist\n• MT2 agonist (мелатонергический)\n• 5-HT2C antagonist (как mirtazapine — но без H1 блокады)\n• Минимальные другие affinities\n\nМЕХАНИЗМ: реcинхронизация circadian rhythms через MT1/MT2 + dis-inhibition NE/DA через 5-HT2C antagonism."
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• MDD: 25–50 мг 1 р/сут НА НОЧЬ (start 25 при insomnia или middle-of-night awakening)\n• Через 2 нед — оценить → 50 мг при недостаточной эффективности\n• Принимать в одно время каждый день (для circadian effect)\n• Off-label EU: GAD, sleep disorders\n• ⚠ Не одобрен FDA — недоступен в US",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1–2 ч\n• T½: 1–2 ч (короткий — отсюда single nightly dose)\n• Метаболизм: CYP1A2 (90%) + CYP2C9/2C19\n• Биодоступность <5% (massive first-pass)\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cipriani 2018: top-1 эффективности (но controversial — Servier-funded studies)\n• Cochrane (Guaiana 2013): эффективность есть, но небольшая в plазcebo-controlled\n• Уникальный механизм — может работать когда serotonergic AD не сработали",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n⚠ КРИТИЧЕСКОЕ — ГЕПАТОТОКСИЧНОСТЬ:\n• ALT/AST повышение >3× ULN: ~1.4% (vs placebo 0.5%)\n• Описаны случаи fulminant hepatitis (rare)\n• ⚠ ОБЯЗАТЕЛЬНЫЙ МОНИТОРИНГ: ALT/AST/билирубин на baseline, 3 нед, 6 нед, 12 нед, 24 нед, далее q6 мес\n• STOP при >3× ULN — повторный тест через 1 нед, если сохраняется — отмена\n• ⚠ ПРОТИВОПОКАЗАНИЯ: цирроз, активный гепатит, ALT/AST >3× ULN baseline\n\nДРУГИЕ ПОБОЧКИ:\n• Головная боль\n• Головокружение\n• Тошнота (умеренно)\n• Бессонница (парадокс — у некоторых)\n\n✅ ОТСУТСТВУЕТ:\n• Сексуальная дисфункция\n• Прибавка веса\n• Discontinuation syndrome\n• ⚠ Серотониновый синдром редок (нет 5-HT reuptake inhibition)\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Strong CYP1A2 inhibitors (флувоксамин, ципрофлоксацин) — ПРОТИВОПОКАЗАНЫ (↑↑ agomelatine)\n⚠ Алкоголь — потенцирует hepatic risk\n⚠ Hepatotoxic drugs (paracetamol high dose, methotrexate, statins) — additive risk"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, не первая линия\nЛАКТАЦИЯ: данные отсутствуют — избегать\nПОЖИЛЫЕ >75 лет: ⚠ FDA-EU warning — ↑ риск hepatic events; обычно не назначать (Maudsley)\nПЕЧЁНОЧНАЯ: ⛔ ПРОТИВОПОКАЗАНО\nПОЧЕЧНАЯ: limited data — caution в severe\nDISCONTINUATION: ✅ минимальный\n\nКОГДА ВЫБИРАТЬ:\n• Депрессия с выраженной insomnia / disrupted circadian rhythms\n• Сексуальная дисфункция от других AD — switch\n• Метаболически уязвимый пациент (без weight gain)\n• Ночная depression worsening\n• Пациент в EU (где доступен)\n\nКОГДА ИЗБЕГАТЬ:\n• Любая печёночная патология\n• Алкогольная зависимость / heavy drinking\n• Полипрагмазия с hepatotoxic drugs\n• Невозможность compliance к мониторингу ферментов\n• Пожилые >75\n• US (недоступен)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT Clinical Guidelines for the Management of Adults with MDD. Can J Psychiatry 2016",
+      "Cipriani A. et al. Comparative efficacy of 21 antidepressants for adult MDD. Lancet 2018;391:1357–66"
+    ]
+  },
+  {
+    "id": "drug_venlafaxine",
+    "cmd_alias": "venlafaxine",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Венлафаксин: SNRI dose-dependent, низкие дозы = SSRI, ⚠ AV+discontinuation+bipolar induction",
+    "tags": [
+      "венлафаксин",
+      "venlafaxine",
+      "Effexor",
+      "Velaxin",
+      "SNRI",
+      "dose-dependent",
+      "↑ АД",
+      "discontinuation",
+      "bipolar induction",
+      "CYP2D6",
+      "O-desmethylvenlafaxine"
+    ],
+    "related": [
+      "drug_duloxetine",
+      "drug_sertraline",
+      "drug_mirtazapine",
+      "alg_bipolar_depression",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "Serotonin-norepinephrine reuptake inhibitor (SNRI), но dose-dependent: <150 мг = практически SSRI; >150 мг — true SNRI с NE компонентом. Высокий discontinuation syndrome (короткий T½). Гипертензия на высоких дозах. ⚠ Самый высокий риск bipolar induction среди \"новых\" AD (Maudsley).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: SNRI. Wyeth (Pfizer). FDA approval 1993 (IR), 1997 (XR).\n\nРЕЦЕПТОРЫ:\n• 5-HT reuptake (SERT) — главный эффект\n• NE reuptake (NET) — слабый при низких дозах, значимый при >150 мг\n• DA reuptake (DAT) — минимальный, на очень высоких дозах\n• Без значимых других affinities\n\nDOSE-DEPENDENT EFFECT:\n• 75 мг: SERT >>> NET — практически SSRI\n• 150 мг: NET начинает participate\n• 225–375 мг: full SNRI activity"
+        }
+      ],
+      "current": {
+        "title": "Дозы, формы, эффективность",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\nFORMS:\n• IR: 75–225 мг 2–3 р/сут (max 375 мг/сут)\n• XR (extended release): 75–225 мг 1 р/сут (max 225 как FDA, но Maudsley до 375)\n\nMDD:\n• Start 75 мг XR\n• Через 1 нед → 150 мг (target нижний)\n• Refractory → 225 мг\n• Эффект NE начинается с ~150 мг — \"raise above 150 mg\" если SSRI-like ответ недостаточен\n\nДРУГИЕ:\n• GAD: 75–225 мг XR (FDA approved)\n• Panic disorder: 75–225 мг XR (FDA)\n• Social anxiety: 75–225 мг XR (FDA)\n• PTSD (off-label, BAP recommended): 150–225 мг\n• Neuropathic pain (off-label): 150–225 мг — менее данных чем у duloxetine\n• Hot flashes (off-label): 37.5–75 мг",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax IR: 2 ч; XR: 5–6 ч\n• T½ venlafaxine: ~5 ч\n• T½ O-desmethylvenlafaxine (active metabolite, = desvenlafaxine): ~11 ч\n• Метаболизм: CYP2D6 (главный)\n• Биодоступность 45%\n\nTDM (Hiemke 2018): venlafaxine + ODV сумма 100–400 нг/мл",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n\n⚠ ГЛАВНЫЕ:\n• ⚠ DISCONTINUATION SYNDROME — выраженный (короткий T½)\n  – \"Brain zaps\" (электрические разряды в голове)\n  – Грипп-подобные симптомы\n  – Тревога, ажитация, бессонница\n  – Обязательный медленный таперинг (≥4 нед, иногда 8)\n• ⚠ DOSE-DEPENDENT АРТЕРИАЛЬНАЯ ГИПЕРТЕНЗИЯ:\n  – ~3% при 150 мг\n  – ~13% при 300 мг\n  – Контроль АД до старта + регулярно при ↑ дозы\n  – Если АД ↑ — снизить дозу или switch\n• Тошнота (transient, обычно)\n• Бессонница / седация (variable)\n• Сексуальная дисфункция (~30%)\n• Гипонатриемия\n• ↑ Холестерин (умеренно, на длительном применении)\n• Тремор\n\n⚠ BIPOLAR INDUCTION:\n• Maudsley: венлафаксин ≥150 мг — самый высокий риск induction среди \"новых\" AD\n• ОСОБЕННО опасен при недиагностированном БАР-2\n• ⚠ В biполярной депрессии (см. alg_bipolar_depression): ИЗБЕГАТЬ \n• Если необходим — только под прикрытием стабилизатора, max 75 мг\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО — серотониновый\n⛔ Tramadol, linezolid, methylene blue — серотониновый\n⛔ Strong CYP2D6 inhibitors (флуоксетин, пароксетин, бупропион) — ↑ levels\n⚠ NSAIDs — ↑ риск кровотечений (как все SSRI/SNRI)\n⚠ Анти-гипертензивные препараты — может потребоваться корректировка"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, экстраполируется как SSRI; обычно сертралин предпочтителен\nЛАКТАЦИЯ: RID 6.4% — приемлемо, мониторить ребёнка\nПОЖИЛЫЕ: 37.5–75 мг старт; гипонатриемия + АД мониторинг\nПЕЧЁНОЧНАЯ: ↓ дозу 50% при mild-moderate; severe — избегать\nПОЧЕЧНАЯ: ↓ дозу при СКФ <30\nDISCONTINUATION: ⚠ ОБЯЗАТЕЛЬНЫЙ медленный таперинг\n\nКОГДА ВЫБИРАТЬ:\n• MDD с failure 2+ SSRIs\n• Anxiety + depression mix (FDA approved для GAD/panic/social)\n• Хроническая боль (как secondary indication, duloxetine лучше изучен)\n• PTSD (BAP recommended off-label)\n\nКОГДА ИЗБЕГАТЬ:\n• Биполярная депрессия (риск induction)\n• Cardiovascular disease с гипертензией (особенно неконтролируемой)\n• Пациент часто пропускает дозы (discontinuation severe)\n• Стартовая попытка АД (есть лучшие 1-я линия — сертралин, эсциталопрам)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT Clinical Guidelines for the Management of Adults with MDD. Can J Psychiatry 2016",
+      "Cipriani A. et al. Comparative efficacy of 21 antidepressants for adult MDD. Lancet 2018;391:1357–66"
+    ]
+  },
+  {
+    "id": "drug_duloxetine",
+    "cmd_alias": "duloxetine",
+    "type": "matrix",
+    "category": "Фармакотерапия (АД)",
+    "title": "Дулоксетин: balanced SNRI, FDA approved для chronic pain/fibromyalgia/DPN",
+    "tags": [
+      "дулоксетин",
+      "duloxetine",
+      "Cymbalta",
+      "SNRI",
+      "balanced",
+      "chronic pain",
+      "fibromyalgia",
+      "diabetic neuropathy",
+      "stress urinary incontinence",
+      "CYP1A2",
+      "CYP2D6"
+    ],
+    "related": [
+      "drug_venlafaxine",
+      "drug_sertraline",
+      "drug_mirtazapine",
+      "flowchart_ad",
+      "ad_side_effects",
+      "treatment_resistant_depression",
+      "preg_antidepressants",
+      "pharma_tdm"
+    ],
+    "description": "Сбалансированный SNRI — более равные эффекты на 5-HT и NE с самого старта (в отличие от dose-dependent venlafaxine). FDA approved не только для MDD/GAD, но и для chronic musculoskeletal pain, fibromyalgia, diabetic peripheral neuropathy, stress urinary incontinence (EU). Меньше discontinuation чем venlafaxine.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: SNRI (\"balanced\"). Eli Lilly. FDA approval 2004.\n\nРЕЦЕПТОРЫ:\n• 5-HT reuptake (SERT) — strong\n• NE reuptake (NET) — strong (более balanced чем venlafaxine)\n• Dopamine reuptake (DAT) — слабый, минимальный\n• Без других значимых affinities\n\nКЛИНИЧЕСКОЕ ЗНАЧЕНИЕ \"balance\":\n• С самого старта 30 мг — обе системы вовлечены\n• Не нужно достигать высоких доз для NE-эффекта (как у venlafaxine)\n• Лучше для болевых индикаций (NE-компонент центрально-аналгетический)"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• MDD: 30–60 мг/сут (start 30, target 60); refractory — до 120 мг\n• GAD: 60 мг (FDA)\n• Diabetic peripheral neuropathic pain: 60 мг (FDA)\n• Fibromyalgia: 30–60 мг (FDA)\n• Chronic musculoskeletal pain (osteoarthritis, low back pain): 60 мг (FDA)\n• Stress urinary incontinence: 80 мг (EU approved, не FDA)\n\nПринимать с/без еды.",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 6 ч\n• T½: 12 ч\n• Метаболизм: CYP1A2 (главный) + CYP2D6\n• Биодоступность 50%\n\nTDM (Hiemke 2018): 30–120 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Cipriani 2018: средняя эффективность\n• HEAT trial: vortioxetine лучше для cognitive аспектов; duloxetine equivalent для core MDD\n• Болевая эффективность подтверждена в multi-RCT (Wernicke 2007, Smith 2013)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• Тошнота: главная (~25%, transient)\n• Сухость во рту\n• Запоры\n• ↓ Аппетит\n• Бессонница / седация (variable)\n• Сексуальная дисфункция\n• ⚠ ↑ АД — но менее выражено чем venlafaxine\n• Гипергидроз\n• Тремор\n• ⚠ Гепатотоксичность — особенно с алкоголем (FDA black box: heavy alcohol use + duloxetine = severe hepatic injury)\n\nDISCONTINUATION SYNDROME: МЕНЬШЕ венлафаксина, но больше fluoxetine; таперинг 4 нед\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ ИМАО\n⛔ Strong CYP1A2 inhibitors (флувоксамин, ципрофлоксацин) — ПРОТИВОПОКАЗАНЫ (↑↑ duloxetine)\n⛔ Smoking — ↓ duloxetine 50% (CYP1A2 induction)\n⛔ Strong CYP2D6 inhibitors (паrоксетин, флуоксетин, бупропион) — ↑ duloxetine\n⛔ Tramadol, linezolid, methylene blue\n⚠ Алкоголь — гепатотоксичность"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, как venlafaxine\nЛАКТАЦИЯ: RID 0.1–1.4% — приемлемо\nПОЖИЛЫЕ: 30 мг старт; ↓ доза при печёночной/почечной\nПЕЧЁНОЧНАЯ: ⛔ ПРОТИВОПОКАЗАНО при severe (Child-Pugh C); mild-moderate — caution\nПОЧЕЧНАЯ: ⛔ ПРОТИВОПОКАЗАНО при СКФ <30\nDISCONTINUATION: умеренный — таперинг 4 нед\n\nКОГДА ВЫБИРАТЬ:\n• MDD + chronic pain (fibromyalgia, DPN, OA, low back pain) — двойной effect\n• Anxiety + depression\n• Когда нужен SNRI без выраженных проблем venlafaxine (АД, induction)\n• Stress urinary incontinence (EU)\n\nКОГДА ИЗБЕГАТЬ:\n• Heavy alcohol use (черный box: hepatic)\n• Severe hepatic / renal impairment\n• Активный курильщик с unpredictable CYP1A2 status\n• Пациент с выраженной MAOI/serotonergic полипрагмазией"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "CANMAT Clinical Guidelines for the Management of Adults with MDD. Can J Psychiatry 2016",
+      "Cipriani A. et al. Comparative efficacy of 21 antidepressants for adult MDD. Lancet 2018;391:1357–66"
+    ]
   }
 ]
