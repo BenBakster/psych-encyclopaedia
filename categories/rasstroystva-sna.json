@@ -315,5 +315,234 @@
       "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Sleep disorders chapter",
       "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VII Hypnotics (p.2261)"
     ]
+  },
+  {
+    "id": "drug_zolpidem",
+    "cmd_alias": "zolpidem",
+    "type": "matrix",
+    "category": "Расстройства сна",
+    "title": "Золпидем: Z-drug, α1-selective GABA, FDA для бессонницы, сложные парасомнии",
+    "tags": [
+      "золпидем",
+      "zolpidem",
+      "Ambien",
+      "Stilnox",
+      "Z-drug",
+      "α1-selective",
+      "sleep onset",
+      "CR",
+      "sublingual",
+      "низкие дозы у женщин",
+      "complex sleep behaviors",
+      "amnesia"
+    ],
+    "related": [
+      "drug_zopiclone",
+      "drug_diazepam",
+      "drug_lorazepam",
+      "insomnia_overview",
+      "insomnia_pharma",
+      "sleep_classification"
+    ],
+    "description": "Имидазопиридин Z-drug — НЕ benzodiazepine структурно, но действует на BZ binding site GABA-A с relative α1 selectivity (отсюда minimal anxiolytic, но strong hypnotic). FDA approved для insomnia. ⚠ Black box: complex sleep behaviors (sleep-driving, sleep-eating). FDA 2013: ↓ женские дозы 50% (slow metabolism).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: imidazopyridine, Z-drug.\nSanofi. FDA approval 1992.\n\nРЕЦЕПТОРЫ:\n• GABA-A positive allosteric (BZ binding site)\n• α1 PREFERENTIAL — отсюда: hypnotic ↑↑, минимум anxiolytic, минимум muscle relaxant, минимум anti-seizure\n• Меньше cognitive impairment чем BDZ (теоретически)\n• Меньше зависимости, чем BDZ (но не ноль)"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• Insomnia (sleep onset предпочтительно):\n  – IR: 5 мг (женщины) или 10 мг (мужчины) на ночь\n  – CR (Ambien CR): 6.25 мг (ж) или 12.5 мг (м)\n  – SL (sublingual, Intermezzo): 1.75 мг (ж) или 3.5 мг (м) — для middle-of-night awakening\n  – Spray (Zolpimist)\n\n⚠ FDA 2013: женские дозы снижены 50% — женщины метаболизируют zolpidem медленнее, ↑ риск morning impairment\n\n• Не для длительной терапии — guidelines: ≤4 нед регулярно",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1.5 ч\n• T½: 2–3 ч (короткий → idealen для onset insomnia, минимум hangover)\n• Метаболизм: CYP3A4 (главный), CYP1A2 + CYP2D6 (минор)\n• Биодоступность 70%; еда ↓ 25% (принимать на пустой желудок)\n• Без активных метаболитов\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Sleep onset: ↓ latency 15–20 мин (значимо vs placebo)\n• Bazire 2020: эффективен short-term, но evidence для long-term скуднее",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• ⚠ COMPLEX SLEEP BEHAVIORS (FDA black box 2019):\n  – Sleep-driving\n  – Sleep-eating\n  – Sleep-walking\n  – Phone calls / sex / cooking без recall\n  – Часто amnestic\n  – Усиливается с alcohol/CNS depressants\n  – Любой эпизод → ОТМЕНА препарата\n• ⚠ Антероградная амнезия\n• Утренний residual (особенно на CR, при женских дозах)\n• Парадоксальная агрессия / disinhibition (как BDZ)\n• Зависимость (меньше BDZ, но реальна)\n• Withdrawal (как BDZ)\n• Депрессия / suicidality (FDA warning)\n• Falls у пожилых\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Strong CYP3A4 inhibitors (кетоконазол, кларитромицин, ритонавир) — ↑↑\n⛔ Strong CYP3A4 inducers (рифампицин, карбамазепин) — ↓\n⛔ Алкоголь — потенцирует sleep behaviors (особенно)\n⛔ Опиоиды — black box"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: Class C — limited data, ассоциация с low birth weight, preterm; избегать\nЛАКТАЦИЯ: RID 0.02–0.18% — приемлемо\nПОЖИЛЫЕ: ↓ доза 5 мг (не выше) — ↑ риск falls, hangover, complex behaviors\nПЕЧЁНОЧНАЯ: ↓ доза\nПОЧЕЧНАЯ: minimal change\nDISCONTINUATION: short-term use — taper не критичен; long-term — taper as BDZ\n\nКОГДА ВЫБИРАТЬ:\n• Sleep onset insomnia\n• Short-term (≤4 нед)\n• Когда нужно избежать residual утром (короткий T½)\n\nКОГДА ИЗБЕГАТЬ:\n• Алкогольное abuse\n• Sleep apnea (нелеченое)\n• История parasomnias\n• Психотическое расстройство (амнезия + disinhibition риски)\n• Длительная терапия (есть лучшие альтернативы — CBT-I, suvorexant)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VI Tranquilizers/Anxiolytics + Part VII Hypnotics",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "BAP Guidelines for the pharmacological management of anxiety disorders (Baldwin D.S. et al. J Psychopharmacol 2014;28:403–439)"
+    ]
+  },
+  {
+    "id": "drug_zopiclone",
+    "cmd_alias": "zopiclone",
+    "type": "matrix",
+    "category": "Расстройства сна",
+    "title": "Зопиклон: Z-drug, broader receptor profile, частый \"горький во рту\"",
+    "tags": [
+      "зопиклон",
+      "zopiclone",
+      "Imovane",
+      "Zimovane",
+      "Z-drug",
+      "cyclopyrrolone",
+      "sleep maintenance",
+      "metallic taste",
+      "CYP3A4",
+      "not in US"
+    ],
+    "related": [
+      "drug_zolpidem",
+      "drug_diazepam",
+      "drug_lorazepam",
+      "insomnia_overview",
+      "insomnia_pharma",
+      "sleep_classification"
+    ],
+    "description": "Cyclopyrrolone Z-drug. Не FDA approved в US (используется EU, UK, Канада, Россия, Украина). Action на ВСЕ subтипы GABA-A (не только α1) — отсюда более full BDZ-like effects (включая anxiolytic). T½ 5 ч — лучше для sleep maintenance. ⚠ Bitter/metallic taste 35%.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: cyclopyrrolone Z-drug.\nRhône-Poulenc Rorer (Sanofi). EU approval 1986.\n\nРЕЦЕПТОРЫ:\n• GABA-A positive allosteric (BZ binding site)\n• ВСЕ α subтипы (α1 + α2 + α3 + α5) — больше \"BDZ-like\" чем zolpidem\n• Eszopiclone — S-энантиомер zopiclone (FDA approved отдельно как Lunesta)"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• Insomnia: 7.5 мг на ночь (стандарт), 3.75 мг (пожилые)\n• Принимать перед сном, без еды\n• Не для длительной терапии — UK NICE: ≤4 нед\n\nОТСУТСТВУЕТ В US — eszopiclone (Lunesta) — single S-isomer:\n• 1–3 мг на ночь\n• FDA approval 2004\n• Approved в US для long-term use (одобрен >12 нед в RCTs)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1.5–2 ч\n• T½: 5–6 ч (intermediate — лучше для sleep maintenance чем zolpidem 2–3ч)\n• Метаболизм: CYP3A4 (главный), CYP2C8\n• Биодоступность 80%\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Эффективен для sleep onset И maintenance\n• Bazire 2020: equal или slightly superior к temazepam\n• Эзопиклон долгосрочные RCT (Walsh 2007): эффективность сохраняется до 12 мес",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• ⚠ BITTER / METALLIC TASTE — 30–40% (главная отличительная особенность)\n• Седация (residual утром выше zolpidem)\n• Сухость во рту\n• Головная боль\n• Headache, dizziness\n• Complex sleep behaviors (как zolpidem)\n• Antероградная амнезия\n• Зависимость (меньше BDZ)\n• Withdrawal\n• Утренний hangover (особенно при дозе 7.5 мг у sensitive пациентов)\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Strong CYP3A4 inhibitors (кетоконазол, кларитромицин, грейпфрутовый сок, ритонавир) — ↑↑\n⛔ Strong CYP3A4 inducers (рифампицин, карбамазепин) — ↓\n⛔ Алкоголь, опиоиды"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, избегать\nЛАКТАЦИЯ: RID 1.4% — приемлемо\nПОЖИЛЫЕ: 3.75 мг старт; falls risk\nПЕЧЁНОЧНАЯ: ↓ доза\nПОЧЕЧНАЯ: minimal change\nDISCONTINUATION: short-term use minimal taper\n\nКОГДА ВЫБИРАТЬ:\n• Sleep onset + maintenance combined (intermediate T½ предпочтителен)\n• Когда zolpidem дал complex behaviors (zopiclone в некоторых отчетах меньше — но evidence слабая)\n\nКОГДА ИЗБЕГАТЬ:\n• Sensitive к taste\n• Длительная терапия (preferred eszopiclone если есть)\n• Алкогольное abuse"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VI Tranquilizers/Anxiolytics + Part VII Hypnotics",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "BAP Guidelines for the pharmacological management of anxiety disorders (Baldwin D.S. et al. J Psychopharmacol 2014;28:403–439)"
+    ]
+  },
+  {
+    "id": "drug_trazodone",
+    "cmd_alias": "trazodone",
+    "type": "matrix",
+    "category": "Расстройства сна",
+    "title": "Тразодон: SARI, low-dose hypnotic + standard-dose AD, ⚠ priapism",
+    "tags": [
+      "тразодон",
+      "trazodone",
+      "Desyrel",
+      "Trittico",
+      "SARI",
+      "5-HT2A antagonist",
+      "hypnotic",
+      "insomnia",
+      "priapism",
+      "α1 antagonist",
+      "H1",
+      "off-label sleep"
+    ],
+    "related": [
+      "drug_mirtazapine",
+      "drug_zolpidem",
+      "drug_zopiclone",
+      "insomnia_overview",
+      "insomnia_pharma",
+      "sleep_classification"
+    ],
+    "description": "Serotonin Antagonist and Reuptake Inhibitor (SARI). FDA approved для MDD (200–600 мг), но в практике главное использование — off-label hypnotic 50–100 мг (НЕ FDA approved для sleep, но один из most-prescribed off-label медикаментов в US).",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: phenylpiperazine, SARI (5-HT2 antagonist + reuptake inhibitor + α1 antagonist).\nMead Johnson. FDA approval 1981.\n\nРЕЦЕПТОРЫ:\n• 5-HT2A antagonist (мощный) — главное hypnotic action\n• 5-HT reuptake inhibitor (умеренный) — antidepressant\n• α1 antagonist — седация + ортостаз\n• H1 antagonist — седация\n• Без значимых antiхолин affinities\n\nКЛИНИЧЕСКИЕ ВЫВОДЫ:\n• Низкие дозы (25–100 мг): доминируют 5-HT2A + α1 + H1 antagonism → hypnotic effect\n• Высокие дозы (200–600 мг): добавляется SERT inhibition → antidepressant"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• Insomnia (off-label, очень частое использование):\n  – 25–100 мг на ночь\n  – Особенно полезен при insomnia + anxiety + depression\n\n• MDD (FDA approved):\n  – 150–600 мг/сут разделено или extended\n  – Start 75–150, target 300–400\n  – Reduced использование в US в favor of SSRIs\n\n• Adjunct к SSRI при insomnia (50 мг на ночь)\n• PTSD-related insomnia / nightmares (off-label)\n• Aggression / behavioral disturbance в dementia (off-label)\n• OCD adjunct (limited data)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1–2 ч\n• T½: 5–9 ч\n• Метаболизм: CYP3A4 (главный)\n• Активный метаболит: m-CPP (5-HT agonist) — может вызвать anxiety transient\n\nTDM (Hiemke 2018): 700–1000 нг/мл для AD effect; для hypnotic effect нет TDM значения\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Insomnia (off-label): эффективность ≥ placebo, но чем длительность ↑ — эффект ↓ (tolerance)\n• MDD: эффективен но ↓ потенция чем SSRI/SNRI\n• Mendelson 2005 review: тразодон — most-prescribed sleep aid в primary care US",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• Седация (как раз желаемое для insomnia, но можно «overshoot»)\n• ⚠ ОРТОСТАЗ (α1) — особенно у пожилых, причина falls\n• Сухость во рту\n• ⚠ ПРИАПИЗМ — rare (1/6000), но FDA warning\n  – Любая prolonged erection >2 ч → emergency\n• Тошнота\n• Головная боль\n• Cardiac arrhythmias rare (QTc минимальный)\n• Утренний hangover\n• ⚠ Без discontinuation syndrome (long-term hypnotic alternative)\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Strong CYP3A4 inhibitors — ↑↑ trazodone\n⛔ Strong CYP3A4 inducers — ↓\n⛔ ИМАО — серотониновый синдром\n⛔ Опиоиды — additive sedation"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, registry suggest minimal teratogenicity; alternative if AD needed\nЛАКТАЦИЯ: RID 2.8% — приемлемо\nПОЖИЛЫЕ: ✅ хороший choice вместо BDZ для insomnia (нет cognitive blunt, нет falls в большинстве); 25 мг старт\nПЕЧЁНОЧНАЯ: ↓ доза\nПОЧЕЧНАЯ: minimal change\nDISCONTINUATION: ✅ минимальный — long-term использование acceptable\n\nКОГДА ВЫБИРАТЬ:\n• Insomnia + anxiety/depression (one drug)\n• Insomnia когда нужно избежать BDZ/Z-drug (особенно у substance use)\n• Insomnia у пожилого (без severe orthostasis history)\n• PTSD nightmares (alternative prazosin)\n• Adjunct к SSRI для sleep\n\nКОГДА ИЗБЕГАТЬ:\n• Severe orthostasis history\n• История priapism\n• Тяжёлая cardiac patology (rare arrhythmias)\n• Если AD effect wanted — SSRIs предпочтительнее"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VI Tranquilizers/Anxiolytics + Part VII Hypnotics",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "BAP Guidelines for the pharmacological management of anxiety disorders (Baldwin D.S. et al. J Psychopharmacol 2014;28:403–439)"
+    ]
+  },
+  {
+    "id": "drug_suvorexant",
+    "cmd_alias": "suvorexant",
+    "type": "matrix",
+    "category": "Расстройства сна",
+    "title": "Сувoрексант: первый orexin antagonist, FDA для insomnia, без BDZ-like зависимости",
+    "tags": [
+      "сувoрексант",
+      "suvorexant",
+      "Belsomra",
+      "orexin",
+      "DORA",
+      "dual orexin receptor antagonist",
+      "insomnia",
+      "Merck",
+      "CYP3A4",
+      "narcolepsy-like effects",
+      "novel mechanism"
+    ],
+    "related": [
+      "drug_zolpidem",
+      "drug_zopiclone",
+      "drug_trazodone",
+      "insomnia_overview",
+      "insomnia_pharma",
+      "sleep_classification"
+    ],
+    "description": "Первый approved DORA (Dual Orexin Receptor Antagonist) — блокирует OX1R и OX2R. FDA 2014. Неvel mechanism vs все BDZ/Z-drugs (которые GABA-based). Без зависимости BDZ-типа (limited data, но encouraging). Дороже, сложнее в Украине.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: DORA — Dual Orexin Receptor Antagonist.\nMerck. FDA approval 2014.\n\nМЕХАНИЗМ:\n• OX1R + OX2R antagonist\n• Orexin (hypocretin) — neuropeptide промtorно отвечающий за wakefulness\n• Блокада → инhibition wakefulness → sleep promotion\n• НЕ GABAergic — НЕ BDZ binding site\n• Меньше cognitive blunting, меньше зависимости (теоретически и в RCT data)\n\nКЛАССНЫЕ ДРУГИЕ DORA:\n• Lemborexant (Dayvigo) — 2019 FDA\n• Daridorexant (Quviviq) — 2022 FDA"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• Insomnia (sleep onset + maintenance): 10–20 мг за 30 мин до сна\n• Не принимать с едой (delayed absorption)\n• Не принимать если <7 ч до wake-up time (residual sedation risk)\n\n⚠ Schedule IV controlled (US) — limited dependence potential, но still controlled",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 2 ч\n• T½: 12 ч (long, относительно для hypnotic)\n• Метаболизм: CYP3A4 (главный)\n• Биодоступность 82%\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Phase 3 trials (Herring 2014, 2016): ↓ sleep latency 5–10 мин, ↑ total sleep time 20+ мин vs placebo\n• Effect размер меньше чем zolpidem, но better tolerability\n• 12-month safety acceptable\n• Меньше rebound insomnia при отмене (vs Z-drugs)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• Седация (residual если <7ч до wake)\n• Головная боль\n• Тошнота\n• Сухость во рту\n• ⚠ NARCOLEPSY-LIKE EFFECTS rare:\n  – Sleep paralysis\n  – Hypnagogic / hypnopompic hallucinations\n  – Cataplexy-like episodes\n  – Связано с DORA mechanism — orexin antagonism\n• Sleep behaviors (rare, less common чем Z-drugs)\n• Suicidal ideation (FDA warning, low frequency)\n\n✅ ОТНОСИТЕЛЬНО ОТСУТСТВУЕТ:\n• Antероградная амнезия (vs BDZ/Z)\n• Falls (vs BDZ — limited data, но encouraging)\n• Cognitive blunt (vs BDZ)\n• Зависимость (теоретически и data до 12 мес)\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Strong CYP3A4 inhibitors (кетоконазол, ритонавир, кларитромицин) — ПРОТИВОПОКАЗАНЫ или ↓ доза 5 мг\n⛔ Strong CYP3A4 inducers (рифампицин, карбамазепин) — significantly ↓ effect\n⛔ Алкоголь — additive sedation\n⛔ Другие CNS depressants"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, избегать\nЛАКТАЦИЯ: limited data\nПОЖИЛЫЕ: ↑ sensitivity — start 5 мг\nПЕЧЁНОЧНАЯ: severe — избегать (Child-Pugh C)\nПОЧЕЧНАЯ: minimal change\nDISCONTINUATION: ✅ minimal rebound\n\nКОГДА ВЫБИРАТЬ:\n• Insomnia + история substance use (less abuse potential)\n• Insomnia когда BDZ/Z-drug failed/contraindicated\n• Хроническая insomnia (long-term safety better)\n• Пожилой пациент с cognitive concerns\n• Пациент которому важна high cognitive function следующий день\n\nКОГДА ИЗБЕГАТЬ:\n• Narcolepsy в анамнезе или семейная\n• Severe hepatic impairment\n• Стоимость significantly higher чем generic Z-drugs\n• Полипрагмазия с CYP3A4 inhibitors/inducers\n• Беременность"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VI Tranquilizers/Anxiolytics + Part VII Hypnotics",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "BAP Guidelines for the pharmacological management of anxiety disorders (Baldwin D.S. et al. J Psychopharmacol 2014;28:403–439)"
+    ]
   }
 ]

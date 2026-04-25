@@ -131,5 +131,414 @@
       "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Anxiety disorders chapter",
       "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VI Tranquilizers/Anxiolytics (p.2035)"
     ]
+  },
+  {
+    "id": "drug_diazepam",
+    "cmd_alias": "diazepam",
+    "type": "matrix",
+    "category": "Тревожные расстройства",
+    "title": "Диазепам (сибазон): long-acting BDZ, основа алкогольной детоксикации, противосудорожный",
+    "tags": [
+      "диазепам",
+      "сибазон",
+      "реланиум",
+      "valium",
+      "BDZ",
+      "long-acting",
+      "alcohol withdrawal",
+      "status epilepticus",
+      "катетоническое возбуждение",
+      "CYP3A4",
+      "desmethyldiazepam",
+      "Авруцкий"
+    ],
+    "related": [
+      "drug_lorazepam",
+      "drug_alprazolam",
+      "drug_clonazepam",
+      "alg_alcohol_withdrawal",
+      "alg_acute_agitation",
+      "anxiety_treatment_approach",
+      "anxiety_pharma_table",
+      "benzo_withdrawal"
+    ],
+    "description": "Long-acting бензодиазепин (T½ 20–80ч + active metabolite desmethyldiazepam T½ до 200ч). Основной BDZ украинской/постсоветской практики (синонимы: сибазон, реланиум). Препарат выбора при алкогольной детоксикации (front-loaded), статусном эпилепсии, кататоническом возбуждении.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: 1,4-бензодиазепин. Roche, синтезирован Sternbach 1959. На рынке с 1963.\n\nРЕЦЕПТОРЫ:\n• GABA-A receptor positive allosteric modulator (BZ binding site)\n• Усиливает Cl⁻ proток через GABA-A → гиперполяризация → ↓ нейрональная возбудимость\n• Действие на ВСЕ субтипы GABA-A (α1/2/3/5) — отсюда множественные эффекты:\n  – α1: седация, амнезия, противосудорожный\n  – α2: anxiolytic, muscle relaxant\n  – α3: anxiolytic, muscle relaxant\n  – α5: cognitive (амнезия)\n\nВ отличие от селективных Z-drugs (золпидем = только α1) — диазепам действует на все."
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n\n• Анксиолизис: 2–10 мг 2–4 р/сут\n• Острая ажитация (Авруцкий, NEUROP/Messer): 5–10 мг IM или PO; повтор q30–60 мин\n• Алкогольная детоксикация (см. alg_alcohol_withdrawal):\n  – Symptom-triggered (CIWA 10–18): 10 мг при CIWA ≥10, повтор q1ч\n  – Front-loaded (CIWA >18 / DT): 10–20 мг IV q1–2ч до седации, 80–200 мг/24ч норма\n• Status epilepticus: 10 мг IV (5 мг/мин), повтор до 30 мг\n• Кататоническое возбуждение / лоразепамовый тест-альтернатива: 10 мг IV медленно\n• Premedication: 5–10 мг IM/PO 1ч до процедуры\n• Спазмы скелетных мышц: 2–10 мг 3–4 р/сут\n• Vertigo: 2–5 мг PO\n\nФОРМЫ: PO (таблетки 2/5/10 мг, раствор), IM, IV, ректальные tubes (для status у детей)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax PO: 30–90 мин\n• Tmax IM: НЕРЕГУЛЯРНАЯ — ⚠ непредсказуемая абсорбция (lorazepam preferred IM)\n• Tmax IV: 1–3 мин\n• T½ diazepam: 20–80 ч\n• T½ desmethyldiazepam (active): 30–200 ч\n• Метаболизм: CYP3A4 + CYP2C19 (демeтилирование)\n• Биодоступность PO: 90%; IM: variable (precipitation в muscle)\n\nTDM (Hiemke 2018): diazepam + DMD сумма 100–500 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Лучший choice для AW в Украине (доступность, цена)\n• Cochrane: BDZ — единственный класс с доказательной базой при DT (Amato 2010)\n• ⚠ В США часто заменяют lorazepam (более предсказуемая IM абсорбция)",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• Седация (главное)\n• Атаксия, falls (особенно пожилые)\n• Антероградная амнезия\n• Респираторная депрессия — особенно с алкоголем/опиоидами\n• Парадоксальная агрессия (особенно у пожилых, у ID, при alcohol use)\n• Накопление при длительной терапии (long T½)\n• ⚠ ЗАВИСИМОСТЬ + DISCONTINUATION SYNDROME (см. benzo_withdrawal)\n• ⚠ Bipolar induction редко\n• ⚠ Не использовать при обструктивном sleep apnea (если не на CPAP)\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Опиоиды + диазепам — black box: respiratory depression risk\n⛔ Алкоголь — потенцирует седацию + apnea\n⛔ Strong CYP3A4 inhibitors (кларитромицин, итраконазол) — ↑↑ levels\n⛔ Strong CYP3A4 inducers (карбамазепин, рифампицин) — ↓ levels\n✅ Лоразепам/оксазепам предпочтительнее при печёночной дисфункции (нет CYP)"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: Class D (FDA) — повышенный риск волчья пасть в I триместре + neonatal withdrawal/floppy infant в III; используется при необходимости (eclampsia, status epilepticus)\nЛАКТАЦИЯ: ⚠ накапливается у ребёнка; alternatives есть (лоразепам)\nПОЖИЛЫЕ: ⚠ falls, накопление; preferred — лоразепам (короче T½)\nПЕЧЁНОЧНАЯ: ⚠ накопление активных метаболитов; preferred — лоразепам/оксазепам (нет CYP)\nПОЧЕЧНАЯ: minimal change\nDISCONTINUATION: ⚠ медленный таперинг; см. benzo_withdrawal\n\nКОГДА ВЫБИРАТЬ:\n• Алкогольная детоксикация (1-я линия в Украине)\n• Status epilepticus\n• Острая ажитация (с галоперидолом combo)\n• Кататония (с lorazepam)\n• Краткосрочный анксиолизис\n\nКОГДА ИЗБЕГАТЬ (предпочесть лоразепам):\n• Пожилые (накопление)\n• Печёночная дисфункция\n• Регулярная IM admiнистрация (variable absorption)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VI Tranquilizers/Anxiolytics + Part VII Hypnotics",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "BAP Guidelines for the pharmacological management of anxiety disorders (Baldwin D.S. et al. J Psychopharmacol 2014;28:403–439)",
+      "Cochrane: Amato L. et al. Benzodiazepines for alcohol withdrawal 2010",
+      "Авруцкий Г.Я. Неотложная помощь в психиатрии. М.: Медицина, 1979"
+    ]
+  },
+  {
+    "id": "drug_lorazepam",
+    "cmd_alias": "lorazepam",
+    "type": "matrix",
+    "category": "Тревожные расстройства",
+    "title": "Лоразепам: intermediate BDZ, predictable IM, кататоническое тест",
+    "tags": [
+      "лоразепам",
+      "lorazepam",
+      "Ativan",
+      "BDZ",
+      "intermediate-acting",
+      "катетоническое возбуждение",
+      "catatonia",
+      "status epilepticus",
+      "glucuronidation",
+      "печёночная безопасность"
+    ],
+    "related": [
+      "drug_diazepam",
+      "drug_alprazolam",
+      "alg_acute_agitation",
+      "alg_nms",
+      "symptom_catatonia",
+      "anxiety_treatment_approach",
+      "anxiety_pharma_table",
+      "benzo_withdrawal"
+    ],
+    "description": "Intermediate-acting BDZ. Уникальные особенности: PREDICTABLE IM absorption (vs diazepam), GLUCURONIDATION metabolism (минует CYP — безопасен при печёночной дисфункции). ПЕРВЫЙ выбор для лоразепамового теста при кататонии.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: 3-hydroxy benzodiazepine. Wyeth. FDA approval 1977.\n\nРЕЦЕПТОРЫ: standard GABA-A positive allosteric modulator (BZ binding site).\n\nКЛЮЧЕВЫЕ ОТЛИЧИЯ ОТ ДИАЗЕПАМА:\n• Метаболизм: glucuronidation only (UGT2B15) — обходит CYP\n• Нет активных метаболитов\n• Гораздо более predictable IM absorption (water-soluble formulation)\n• Короче T½ — меньше накопления у пожилых"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• Анксиолизис: 1–6 мг/сут разделено на 2–3 приёма\n• Острая ажитация (NEUROP/Messer): 1–2.5 мг PO/IM/IV (max 7.5 мг/сут)\n• Кататоническое возбуждение / лоразепамовый тест: 2 мг IM, оценка через 30 мин — если эффект — продолжить 2–4 мг q4–6ч\n• Status epilepticus: 4 мг IV slowly, повтор через 10–15 мин\n• Adjunct chemotherapy-induced nausea (anti-emetic potential)\n• Premedication: 1–2 мг PO/IM 1ч до процедуры\n• Insomnia: 1–2 мг на ночь (off-label, Maudsley не рекомендует регулярно)\n• AW (alternative diazepam): 2 мг IM при CIWA ≥10, повтор q1ч\n• ЗНС (NEUROP/Messer): 2–4 мг (max 7.5 мг/сут) IV\n• Серотониновый синдром: 1–2.5 мг PO или 0.5–1 мг IV",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax PO: 2 ч\n• Tmax IM: ✅ 1–3 ч PREDICTABLE (vs erratic diazepam IM)\n• Tmax IV: <5 мин\n• T½: 10–20 ч (intermediate)\n• Метаболизм: только glucuronidation — нет CYP\n• Нет активных метаболитов\n• Биодоступность PO: 90%; IM: 90%+ predictable\n\nTDM (Hiemke 2018): 30–100 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Battaglia 1997 RCT: lorazepam + haloperidol IM > monotherapy (acute psychotic agitation)\n• Catatonia first-line (Bush-Francis Catatonia Rating Scale + lorazepam test)\n• NICE CG100 для DT: первый choice — лоразепам PO",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• Седация\n• Атаксия\n• Амнезия (потенциально полезна для процедур)\n• Респираторная депрессия (с опиоидами/алкоголем)\n• ⚠ Зависимость + discontinuation\n• Парадоксальная агрессия редка (меньше чем диазепам)\n• ⚠ Propylene glycol toxicity при high-dose IV (как в DT) — мониторинг osmolar gap, лактата\n\nВЗАИМОДЕЙСТВИЯ:\n• ✅ Минимум CYP-driven interactions (преимущество перед alprazolam, midazolam)\n⛔ Опиоиды + lorazepam — black box\n⛔ Probenecid — ↓ glucuronidation → ↑ lorazepam (rare clinically)\n⛔ Алкоголь"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: Class D — общий BDZ profile; используется при необходимости (eclampsia, status, severe anxiety)\nЛАКТАЦИЯ: RID 2.6% — приемлемо\nПОЖИЛЫЕ: ✅ ОТЛИЧНЫЙ choice — короче T½, нет активных метаболитов, нет CYP — predictable\n• 0.5–1 мг старт\nПЕЧЁНОЧНАЯ: ✅ ОТЛИЧНЫЙ choice (нет CYP — glucuronidation сохранена даже в cirrhosis)\nПОЧЕЧНАЯ: minimal change\nDISCONTINUATION: умеренный — таперинг 4 нед\n\nКОГДА ВЫБИРАТЬ:\n• Кататонический ступор / возбуждение (FIRST LINE) — лоразепамовый тест\n• ЗНС, серотониновый синдром (NEUROP)\n• IM administration в emergency (predictable)\n• Печёночная дисфункция\n• Пожилые\n• Острая ажитация в комбинации с галоперидолом IM\n\nКОГДА ИЗБЕГАТЬ:\n• AW в Украине (диазепам/сибазон традиционно используется + дешевле)\n• High-dose IV длительно (propylene glycol toxicity)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VI Tranquilizers/Anxiolytics + Part VII Hypnotics",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "BAP Guidelines for the pharmacological management of anxiety disorders (Baldwin D.S. et al. J Psychopharmacol 2014;28:403–439)",
+      "Battaglia J. et al. Haloperidol+lorazepam IM RCT. Am J Emerg Med 1997",
+      "Bush G. et al. Catatonia I/II. Acta Psychiatr Scand 1996",
+      "Bazire S. Psychotropic Drug Directory 2020/21"
+    ]
+  },
+  {
+    "id": "drug_alprazolam",
+    "cmd_alias": "alprazolam",
+    "type": "matrix",
+    "category": "Тревожные расстройства",
+    "title": "Альпразолам: short-acting BDZ, panic disorder FDA, ⚠ misuse + interdose",
+    "tags": [
+      "альпразолам",
+      "alprazolam",
+      "Xanax",
+      "BDZ",
+      "short-acting",
+      "panic disorder",
+      "interdose anxiety",
+      "misuse",
+      "CYP3A4",
+      "Bazire warning"
+    ],
+    "related": [
+      "drug_lorazepam",
+      "drug_diazepam",
+      "drug_clonazepam",
+      "anxiety_treatment_approach",
+      "anxiety_pharma_table",
+      "benzo_withdrawal"
+    ],
+    "description": "Triazolobenzodiazepine. FDA approved для panic disorder. Short T½ (6–12ч) → быстрый onset, но ⚠ выраженное interdose anxiety + самый высокий misuse potential среди BDZ. Bazire 2020: «не рекомендуется как chronic anxiolytic».",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: triazolobenzodiazepine (имеет triazole ring — отличает от diazepam семейства).\nUpjohn (Pfizer). FDA approval 1981.\n\nРЕЦЕПТОРЫ: standard GABA-A positive allosteric. Имеет некоторое α2-предпочтение → сильный anxiolytic effect."
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• Generalized anxiety: 0.25–4 мг/сут разделено на 3 приёма (max 4 мг/сут)\n• Panic disorder: start 0.5 мг 3 р/сут → up to 10 мг/сут (FDA)\n• Alprazolam XR (extended release): 0.5–6 мг 1 р/сут — сглаживает interdose\n• Insomnia (off-label): 0.25–0.5 мг (не рекомендуется как primary)\n\n⚠ В большинстве western guidelines (NICE, BAP) — НЕ first-line для panic из-за misuse/dependence. Сертралин/эсциталопрам предпочтительнее.\n\nFORMS: tablets 0.25/0.5/1/2 мг, XR 0.5/1/2/3 мг",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1–2 ч (быстрый onset → reinforcement risk)\n• T½: 6–12 ч (короткий → interdose anxiety + быстрый rebound)\n• Метаболизм: CYP3A4\n• Активные метаболиты: minor\n\nTDM (Hiemke 2018): 5–50 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Panic FDA: эффективен\n• Cross-Cultural Anxiety RCT: ≈ imipramine\n• Bazire 2020: «not recommended as chronic anxiolytic; severe rebound anxiety, very rapid onset of dependence»",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• ⚠ INTERDOSE ANXIETY — выраженное между приёмами (короткий T½ + быстрый clearance)\n• Rebound panic при пропуске дозы\n• Седация, атаксия\n• Антероградная амнезия\n• Депрессия (увеличение риска при длительном применении)\n• ⚠ MISUSE POTENTIAL — самый высокий среди BDZ (быстрый Tmax + euphoria)\n• ⚠ Очень быстро развивается tolerance\n• ⚠ Withdrawal — самый тяжёлый из BDZ (короткий T½ → быстрый и интенсивный)\n• ⚠ Парадоксальная агрессия / disinhibition\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Strong CYP3A4 inhibitors (кетоконазол, кларитромицин, ритонавир, грейпфрутовый сок) — ↑↑↑ alprazolam\n⛔ Strong CYP3A4 inducers (карбамазепин, рифампицин) — ↓ alprazolam\n⛔ Опиоиды — black box\n⛔ Алкоголь"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: Class D — избегать (есть лучшие BDZ — лоразепам/clonazepam)\nЛАКТАЦИЯ: RID 8.5% — мониторить ребёнка\nПОЖИЛЫЕ: ⚠ ИЗБЕГАТЬ — interdose, falls, depression risk; preferred — clonazepam или non-BDZ alternative\nПЕЧЁНОЧНАЯ: ↓ дозу\nПОЧЕЧНАЯ: minimal change\nDISCONTINUATION: ⚠ ОЧЕНЬ ТЯЖЁЛЫЙ — switch на clonazepam/diazepam перед таперингом, потом slow taper 8–12 нед\n\nКОГДА ВЫБИРАТЬ:\n• Panic disorder при failure SSRI/SNRI и при невозможности использовать clonazepam (longer T½ предпочтителен)\n• Anxiety с компонентом nemegyрабочих эффектов (кратковременно <4 нед)\n\nКОГДА ИЗБЕГАТЬ:\n• Substance use history (любая)\n• Ожидаемое long-term использование (есть better alternatives — pregabalin, buspirone, SSRI)\n• Пожилые\n• Депрессия + anxiety mix"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VI Tranquilizers/Anxiolytics + Part VII Hypnotics",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "BAP Guidelines for the pharmacological management of anxiety disorders (Baldwin D.S. et al. J Psychopharmacol 2014;28:403–439)",
+      "Bazire S. Psychotropic Drug Directory 2020/21 — chapter 1.6 (anxiety)"
+    ]
+  },
+  {
+    "id": "drug_clonazepam",
+    "cmd_alias": "clonazepam",
+    "type": "matrix",
+    "category": "Тревожные расстройства",
+    "title": "Клонозепам: intermediate-long BDZ, panic + anti-seizure, лучше альпразолама",
+    "tags": [
+      "клонозепам",
+      "clonazepam",
+      "Klonopin",
+      "Rivotril",
+      "BDZ",
+      "panic",
+      "seizure",
+      "myoclonus",
+      "RLS",
+      "Tourette"
+    ],
+    "related": [
+      "drug_diazepam",
+      "drug_lorazepam",
+      "drug_alprazolam",
+      "anxiety_treatment_approach",
+      "anxiety_pharma_table",
+      "benzo_withdrawal"
+    ],
+    "description": "Long-intermediate BDZ (T½ 18–50ч), preferable to alprazolam для panic disorder (более стабильные plasma levels, меньше interdose). Также — anti-seizure (особенно myoclonic), Tourette, REM sleep behavior disorder.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: nitro-benzodiazepine. Roche. FDA approval 1975 (анти-эпилептик), 1997 (panic).\n\nРЕЦЕПТОРЫ: standard GABA-A modulator с относительной α1 selectivity (отсюда сильный anti-seizure)."
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• Panic disorder: 0.5–4 мг/сут разделено на 1–2 приёма (FDA)\n• Generalized anxiety (off-label): 0.5–2 мг/сут\n• Lennox-Gastaut, atypical absence, myoclonic seizures: 1.5–20 мг/сут (FDA)\n• Tourette syndrome (off-label): 0.5–4 мг\n• REM sleep behavior disorder (off-label): 0.5–2 мг на ночь — first-line treatment\n• Akathisia (off-label, NICE): 0.5–2 мг\n• Restless legs syndrome (off-label)",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1–4 ч\n• T½: 18–50 ч (long-intermediate) — отсюда стабильнее plasma levels чем alprazolam\n• Метаболизм: CYP3A4 (минимально CYP2C19)\n• Без активных метаболитов\n\nTDM (Hiemke 2018): 4–80 нг/мл\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• Comparative trials: clonazepam ≥ alprazolam для panic, лучшая переносимость long-term\n• Bazire 2020: \"superior to alprazolam for chronic use due to stability\"\n• Bonnet 2011 (n=74, open): эффективный adjunct для AW",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• Седация (главное, в начале)\n• Атаксия, falls\n• Амнезия (минимум — длиннее T½)\n• ⚠ ДЕПРЕССИЯ — выше других BDZ (известный side effect, описан в guidelines)\n• Паrаксидальная агрессия (особенно у детей, ID)\n• Saliva increase\n• ⚠ Зависимость + discontinuation (но мягче, чем alprazolam)\n• ⚠ Cognitive blunting при длительной терапии\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Опиоиды — black box\n⛔ Алкоголь\n⛔ Strong CYP3A4 inhibitors — ↑ clonazepam\n⛔ Strong CYP3A4 inducers — ↓\n⚠ Vальпроат — иногда parasсорные absence seizures"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: Class D — избегать в I триместре (cleft lip/palate signal — но низкий)\nЛАКТАЦИЯ: RID 2.8% — приемлемо\nПОЖИЛЫЕ: ↓ доза 0.25 мг старт; preferred over alprazolam но clonazepam тоже накапливается\nПЕЧЁНОЧНАЯ: ↓ доза\nПОЧЕЧНАЯ: minimal change\nDISCONTINUATION: ⚠ медленнее, чем alprazolam — таперинг 8–12 нед\n\nКОГДА ВЫБИРАТЬ:\n• Panic disorder требующий BDZ (лучше alprazolam — стабильность)\n• Ситуация когда нужен switch с alprazolam перед детоксикацией\n• REM sleep behavior disorder (1-я линия)\n• Akathisia от АП (off-label)\n• Myoclonic / atypical absence seizures\n\nКОГДА ИЗБЕГАТЬ:\n• Депрессия — может ухудшить\n• Substance use\n• Пожилые с cognitive complaints"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VI Tranquilizers/Anxiolytics + Part VII Hypnotics",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "BAP Guidelines for the pharmacological management of anxiety disorders (Baldwin D.S. et al. J Psychopharmacol 2014;28:403–439)",
+      "Bonnet U. et al. Clonazepam in alcohol withdrawal. Alcohol Alcohol 2011;46:68–73"
+    ]
+  },
+  {
+    "id": "drug_buspirone",
+    "cmd_alias": "buspirone",
+    "type": "matrix",
+    "category": "Тревожные расстройства",
+    "title": "Буспирон: 5-HT1A partial agonist, анксиолитик БЕЗ седации/зависимости/withdrawal",
+    "tags": [
+      "буспирон",
+      "buspirone",
+      "Buspar",
+      "azapirone",
+      "5-HT1A partial agonist",
+      "GAD",
+      "SSRI augmentation",
+      "not-BDZ",
+      "minimum sedation",
+      "minimum dependence"
+    ],
+    "related": [
+      "drug_diazepam",
+      "drug_pregabalin",
+      "drug_gabapentin",
+      "anxiety_treatment_approach",
+      "anxiety_pharma_table",
+      "benzo_withdrawal"
+    ],
+    "description": "Уникальный анксиолитик — 5-HT1A partial agonist, НЕ BDZ, НЕ GABAergic. БЕЗ седации, БЕЗ респираторной депрессии, БЕЗ зависимости, БЕЗ withdrawal. Onset медленный (2–4 недели). FDA approved для GAD и augmentation для SSRI-resistant MDD/OCD.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: azapirone (анксиолитик-non-BDZ).\nBristol-Myers Squibb. FDA approval 1986.\n\nРЕЦЕПТОРЫ:\n• 5-HT1A partial agonist (главный)\n• D2 partial antagonist (минимальный, на высоких дозах)\n• Без аффинности к GABA-A, BDZ-binding site\n• Без аффинности к опиоидным или muscarinic рецепторам"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• Generalized anxiety disorder (GAD): 15–60 мг/сут разделено на 2–3 приёма (FDA)\n  – Start 7.5 мг 2 р/сут\n  – Up-titrate каждые 2–3 дня по 5 мг\n  – Target 30 мг разделено на 2 приёма\n• Augmentation для SSRI-resistant MDD (off-label, STAR*D step 2 option)\n• Augmentation для SSRI-resistant OCD (off-label)\n• Aggression / behavioral problems в TBI / ID (off-label): 10–30 мг\n\nПринимать с/без еды (но consistent — еда ↑ levels 2×).",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 40–90 мин\n• T½: 2–3 ч (короткий — отсюда 2–3 раза в сутки)\n• Метаболизм: CYP3A4\n• Активный метаболит: 1-PP — слаб\n• Биодоступность: 5% (massive first-pass)\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• GAD: ≈ BDZ к 4–6 нед, но онсет позже (2–4 нед)\n• Anti-anxiety без седативного компонента (важно для жизни/работы)\n• MDD augmentation: limited evidence",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• Головокружение (transient)\n• Головная боль\n• Тошнота\n• Раздражительность / nervousness (может ↑ anxiety временно)\n• Парestезии (обычно лёгкие)\n• Сонливость минимальная\n\n✅ ОТСУТСТВУЕТ:\n• Седация\n• Респираторная депрессия\n• Зависимость / abuse\n• Discontinuation syndrome\n• Antероградная амнезия\n• Misuse / liking effect\n• Падения у пожилых\n\nВЗАИМОДЕЙСТВИЯ:\n⛔ Strong CYP3A4 inhibitors (кетоконазол, кларитромицин, ритонавир, грейпфрутовый сок) — ↑↑ buspirone (избегать или ↓ доза до 2.5 мг 2 р/сут)\n⛔ Strong CYP3A4 inducers (рифампицин, карбамазепин) — ↓ buspirone\n⛔ ИМАО — серотониновый риск (theoretical, partial agonist)\n⚠ Без значимых opioid/alcohol potentation"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: Class B — limited data, но preferred over BDZ при необходимости anxiolytic\nЛАКТАЦИЯ: limited data\nПОЖИЛЫЕ: ✅ хороший profile — нет седации, нет antiхолин, нет накопления\nПЕЧЁНОЧНАЯ: ↓ дозу или избегать при severe\nПОЧЕЧНАЯ: ↓ дозу при СКФ <50\nDISCONTINUATION: ✅ Не требуется таперинг\n\nКОГДА ВЫБИРАТЬ:\n• GAD у пациента с substance use history\n• GAD у пожилого\n• GAD когда нужно сохранить vigilance/cognition (driver, surgeon, etc)\n• SSRI-resistant MDD/anxiety augmentation\n• Пациент failed SSRI/SNRI и не хочет BDZ\n\nКОГДА ИЗБЕГАТЬ:\n• Острая anxiety (онсет 2–4 нед — нужно немедленное облегчение)\n• Panic disorder (data слабые vs other agents)\n• PTSD\n• Compliance issues (3 раза в сутки)"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VI Tranquilizers/Anxiolytics + Part VII Hypnotics",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "BAP Guidelines for the pharmacological management of anxiety disorders (Baldwin D.S. et al. J Psychopharmacol 2014;28:403–439)"
+    ]
+  },
+  {
+    "id": "drug_pregabalin",
+    "cmd_alias": "pregabalin",
+    "type": "matrix",
+    "category": "Тревожные расстройства",
+    "title": "Прегабалин: α2δ ligand, GAD/нейропатия, ⚠ misuse potential",
+    "tags": [
+      "прегабалин",
+      "pregabalin",
+      "Lyrica",
+      "α2δ",
+      "GAD",
+      "neuropathic pain",
+      "fibromyalgia",
+      "RLS",
+      "misuse",
+      "substance use disorder",
+      "Pfizer"
+    ],
+    "related": [
+      "drug_gabapentin",
+      "drug_buspirone",
+      "drug_diazepam",
+      "anxiety_treatment_approach",
+      "anxiety_pharma_table",
+      "benzo_withdrawal"
+    ],
+    "description": "α2δ-ligand of voltage-gated calcium channels. FDA approved для DPN, postherpetic neuralgia, fibromyalgia, partial seizures, GAD (EU FDA approved). ⚠ С 2019 — Schedule V controlled substance в США из-за recognized misuse в SUD popilations.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: gabapentinoid, α2δ ligand.\nPfizer. FDA approval: 2004 DPN/PHN/seizures, 2007 fibromyalgia, EU GAD.\n\nМЕХАНИЗМ:\n• Связывание с α2δ subunit voltage-gated calcium channels\n• ↓ release возбуждающих нейромедиаторов (glutamate, NE, substance P)\n• НЕ GABAergic (несмотря на название) — нет direct effect на GABA-A receptors\n• Не agonist GABA receptors"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• GAD (EU approved): 150–600 мг/сут разделено на 2–3 приёма\n  – Start 75 мг 2 р/сут\n  – Target 300–450 мг/сут\n• Diabetic peripheral neuropathy: 100–200 мг 3 р/сут (max 600/сут)\n• Postherpetic neuralgia: 150–600 мг/сут\n• Fibromyalgia: 300–600 мг/сут\n• Partial seizures (adjunct): 150–600 мг/сут\n• Spinal cord injury neuropathic pain: 150–600 мг/сут\n• Off-label: alcohol withdrawal, anxiety augmentation, RLS, social anxiety",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 1–2 ч (быстрый onset)\n• T½: 6 ч\n• Метаболизм: minimal (90% renal неизменённого)\n• Биодоступность: 90% (linear, predictable — лучше gabapentin)\n• Не индуцирует / не ингибирует CYP\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• GAD: ≈ benzodiazepines, лучшая переносимость long-term\n• Stein 2008 NM-A: pregabalin для GAD ≥ venlafaxine\n• Меньше misuse чем BDZ, но потенциал есть\n• PROUD trial 2014: эффективна как augmentation к SSRI",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• Головокружение (~30%)\n• Седация (~20%)\n• Прибавка веса (4–7 кг при длительной терапии)\n• Периферические отеки\n• Сухость во рту\n• Размытое зрение\n• Эйфория (контролируемое substance в US с 2019)\n• Cognitive slowing\n• ⚠ MISUSE POTENTIAL — особенно в пациентах с substance use disorder\n  – Описан abuse в opioid users\n  – «Buzzed» feeling, особенно на >300 мг + alcohol\n  – Сообщения смерти от респ. депрессии при mixing с opioids\n\nВЗАИМОДЕЙСТВИЯ:\n• ✅ Минимум pharmacokinetic interactions (renal excretion)\n⚠ Опиоиды — additive sedation, респ. депрессия (FDA warning 2019)\n⚠ Алкоголь — additive sedation\n⚠ BDZ — additive sedation"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: Class C — limited data, EU restricted (signal cardiac defects); избегать при возможности\nЛАКТАЦИЯ: RID 7% — не рекомендуется\nПОЖИЛЫЕ: ↓ доза при ↓ СКФ; mind sedation, falls\nПОЧЕЧНАЯ: ⚠ ↓ дозу значительно при ↓ СКФ:\n• СКФ 30–60: 50% dose\n• СКФ 15–30: 25% dose\n• СКФ <15: 10–15% dose\nПЕЧЁНОЧНАЯ: minimal change\nDISCONTINUATION: ⚠ taper over 1+ нед — withdrawal seizures возможны\n\nКОГДА ВЫБИРАТЬ:\n• GAD у пациента с substance use в анамнезе (если решил, что pregabalin OK по анамнезу) — preferred over BDZ\n• GAD + neuropathic pain (двойная индикация)\n• GAD + fibromyalgia\n• Augmentation SSRI-resistant\n\nКОГДА ИЗБЕГАТЬ:\n• Активная opioid use или history\n• Известный misuse pregabalin в анамнезе\n• Сложные cognitive demands (driving, surgical work) — седация\n• Плохая renal function без careful dosing\n• Беременность"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VI Tranquilizers/Anxiolytics + Part VII Hypnotics",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "BAP Guidelines for the pharmacological management of anxiety disorders (Baldwin D.S. et al. J Psychopharmacol 2014;28:403–439)"
+    ]
+  },
+  {
+    "id": "drug_gabapentin",
+    "cmd_alias": "gabapentin",
+    "type": "matrix",
+    "category": "Тревожные расстройства",
+    "title": "Габапентин: α2δ ligand, нейропатия + AW augment + бессонница",
+    "tags": [
+      "габапентин",
+      "gabapentin",
+      "Neurontin",
+      "α2δ",
+      "нейропатическая боль",
+      "AW",
+      "alcohol withdrawal",
+      "insomnia",
+      "bipolar",
+      "not-controlled",
+      "saturable absorption"
+    ],
+    "related": [
+      "drug_pregabalin",
+      "drug_diazepam",
+      "drug_buspirone",
+      "alg_alcohol_withdrawal",
+      "anxiety_treatment_approach",
+      "anxiety_pharma_table",
+      "benzo_withdrawal"
+    ],
+    "description": "Старый α2δ ligand, аналогичен прегабалину механистически. FDA approved для PHN, partial seizures. Off-label: AW (Bazire — equivalent benzo для mild-moderate AW), нейропатия, бессонница, bipolar augment. ⚠ SATURABLE absorption — биодоступность ↓ на high doses.",
+    "matrix": {
+      "past": [
+        {
+          "title": "Фармакология",
+          "desc": "КЛАСС: gabapentinoid, α2δ ligand. Pfizer/Parke-Davis. FDA approval 1993.\n\nМЕХАНИЗМ: см. drug_pregabalin (тот же механизм).\n\nПРИНЦИПИАЛЬНОЕ ОТЛИЧИЕ ОТ ПРЕГАБАЛИНА:\n• Gabapentin имеет saturable carrier-mediated absorption (transporter LAT1)\n• Биодоступность 60% при 900 мг/сут, ↓ до 27% при 4800 мг/сут\n• Pregabalin: linear PK, биодоступность 90% — predictable\n• Поэтому gabapentin часто требует higher doses + 3 приёма"
+        }
+      ],
+      "current": {
+        "title": "Дозы, эффективность, побочки",
+        "pheno": "ПОКАЗАНИЯ И ДОЗЫ:\n• Postherpetic neuralgia: 600 мг 3 р/сут (max 3600/сут)\n• Partial seizures (adjunct): 1200–3600 мг/сут\n• Off-label:\n  – AW mild-to-moderate (Bazire 2020 well-evidenced): 300–600 мг 3 р/сут × 7–10 дней — equivalent benzo для mild AW (Myrick 2009 RCT)\n  – Insomnia: 100–600 мг на ночь\n  – Anxiety (off-label): 300–1800 мг/сут\n  – Bipolar augmentation (limited evidence)\n  – Hot flashes (post-menopausal)\n  – RLS\n  – Diabetic neuropathy (off-label, FDA approved для PHN специфически)\n  – Trigeminal neuralgia\n\nDOSING SCHEME:\n• Start 100–300 мг на ночь day 1\n• Up by 300 мг/сут q3 дня\n• Target 900–1800 мг/сут разделено на 3 приёма",
+        "neuro": "ФАРМАКОКИНЕТИКА:\n• Tmax: 2–3 ч\n• T½: 5–7 ч (короткий)\n• Метаболизм: minimal (renal clearance, неизменённого)\n• ⚠ SATURABLE ABSORPTION — bioavailability ↓ при ↑ doses\n• Не индуцирует / не ингибирует CYP\n• Не связывается с белками\n\nКЛИНИЧЕСКИЕ ДАННЫЕ:\n• AW (Myrick 2009 RCT): gabapentin 1200 мг 1-й день → taper, equivalent lorazepam для mild-moderate AW\n• Bazire 2020: \"alternative to BDZ for AW при low dependence severity\"\n• Anxiety: эффективен в open-label, но weaker RCT data чем pregabalin",
+        "tactic": "ПОБОЧНЫЕ ЭФФЕКТЫ:\n• Седация\n• Головокружение\n• Атаксия\n• Прибавка веса (меньше pregabalin)\n• Периферические отеки\n• Cognitive slowing\n• \"Dopamax\" — снижение когнитивных функций описано в высоких дозах\n• ⚠ Misuse potential — лучше прегабалина (US: not controlled federally, но some states)\n• ⚠ Описан abuse в opioid users\n\nВЗАИМОДЕЙСТВИЯ:\n• ✅ Минимум PK interactions\n⚠ Антациды Mg/Al — ↓ gabapentin absorption (отдельно по 2 ч)\n⚠ Опиоиды — additive (FDA warning 2019)\n⚠ Алкоголь"
+      },
+      "future": [
+        {
+          "title": "Спецпопуляции и вопросы выбора",
+          "desc": "БЕРЕМЕННОСТЬ: limited data, обычно избегать; для seizures если нужно — minimum effective dose\nЛАКТАЦИЯ: RID 6–8% — приемлемо\nПОЖИЛЫЕ: ↓ доза при ↓ СКФ; sedation/falls risk\nПОЧЕЧНАЯ: ⚠ значимая корректировка:\n• СКФ >60: full dose\n• 30–60: 50%\n• 15–30: 25%\n• <15: 10–15%\nПЕЧЁНОЧНАЯ: minimal change\nDISCONTINUATION: ⚠ taper over 1+ нед\n\nКОГДА ВЫБИРАТЬ:\n• AW mild-moderate как alternative BDZ (особенно outpatient)\n• Нейропатическая боль + anxiety\n• Insomnia в пациенте с anxiety и желанием избежать BDZ/Z-drug\n• Bipolar augmentation (limited)\n\nКОГДА ИЗБЕГАТЬ:\n• Severe AW / DT (BDZ first-line)\n• Активная opioid use\n• Misuse history с gabapentinoids"
+        }
+      ]
+    },
+    "lastUpdated": "2026-04-25",
+    "sources": [
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part VI Tranquilizers/Anxiolytics + Part VII Hypnotics",
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021)",
+      "Hiemke C. et al. TDM consensus 2017. Pharmacopsychiatry 2018;51:9–62",
+      "BAP Guidelines for the pharmacological management of anxiety disorders (Baldwin D.S. et al. J Psychopharmacol 2014;28:403–439)",
+      "Myrick H. et al. Gabapentin vs lorazepam in AW. Alcohol Clin Exp Res 2009"
+    ]
   }
 ]
