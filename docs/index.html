@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSYCH :: ENCYCLOPAEDIA OS v7.1</title>
+    
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script src="database.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
+
+        :root {
+            --g: #00ff41; --g-dim: #008f11; --g-dark: #004d0a;
+            --bg: #030303; --panel: #0a0a0a; --panel-hover: #111;
+            --red: #ff003c; --blue: #00a8ff; --amber: #ffcc00; --orange: #ff8800;
+            --purple: #b266ff; --teal: #00ccaa; --pink: #ff6699;
+            --white: #e0e0e0; --grey: #555;
+            --border: #1a3a1a;
+            --font: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; overflow: hidden; }
+        body { font-family: var(--font); background: var(--bg); color: var(--g); }
+
+        /* CRT Scanline overlay */
+        body::after {
+            content: ""; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.25) 50%),
+                        linear-gradient(90deg, rgba(255,0,0,0.04), rgba(0,255,0,0.02), rgba(0,0,255,0.04));
+            background-size: 100% 2px, 3px 100%;
+            z-index: 9999; pointer-events: none;
+        }
+
+        /* ═══════ HEADER ═══════ */
+        #header {
+            position: absolute; top: 0; left: 0; right: 0; height: 42px;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0 24px; border-bottom: 1px solid var(--border);
+            background: linear-gradient(180deg, #0d0d0d, var(--bg)); z-index: 10;
+        }
+        #header .logo { font-weight: 700; font-size: 1rem; letter-spacing: 2px; }
+        #header .logo span { color: var(--g-dim); }
+        #header .header-right { display: flex; align-items: center; gap: 14px; }
+        #header .stats { font-size: 0.72rem; color: var(--g-dim); }
+        .header-btn {
+            background: rgba(0,255,65,0.05); border: 1px solid var(--border); color: var(--g-dim);
+            padding: 5px 12px; border-radius: 3px; font-family: var(--font); font-size: 0.78rem;
+            cursor: pointer; transition: 0.2s;
+        }
+        .header-btn:hover { background: rgba(0,255,65,0.1); color: var(--g); border-color: var(--g-dim); }
+        .header-btn.active { background: rgba(255,204,0,0.12); border-color: var(--amber); color: var(--amber); }
+        .header-btn kbd { background: #222; padding: 1px 5px; border-radius: 2px; font-size: 0.68rem; margin-left: 6px; }
+
+        /* ═══════ MAIN WORKSPACE ═══════ */
+        #workspace {
+            position: absolute; top: 42px; left: 0; right: 0; bottom: 0;
+            display: flex; flex-direction: column; overflow: hidden;
+        }
+
+        /* ═══════ DASHBOARD VIEW ═══════ */
+        .dashboard {
+            flex: 1; overflow-y: auto; overflow-x: hidden;
+            padding: 0 24px 30px;
+        }
+
+        /* ─── SEARCH HERO ─── */
+        .search-hero {
+            max-width: 720px; margin: 40px auto 30px; text-align: center;
+        }
+        .search-hero-title {
+            font-size: 1.1rem; font-weight: 300; color: var(--g-dim);
+            margin-bottom: 16px; letter-spacing: 3px; text-transform: uppercase;
+        }
+        .search-hero-title strong { color: var(--g); font-weight: 700; }
+        .search-bar-wrap {
+            display: flex; align-items: center; border: 2px solid var(--g-dim);
+            background: rgba(0,255,65,0.03); padding: 14px 20px; transition: 0.3s;
+        }
+        .search-bar-wrap:focus-within {
+            border-color: var(--g); box-shadow: 0 0 20px rgba(0,255,65,0.15), inset 0 0 20px rgba(0,255,65,0.03);
+        }
+        .search-bar-wrap .search-icon { color: var(--g-dim); margin-right: 12px; font-size: 1.2rem; flex-shrink: 0; }
+        .search-bar-wrap:focus-within .search-icon { color: var(--g); }
+        .search-bar {
+            background: transparent; border: none; color: var(--g); font-family: var(--font);
+            font-size: 1.1rem; width: 100%; outline: none;
+        }
+        .search-bar::placeholder { color: var(--g-dark); }
+        .search-bar-hint {
+            font-size: 0.68rem; color: var(--g-dark); margin-left: auto; flex-shrink: 0;
+            padding-left: 10px;
+        }
+
+        /* ─── SECTION BUTTONS ─── */
+        .sections-row {
+            display: flex; flex-wrap: wrap; gap: 8px; max-width: 820px;
+            margin: 0 auto 28px; justify-content: center;
+        }
+        .section-btn {
+            display: flex; align-items: center; gap: 7px;
+            padding: 9px 16px; border: 1px solid var(--border); background: rgba(0,0,0,0.4);
+            font-family: var(--font); font-size: 0.78rem; cursor: pointer;
+            transition: all 0.2s; color: var(--white); border-radius: 2px;
+        }
+        .section-btn:hover { border-color: currentColor; background: rgba(255,255,255,0.03); }
+        .section-btn.active { font-weight: 700; background: rgba(255,255,255,0.06); }
+        .section-btn .section-icon { font-size: 1rem; }
+        .section-btn .section-count {
+            font-size: 0.62rem; opacity: 0.5; margin-left: 2px;
+        }
+
+        /* ─── RESULTS GRID ─── */
+        .results-header {
+            display: flex; align-items: center; justify-content: space-between;
+            max-width: 920px; margin: 0 auto 14px; padding: 0 4px;
+        }
+        .results-title { font-size: 0.75rem; color: var(--g-dim); text-transform: uppercase; letter-spacing: 1px; }
+        .results-count { font-size: 0.72rem; color: var(--grey); }
+
+        .results-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 10px; max-width: 920px; margin: 0 auto;
+        }
+
+        .result-card {
+            border: 1px solid var(--border); background: rgba(0,0,0,0.5);
+            padding: 14px 16px; cursor: pointer; transition: all 0.2s;
+            position: relative; overflow: hidden;
+        }
+        .result-card::before {
+            content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+            background: var(--g-dim); transition: 0.2s;
+        }
+        .result-card:hover {
+            border-color: var(--g-dim); background: rgba(0,255,65,0.02);
+            transform: translateY(-1px);
+        }
+        .result-card:hover::before { background: var(--g); }
+        .result-card.urgent::before { background: var(--red); }
+        .result-card.urgent:hover::before { background: var(--red); box-shadow: 0 0 8px var(--red); }
+
+        .card-top { display: flex; align-items: center; gap: 7px; margin-bottom: 7px; }
+        .card-type-badge {
+            font-size: 0.55rem; padding: 2px 5px; border-radius: 1px;
+            font-weight: 700; letter-spacing: 0.5px; flex-shrink: 0;
+        }
+        .badge-matrix { background: var(--g-dark); color: var(--g); }
+        .badge-table { background: #1a1a3a; color: var(--blue); }
+        .badge-flowchart { background: #3a2a00; color: var(--amber); }
+        .badge-calculator { background: #2a003a; color: var(--purple); }
+        .badge-checklist { background: #003a2a; color: var(--teal); }
+        .badge-text { background: #1a1a1a; color: var(--grey); }
+
+        .card-title {
+            font-weight: 600; font-size: 0.88rem; color: var(--white);
+            line-height: 1.3; margin-bottom: 5px;
+            overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+        }
+        .card-category { font-size: 0.68rem; color: var(--g-dim); margin-bottom: 6px; }
+        .card-desc {
+            font-size: 0.75rem; color: var(--grey); line-height: 1.4;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+        }
+        .card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+        .card-tag {
+            font-size: 0.6rem; padding: 1px 5px; border: 1px solid var(--border);
+            color: var(--g-dark); border-radius: 1px;
+        }
+        .card-fav {
+            position: absolute; top: 10px; right: 10px; font-size: 0.8rem;
+            cursor: pointer; opacity: 0.3; transition: 0.15s; background: none;
+            border: none; color: var(--amber); font-family: var(--font);
+        }
+        .card-fav:hover, .card-fav.starred { opacity: 1; }
+        .card-urgent-badge {
+            font-size: 0.58rem; padding: 2px 6px; background: rgba(255,0,60,0.15);
+            color: var(--red); font-weight: 700; letter-spacing: 0.5px; border-radius: 1px;
+        }
+
+        /* ─── FAVORITES STRIP ─── */
+        .favs-strip {
+            max-width: 920px; margin: 0 auto 22px;
+            border: 1px dashed var(--border); padding: 12px 16px;
+            background: rgba(255,204,0,0.02);
+        }
+        .favs-strip-title { font-size: 0.7rem; color: var(--amber); margin-bottom: 8px; letter-spacing: 1px; }
+        .favs-strip-items { display: flex; flex-wrap: wrap; gap: 6px; }
+        .fav-chip {
+            padding: 5px 10px; border: 1px solid var(--border); background: rgba(255,204,0,0.04);
+            font-family: var(--font); font-size: 0.78rem; color: var(--white); cursor: pointer;
+            transition: 0.15s;
+        }
+        .fav-chip:hover { border-color: var(--amber); color: var(--amber); }
+
+        /* ═══════ ARTICLE VIEW ═══════ */
+        .article-view {
+            flex: 1; overflow-y: auto; overflow-x: hidden;
+            padding: 24px 40px 40px;
+            max-width: 960px; margin: 0 auto; width: 100%;
+        }
+        .back-bar {
+            display: flex; align-items: center; gap: 12px; margin-bottom: 20px;
+            padding-bottom: 14px; border-bottom: 1px solid var(--border);
+        }
+        .back-btn {
+            background: transparent; border: 1px solid var(--border); color: var(--g-dim);
+            padding: 6px 14px; font-family: var(--font); font-size: 0.8rem; cursor: pointer;
+            transition: 0.15s;
+        }
+        .back-btn:hover { border-color: var(--g); color: var(--g); }
+        .back-breadcrumb { font-size: 0.75rem; color: var(--grey); }
+
+        .content-title {
+            font-size: 1.4rem; font-weight: 700; margin-bottom: 5px;
+            text-shadow: 0 0 8px rgba(0,255,65,0.3); letter-spacing: 1px;
+        }
+        .content-meta { font-size: 0.75rem; color: var(--g-dim); margin-bottom: 15px; }
+        .content-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 15px; }
+        .content-tag {
+            font-size: 0.65rem; padding: 2px 6px; border: 1px solid var(--border);
+            color: var(--g-dim); border-radius: 2px; cursor: pointer; background: transparent;
+            font-family: var(--font); transition: 0.15s;
+        }
+        .content-tag:hover { border-color: var(--g-dim); color: var(--g); }
+        .content-related { margin-top: 25px; padding-top: 15px; border-top: 1px dashed var(--border); }
+        .content-related-title { font-size: 0.75rem; color: var(--g-dim); margin-bottom: 8px; text-transform: uppercase; }
+        .related-link {
+            display: inline-block; margin: 3px 5px 3px 0; padding: 3px 8px; font-size: 0.8rem;
+            border: 1px solid var(--border); cursor: pointer; transition: 0.15s; color: var(--blue);
+            font-family: var(--font); background: transparent; border-radius: 2px;
+        }
+        .related-link:hover { border-color: var(--blue); background: rgba(0,168,255,0.08); }
+
+        .content-body { white-space: pre-wrap; line-height: 1.7; font-size: 0.95rem; color: var(--white); }
+        .content-desc { color: var(--g-dim); font-style: italic; margin-bottom: 20px; font-size: 0.9rem; }
+
+        /* ═══════ MATRIX RENDERER ═══════ */
+        .matrix-container { display: flex; gap: 15px; margin-top: 15px; }
+        .matrix-col { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+        .matrix-col.center { flex: 1.5; }
+        .matrix-col-title { text-align: center; font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; padding-bottom: 8px; margin-bottom: 5px; border-bottom: 1px dashed; }
+        .node { background: rgba(0,0,0,0.6); border: 1px solid; padding: 14px; }
+        .node-past { border-color: var(--grey); opacity: 0.8; }
+        .node-current { border-color: var(--g); box-shadow: 0 0 12px rgba(0,255,65,0.15); }
+        .node-future { border-color: var(--blue); }
+        .node-title { font-weight: 700; margin-bottom: 8px; font-size: 1rem; }
+        .node-label { font-size: 0.7rem; background: #222; color: #aaa; padding: 2px 6px; display: inline-block; margin-bottom: 5px; letter-spacing: 0.5px; }
+        .node-label.pheno { background: #1a1a2a; }
+        .node-label.neuro { background: #2a1a1a; }
+        .node-label.tactic { background: #0a2a0a; }
+        .node-text { font-size: 0.9rem; margin-bottom: 10px; white-space: pre-wrap; line-height: 1.6; color: var(--white); }
+
+        /* ═══════ TABLE RENDERER ═══════ */
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.85rem; }
+        .data-table th, .data-table td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; }
+        .data-table th { background: rgba(0,143,17,0.15); color: var(--g); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .data-table tr:hover td { background: rgba(0,255,65,0.03); }
+        .data-table td { color: var(--white); }
+
+        /* ═══════ FLOWCHART RENDERER ═══════ */
+        .flow-step { margin-bottom: 20px; }
+        .flow-question {
+            font-size: 1.1rem; font-weight: 700; color: var(--g); margin-bottom: 8px;
+            padding: 12px 15px; border-left: 3px solid var(--amber); background: rgba(255,204,0,0.04);
+        }
+        .flow-info { font-size: 0.85rem; color: var(--g-dim); padding: 8px 15px; margin-bottom: 10px; white-space: pre-wrap; line-height: 1.6; }
+        .flow-options { display: flex; flex-direction: column; gap: 6px; padding-left: 15px; }
+        .flow-option {
+            background: rgba(0,255,65,0.04); border: 1px solid var(--border); padding: 10px 15px;
+            cursor: pointer; transition: 0.2s; font-family: var(--font); font-size: 0.9rem;
+            color: var(--white); text-align: left;
+        }
+        .flow-option:hover { border-color: var(--g); background: rgba(0,255,65,0.08); color: var(--g); }
+        .flow-result { border: 1px solid var(--g); padding: 20px; background: rgba(0,255,65,0.03); margin-top: 10px; }
+        .flow-result-title { font-weight: 700; font-size: 1.1rem; color: var(--g); margin-bottom: 10px; }
+        .flow-result-content { white-space: pre-wrap; line-height: 1.7; color: var(--white); font-size: 0.9rem; }
+        .flow-breadcrumb { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 15px; }
+        .flow-crumb {
+            font-size: 0.7rem; padding: 2px 8px; background: rgba(0,255,65,0.05);
+            border: 1px solid var(--border); color: var(--g-dim); cursor: pointer; font-family: var(--font);
+        }
+        .flow-crumb:hover { border-color: var(--g-dim); }
+        .flow-reset {
+            margin-top: 15px; padding: 8px 16px; background: transparent; border: 1px solid var(--g-dim);
+            color: var(--g-dim); font-family: var(--font); cursor: pointer; font-size: 0.8rem;
+        }
+        .flow-reset:hover { border-color: var(--g); color: var(--g); }
+
+        /* ═══════ CALCULATOR RENDERER ═══════ */
+        .calc-eq-row { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; flex-wrap: wrap; }
+        .calc-select, .calc-input {
+            background: #111; border: 1px solid var(--border); color: var(--g); padding: 8px 12px;
+            font-family: var(--font); font-size: 0.9rem; outline: none;
+        }
+        .calc-select:focus, .calc-input:focus { border-color: var(--g); }
+        .calc-input { width: 100px; text-align: center; }
+        .calc-result-box { padding: 15px; border: 1px solid var(--g); background: rgba(0,255,65,0.03); font-size: 1rem; margin-top: 10px; }
+        .calc-result-big { font-size: 1.5rem; font-weight: 700; color: var(--g); }
+        .calc-eq-table { width: 100%; margin-top: 15px; }
+        .calc-eq-table td { padding: 6px 10px; border-bottom: 1px solid var(--border); font-size: 0.85rem; color: var(--white); }
+        .calc-eq-table .highlight { color: var(--g); font-weight: 700; }
+
+        .scale-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; padding: 6px; border: 1px solid transparent; }
+        .scale-item:hover { border-color: var(--border); }
+        .scale-item-text { flex: 1; min-width: 0; font-size: 0.85rem; color: var(--white); line-height: 1.4; }
+        .scale-buttons { display: flex; gap: 2px; flex-shrink: 0; flex-wrap: wrap; max-width: 220px; }
+        .scale-btn {
+            min-width: 26px; height: 26px; border: 1px solid var(--border); background: transparent;
+            color: var(--g-dim); font-family: var(--font); font-size: 0.7rem; cursor: pointer;
+            display: flex; align-items: center; justify-content: center; transition: 0.15s; padding: 0 3px;
+        }
+        .scale-btn:hover { border-color: var(--g-dim); color: var(--g); }
+        .scale-btn.selected { background: var(--g-dim); color: var(--bg); font-weight: 700; border-color: var(--g); }
+        .scale-total {
+            padding: 15px; margin-top: 15px; font-size: 1.2rem; font-weight: 700;
+            border: 2px solid; display: flex; justify-content: space-between; align-items: center;
+        }
+        .scale-action { font-size: 0.85rem; font-weight: 400; margin-top: 8px; color: var(--white); }
+        .scale-labels { font-size: 0.7rem; color: var(--g-dim); margin-bottom: 15px; }
+
+        /* ═══════ CHECKLIST RENDERER ═══════ */
+        .check-section { margin-bottom: 20px; }
+        .check-section-title { font-weight: 700; font-size: 0.95rem; color: var(--g); margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1px dashed var(--border); }
+        .check-item { display: flex; align-items: flex-start; gap: 10px; padding: 6px 0; cursor: pointer; }
+        .check-box {
+            width: 18px; height: 18px; border: 1px solid var(--g-dim); flex-shrink: 0; margin-top: 2px;
+            display: flex; align-items: center; justify-content: center; transition: 0.15s; font-size: 0.7rem;
+        }
+        .check-box.checked { background: var(--g-dim); color: var(--bg); font-weight: 700; }
+        .check-item-text { font-size: 0.9rem; color: var(--white); line-height: 1.5; }
+        .check-counter { font-size: 0.8rem; color: var(--g-dim); margin-top: 10px; padding: 8px; border: 1px dashed var(--border); }
+
+        /* ═══════ CLI ═══════ */
+        #cli-container {
+            flex-shrink: 0; height: 110px;
+            border-top: 1px solid var(--g-dim);
+            background: #000; display: flex; flex-direction: column; font-size: 0.8rem;
+        }
+        #cli-container.collapsed { height: 32px; overflow: hidden; }
+        #cli-output { flex: 1; overflow-y: auto; padding: 6px 14px; }
+        .cli-prompt-line { display: flex; align-items: center; padding: 4px 14px 6px; flex-shrink: 0; }
+        .cli-prompt { margin-right: 8px; color: var(--g); font-weight: 700; white-space: nowrap; }
+        #cli-input { background: transparent; border: none; color: var(--g); font-family: var(--font); font-size: 0.85rem; width: 100%; outline: none; }
+        .cli-toggle {
+            position: absolute; right: 14px; bottom: 88px;
+            background: var(--panel); border: 1px solid var(--border); color: var(--g-dim);
+            font-family: var(--font); font-size: 0.65rem; padding: 2px 8px; cursor: pointer;
+            z-index: 11; transition: 0.15s;
+        }
+        .cli-toggle:hover { color: var(--g); border-color: var(--g-dim); }
+        #cli-container.collapsed ~ .cli-toggle { bottom: 10px; }
+
+        /* ═══════ SEARCH MODAL (Ctrl+K) ═══════ */
+        .search-overlay {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85); z-index: 10000; display: flex;
+            justify-content: center; padding-top: 15vh;
+        }
+        .search-modal { width: 620px; max-height: 60vh; display: flex; flex-direction: column; }
+        .search-input-wrap {
+            display: flex; align-items: center; border: 1px solid var(--g); background: #111; padding: 12px 16px;
+        }
+        .search-input-wrap span { color: var(--g); margin-right: 10px; font-size: 1.1rem; }
+        .search-input {
+            background: transparent; border: none; color: var(--g); font-family: var(--font);
+            font-size: 1rem; width: 100%; outline: none;
+        }
+        .search-results { overflow-y: auto; background: #0a0a0a; border: 1px solid var(--border); border-top: none; }
+        .search-result-item { padding: 10px 16px; cursor: pointer; border-bottom: 1px solid var(--border); transition: 0.1s; }
+        .search-result-item:hover, .search-result-item.highlighted { background: rgba(0,255,65,0.08); }
+        .search-result-title { font-weight: 700; font-size: 0.9rem; color: var(--g); }
+        .search-result-cat { font-size: 0.7rem; color: var(--g-dim); }
+        .search-result-match { font-size: 0.75rem; color: var(--grey); margin-top: 3px; }
+
+        /* ═══════ EMPTY STATE ═══════ */
+        .empty-state { text-align: center; padding: 60px 20px; color: var(--g-dark); }
+        .empty-state .empty-icon { font-size: 2.5rem; margin-bottom: 12px; opacity: 0.5; }
+        .empty-state .empty-text { font-size: 0.9rem; line-height: 1.6; }
+
+        /* ═══════ SCROLLBAR ═══════ */
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: var(--g-dark); border-radius: 2px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--g-dim); }
+
+        /* ═══════ RESPONSIVE ═══════ */
+        @media (max-width: 768px) {
+            .matrix-container { flex-direction: column; }
+            .search-hero { margin-top: 20px; }
+            .results-grid { grid-template-columns: 1fr; }
+            .article-view { padding: 16px 16px 30px; }
+            .sections-row { gap: 6px; }
+            .section-btn { padding: 7px 10px; font-size: 0.72rem; }
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useRef, useCallback, useMemo } = React;
+
+        // ═══════════════════════════════════════
+        // SECTION MAPPING
+        // ═══════════════════════════════════════
+        const SECTIONS = [
+            {
+                id: 'urgent', label: 'УРГЕНТНОЕ', icon: '⚡', color: 'var(--red)',
+                categories: ['Ургентная психиатрия']
+            },
+            {
+                id: 'pharma', label: 'ФАРМАКО', icon: '⚕', color: 'var(--teal)',
+                categories: ['Фармакотерапия (АД)', 'Фармакотерапия (АП)', 'Фармакотерапия (Нормотимики)', 'Фармакотерапия (Общее)']
+            },
+            {
+                id: 'clinic', label: 'КЛИНИКА', icon: '◉', color: 'var(--blue)',
+                categories: ['Симптоматология', 'Синдромология', 'Диагностические критерии (МКБ-10)']
+            },
+            {
+                id: 'nosology', label: 'НОЗОЛОГИИ', icon: '◈', color: 'var(--amber)',
+                categories: ['Аффективные расстройства', 'Тревожные расстройства', 'Расстройства личности', 'Расстройства сна', 'Наркология', 'Нейроразвитие']
+            },
+            {
+                id: 'scales', label: 'ШКАЛЫ', icon: '▦', color: 'var(--purple)',
+                categories: ['Шкалы и Калькуляторы']
+            },
+            {
+                id: 'special', label: 'СПЕЦРАЗДЕЛЫ', icon: '✦', color: 'var(--orange)',
+                categories: ['Психоонкология', 'Военная психиатрия']
+            },
+            {
+                id: 'reference', label: 'СПРАВОЧНОЕ', icon: '§', color: 'var(--g-dim)',
+                categories: ['Юридический статус (Украина)', 'Нейробиология (Stahl)', 'Феноменология (Ясперс)']
+            }
+        ];
+
+        function getSectionForCategory(cat) {
+            return SECTIONS.find(s => s.categories.includes(cat));
+        }
+
+        // ═══════════════════════════════════════
+        // SEARCH ENGINE
+        // ═══════════════════════════════════════
+        function fuzzySearch(db, query) {
+            if (!query.trim()) return [];
+            const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+            
+            return db.map(entry => {
+                const fields = [
+                    entry.title, entry.category, entry.cmd_alias,
+                    (entry.tags || []).join(' '), entry.description || '', entry.content || '',
+                    entry.matrix ? [
+                        entry.matrix.current?.pheno, entry.matrix.current?.neuro,
+                        entry.matrix.current?.tactic, entry.matrix.current?.title,
+                        ...(entry.matrix.past || []).map(n => n.title + ' ' + n.desc),
+                        ...(entry.matrix.future || []).map(n => n.title + ' ' + n.desc)
+                    ].join(' ') : '',
+                    entry.tableRows ? entry.tableRows.flat().join(' ') : '',
+                    entry.flowchart ? Object.values(entry.flowchart.steps).map(s => 
+                        [s.question, s.info, s.title, s.content, (s.options||[]).map(o=>o.label).join(' ')].join(' ')
+                    ).join(' ') : '',
+                    entry.calculator?.items ? entry.calculator.items.map(i => i.text || i.drug || '').join(' ') : '',
+                    entry.checklist?.sections ? entry.checklist.sections.map(s => 
+                        s.title + ' ' + s.items.map(i=>i.text).join(' ')
+                    ).join(' ') : ''
+                ].join(' ').toLowerCase();
+
+                let score = 0;
+                let matchedTerms = [];
+                terms.forEach(term => {
+                    if (fields.includes(term)) { score += 10; matchedTerms.push(term); }
+                    else if (fields.indexOf(term) !== -1) { score += 5; matchedTerms.push(term); }
+                    else {
+                        const words = fields.split(/\s+/);
+                        if (words.some(w => w.includes(term) || term.includes(w))) {
+                            score += 3; matchedTerms.push(term);
+                        }
+                    }
+                });
+                const titleLower = entry.title.toLowerCase();
+                const aliasLower = (entry.cmd_alias || '').toLowerCase();
+                terms.forEach(t => {
+                    if (titleLower.includes(t)) score += 20;
+                    if (aliasLower === t) score += 30;
+                });
+                // Urgency boost
+                if (entry.category === 'Ургентная психиатрия') score += 5;
+                if ((entry.tags || []).some(t => t === 'ургентное' || t === 'жизнеугрожающее')) score += 3;
+
+                return { entry, score, matchedTerms };
+            }).filter(r => r.score > 0).sort((a, b) => b.score - a.score);
+        }
+
+        // Sort with urgency priority
+        function sortByUrgency(entries) {
+            const urgencyOrder = { 'Ургентная психиатрия': 0 };
+            return [...entries].sort((a, b) => {
+                const ua = urgencyOrder[a.category] ?? 1;
+                const ub = urgencyOrder[b.category] ?? 1;
+                if (ua !== ub) return ua - ub;
+                // Within same priority, urgent tags first
+                const aUrgent = (a.tags || []).includes('жизнеугрожающее') ? 0 : (a.tags || []).includes('ургентное') ? 1 : 2;
+                const bUrgent = (b.tags || []).includes('жизнеугрожающее') ? 0 : (b.tags || []).includes('ургентное') ? 1 : 2;
+                return aUrgent - bUrgent;
+            });
+        }
+
+        // ═══════════════════════════════════════
+        // RENDERERS (preserved from v7.0)
+        // ═══════════════════════════════════════
+
+        function TextRenderer({ article }) {
+            return <div className="content-body">{article.content}</div>;
+        }
+
+        function MatrixRenderer({ article }) {
+            const m = article.matrix;
+            return (
+                <React.Fragment>
+                    {article.description && <div className="content-desc">{article.description}</div>}
+                    <div className="matrix-container">
+                        <div className="matrix-col">
+                            <div className="matrix-col-title" style={{color: 'var(--grey)', borderColor: 'var(--grey)'}}>ПРЕКУРСОРЫ (T−1)</div>
+                            {m.past.map((node, i) => (
+                                <div key={i} className="node node-past">
+                                    <div className="node-title" style={{color:'var(--grey)'}}>{node.title}</div>
+                                    <div className="node-text">{node.desc}</div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="matrix-col center">
+                            <div className="matrix-col-title" style={{color: 'var(--g)', borderColor: 'var(--g)'}}>АКТИВНАЯ ФАЗА (T=0)</div>
+                            <div className="node node-current">
+                                <div className="node-title" style={{color:'var(--g)'}}>{m.current.title}</div>
+                                {m.current.pheno && <React.Fragment><div className="node-label pheno">ФЕНОМЕНОЛОГИЯ</div><div className="node-text">{m.current.pheno}</div></React.Fragment>}
+                                {m.current.neuro && <React.Fragment><div className="node-label neuro">НЕЙРОСЕТИ</div><div className="node-text">{m.current.neuro}</div></React.Fragment>}
+                                {m.current.tactic && <React.Fragment><div className="node-label tactic">ТАКТИКА / ФАРМАКОЛОГИЯ</div><div className="node-text">{m.current.tactic}</div></React.Fragment>}
+                            </div>
+                        </div>
+                        <div className="matrix-col">
+                            <div className="matrix-col-title" style={{color: 'var(--blue)', borderColor: 'var(--blue)'}}>ЭВОЛЮЦИЯ (T+1)</div>
+                            {m.future.map((node, i) => (
+                                <div key={i} className="node node-future">
+                                    <div className="node-title" style={{color:'var(--blue)'}}>{node.title}</div>
+                                    <div className="node-text">{node.desc}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </React.Fragment>
+            );
+        }
+
+        function TableRenderer({ article }) {
+            return (
+                <React.Fragment>
+                    {article.description && <div className="content-desc">{article.description}</div>}
+                    <div style={{overflowX: 'auto'}}>
+                    <table className="data-table">
+                        <thead><tr>{article.tableHeaders.map((h, i) => <th key={i}>{h}</th>)}</tr></thead>
+                        <tbody>
+                            {article.tableRows.map((row, i) => (
+                                <tr key={i}>{row.map((cell, j) => <td key={j} dangerouslySetInnerHTML={{__html: cell}} />)}</tr>
+                            ))}
+                        </tbody>
+                    </table>
+                    </div>
+                </React.Fragment>
+            );
+        }
+
+        function FlowchartRenderer({ article }) {
+            const [path, setPath] = useState([article.flowchart.start]);
+            const steps = article.flowchart.steps;
+            const currentId = path[path.length - 1];
+            const currentStep = steps[currentId];
+            const goTo = (nextId) => setPath([...path, nextId]);
+            const goBack = (index) => setPath(path.slice(0, index + 1));
+            const reset = () => setPath([article.flowchart.start]);
+            return (
+                <React.Fragment>
+                    {article.description && <div className="content-desc">{article.description}</div>}
+                    {path.length > 1 && (
+                        <div className="flow-breadcrumb">
+                            {path.map((stepId, i) => (
+                                <button key={i} className="flow-crumb" onClick={() => goBack(i)}>
+                                    {i === 0 ? '◉ Начало' : steps[stepId]?.question?.substring(0, 30) || steps[stepId]?.title?.substring(0, 30) || `Шаг ${i+1}`}
+                                </button>
+                            ))}
+                        </div>
+                    )}
+                    <div className="flow-step">
+                        {currentStep.result ? (
+                            <div className="flow-result">
+                                <div className="flow-result-title">→ {currentStep.title}</div>
+                                <div className="flow-result-content">{currentStep.content}</div>
+                                <button className="flow-reset" onClick={reset}>↺ Начать заново</button>
+                            </div>
+                        ) : (
+                            <React.Fragment>
+                                <div className="flow-question">{currentStep.question}</div>
+                                {currentStep.info && <div className="flow-info">{currentStep.info}</div>}
+                                <div className="flow-options">
+                                    {currentStep.options.map((opt, i) => (
+                                        <button key={i} className="flow-option" onClick={() => goTo(opt.next)}>
+                                            {opt.label}
+                                        </button>
+                                    ))}
+                                </div>
+                            </React.Fragment>
+                        )}
+                    </div>
+                </React.Fragment>
+            );
+        }
+
+        function CalculatorRenderer({ article }) {
+            const calc = article.calculator;
+            if (calc.calcType === 'equivalence') return <EquivalenceCalc article={article} />;
+            if (calc.calcType === 'scale') return <ScaleCalc article={article} />;
+            return <div>Unknown calculator type</div>;
+        }
+
+        function EquivalenceCalc({ article }) {
+            const calc = article.calculator;
+            const [selectedDrug, setSelectedDrug] = useState(calc.items[0].drug);
+            const [dose, setDose] = useState('');
+            const selected = calc.items.find(i => i.drug === selectedDrug);
+            const refItem = calc.items[0];
+            const cpzDose = dose && selected ? (parseFloat(dose) / selected.dose_eq * refItem.dose_eq) : null;
+            return (
+                <React.Fragment>
+                    <div className="content-desc">{article.description}</div>
+                    <div className="calc-eq-row">
+                        <select className="calc-select" value={selectedDrug} onChange={e => setSelectedDrug(e.target.value)}>
+                            {calc.items.map(item => <option key={item.drug} value={item.drug}>{item.drug}</option>)}
+                        </select>
+                        <input className="calc-input" type="number" placeholder="Доза" value={dose}
+                            onChange={e => setDose(e.target.value)} min="0" step="any" />
+                        <span style={{color:'var(--g-dim)'}}>мг</span>
+                    </div>
+                    {cpzDose !== null && (
+                        <div className="calc-result-box">
+                            <div style={{color:'var(--g-dim)', fontSize:'0.8rem', marginBottom:'5px'}}>Эквивалент:</div>
+                            <div className="calc-result-big">{cpzDose.toFixed(1)} мг {refItem.drug}</div>
+                        </div>
+                    )}
+                    <table className="calc-eq-table" style={{marginTop:'20px'}}>
+                        <tbody>
+                            {calc.items.map(item => {
+                                const equiv = dose ? (parseFloat(dose) / selected.dose_eq * item.dose_eq).toFixed(1) : '—';
+                                return (
+                                    <tr key={item.drug}>
+                                        <td style={{fontWeight: item.drug === selectedDrug ? 700 : 400, color: item.drug === selectedDrug ? 'var(--g)' : 'var(--white)'}}>{item.drug}</td>
+                                        <td style={{color:'var(--g-dim)'}}>экв. доза: {item.dose_eq} мг</td>
+                                        <td className={dose ? 'highlight' : ''}>{equiv} мг</td>
+                                    </tr>
+                                );
+                            })}
+                        </tbody>
+                    </table>
+                </React.Fragment>
+            );
+        }
+
+        function ScaleCalc({ article }) {
+            const calc = article.calculator;
+            const [scores, setScores] = useState({});
+            const total = Object.values(scores).reduce((a, b) => a + b, 0);
+            const scoring = calc.scoring.find(s => total >= s.range[0] && total <= s.range[1]);
+            const setScore = (id, val) => setScores(prev => ({ ...prev, [id]: val }));
+            return (
+                <React.Fragment>
+                    <div className="content-desc">{article.description}</div>
+                    {calc.labels && <div className="scale-labels">{Array.isArray(calc.labels) ? calc.labels.join(' | ') : calc.labels}</div>}
+                    {calc.items.map(item => (
+                        <div key={item.id} className="scale-item">
+                            <div className="scale-item-text">{item.text}</div>
+                            <div className="scale-buttons">
+                                {Array.from({length: item.max + 1}, (_, i) => (
+                                    <button key={i} className={`scale-btn ${scores[item.id] === i ? 'selected' : ''}`}
+                                        onClick={() => setScore(item.id, i)}>{i}</button>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                    <div className="scale-total" style={{borderColor: scoring?.color || 'var(--g-dim)', color: scoring?.color || 'var(--g)'}}>
+                        <div>
+                            <div>Итого: {total} баллов</div>
+                            {scoring && <div style={{fontSize:'0.9rem', marginTop:'3px'}}>{scoring.label}</div>}
+                        </div>
+                    </div>
+                    {scoring && <div className="scale-action">{scoring.action}</div>}
+                </React.Fragment>
+            );
+        }
+
+        function ChecklistRenderer({ article }) {
+            const [checked, setChecked] = useState({});
+            const toggle = (id) => setChecked(prev => ({...prev, [id]: !prev[id]}));
+            const totalChecked = Object.values(checked).filter(Boolean).length;
+            const totalItems = article.checklist.sections.reduce((a, s) => a + s.items.length, 0);
+            return (
+                <React.Fragment>
+                    {article.description && <div className="content-desc">{article.description}</div>}
+                    {article.checklist.sections.map((section, si) => {
+                        const sectionChecked = section.items.filter(i => checked[i.id]).length;
+                        return (
+                            <div key={si} className="check-section">
+                                <div className="check-section-title">{section.title} <span style={{fontWeight:400, color:'var(--g-dim)'}}>({sectionChecked}/{section.items.length})</span></div>
+                                {section.items.map(item => (
+                                    <div key={item.id} className="check-item" onClick={() => toggle(item.id)}>
+                                        <div className={`check-box ${checked[item.id] ? 'checked' : ''}`}>{checked[item.id] ? '✓' : ''}</div>
+                                        <div className="check-item-text" style={{opacity: checked[item.id] ? 0.6 : 1}}>{item.text}</div>
+                                    </div>
+                                ))}
+                            </div>
+                        );
+                    })}
+                    <div className="check-counter">Отмечено: {totalChecked} / {totalItems}</div>
+                </React.Fragment>
+            );
+        }
+
+        // ═══════════════════════════════════════
+        // SEARCH MODAL (Ctrl+K)
+        // ═══════════════════════════════════════
+        function SearchModal({ db, onSelect, onClose }) {
+            const [query, setQuery] = useState('');
+            const [highlightIdx, setHighlightIdx] = useState(0);
+            const inputRef = useRef(null);
+            const results = useMemo(() => fuzzySearch(db, query), [db, query]);
+            useEffect(() => { inputRef.current?.focus(); }, []);
+            useEffect(() => { setHighlightIdx(0); }, [query]);
+            const handleKeyDown = (e) => {
+                if (e.key === 'Escape') onClose();
+                else if (e.key === 'ArrowDown') { e.preventDefault(); setHighlightIdx(i => Math.min(i + 1, results.length - 1)); }
+                else if (e.key === 'ArrowUp') { e.preventDefault(); setHighlightIdx(i => Math.max(i - 1, 0)); }
+                else if (e.key === 'Enter' && results[highlightIdx]) { onSelect(results[highlightIdx].entry); onClose(); }
+            };
+            return (
+                <div className="search-overlay" onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}>
+                    <div className="search-modal">
+                        <div className="search-input-wrap">
+                            <span>⌕</span>
+                            <input ref={inputRef} className="search-input" placeholder="Поиск по базе... (название, тег, содержимое)"
+                                value={query} onChange={e => setQuery(e.target.value)} onKeyDown={handleKeyDown}
+                                autoComplete="off" spellCheck="false" />
+                        </div>
+                        <div className="search-results">
+                            {results.length === 0 && query.length > 0 && (
+                                <div style={{padding:'15px', color:'var(--grey)', textAlign:'center'}}>Ничего не найдено</div>
+                            )}
+                            {results.slice(0, 12).map((r, i) => (
+                                <div key={r.entry.id} className={`search-result-item ${i === highlightIdx ? 'highlighted' : ''}`}
+                                    onClick={() => { onSelect(r.entry); onClose(); }}
+                                    onMouseEnter={() => setHighlightIdx(i)}>
+                                    <div className="search-result-title">{r.entry.title}</div>
+                                    <div className="search-result-cat">{r.entry.category} · {r.entry.type} · /{r.entry.cmd_alias}</div>
+                                    {r.matchedTerms.length > 0 && (
+                                        <div className="search-result-match">совпадение: {r.matchedTerms.join(', ')}</div>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        // ═══════════════════════════════════════
+        // MAIN APP
+        // ═══════════════════════════════════════
+        function App() {
+            const db = window.PSYCH_DATABASE || [];
+            const isDbLoaded = db.length > 0;
+
+            const [activeArticle, setActiveArticle] = useState(null);
+            const [activeSection, setActiveSection] = useState(null);
+            const [searchQuery, setSearchQuery] = useState('');
+            const [showSearch, setShowSearch] = useState(false);
+            const [cliCollapsed, setCliCollapsed] = useState(false);
+            const [favorites, setFavorites] = useState(() => {
+                try { return JSON.parse(localStorage.getItem('psych_favs') || '[]'); } catch { return []; }
+            });
+            const [cliOutput, setCliOutput] = useState([
+                { type: 'sys', text: `PSYCH ENCYCLOPAEDIA OS v7.1 · Загружено ${db.length} записей` },
+                { type: 'info', text: 'Введите help для списка команд. Ctrl+K — быстрый поиск.' }
+            ]);
+            const [inputValue, setInputValue] = useState('');
+            const outputRef = useRef(null);
+            const searchRef = useRef(null);
+
+            // Section counts
+            const sectionCounts = useMemo(() => {
+                const counts = {};
+                SECTIONS.forEach(s => {
+                    counts[s.id] = db.filter(e => s.categories.includes(e.category)).length;
+                });
+                return counts;
+            }, [db]);
+
+            // All unique tags
+            const allTags = useMemo(() => {
+                const tags = {};
+                db.forEach(entry => (entry.tags || []).forEach(t => { tags[t] = (tags[t] || 0) + 1; }));
+                return Object.entries(tags).sort((a, b) => b[1] - a[1]);
+            }, [db]);
+
+            // Dashboard cards: filtered by section and/or inline search
+            const dashboardEntries = useMemo(() => {
+                let entries = db;
+                // If searching inline
+                if (searchQuery.trim()) {
+                    const results = fuzzySearch(db, searchQuery);
+                    return results.map(r => r.entry);
+                }
+                // If section filter active
+                if (activeSection) {
+                    const sec = SECTIONS.find(s => s.id === activeSection);
+                    if (sec) entries = entries.filter(e => sec.categories.includes(e.category));
+                }
+                return sortByUrgency(entries);
+            }, [db, activeSection, searchQuery]);
+
+            // Keyboard shortcuts
+            useEffect(() => {
+                const handler = (e) => {
+                    if ((e.ctrlKey || e.metaKey) && e.key === 'k') { e.preventDefault(); setShowSearch(true); }
+                    if (e.key === 'Escape') {
+                        if (showSearch) setShowSearch(false);
+                        else if (activeArticle) setActiveArticle(null);
+                    }
+                };
+                window.addEventListener('keydown', handler);
+                return () => window.removeEventListener('keydown', handler);
+            }, [showSearch, activeArticle]);
+
+            useEffect(() => {
+                if (outputRef.current) outputRef.current.scrollTop = outputRef.current.scrollHeight;
+            }, [cliOutput]);
+
+            useEffect(() => {
+                try { localStorage.setItem('psych_favs', JSON.stringify(favorites)); } catch {}
+            }, [favorites]);
+
+            const toggleFav = (id, e) => {
+                if (e) e.stopPropagation();
+                setFavorites(prev => prev.includes(id) ? prev.filter(f => f !== id) : [...prev, id]);
+            };
+
+            const navigateTo = (entry) => {
+                setActiveArticle(entry);
+                setSearchQuery('');
+            };
+
+            const navigateById = (id) => {
+                const found = db.find(d => d.id === id);
+                if (found) setActiveArticle(found);
+            };
+
+            const goToDashboard = () => {
+                setActiveArticle(null);
+            };
+
+            const toggleSection = (secId) => {
+                setActiveSection(prev => prev === secId ? null : secId);
+                setSearchQuery('');
+            };
+
+            // Type badge
+            const typeBadge = (type) => {
+                const labels = { matrix:'MTX', table:'TBL', flowchart:'FLW', calculator:'CAL', checklist:'CHK', text:'TXT' };
+                return <span className={`card-type-badge badge-${type}`}>{labels[type] || type}</span>;
+            };
+
+            const isUrgent = (entry) => entry.category === 'Ургентная психиатрия' ||
+                (entry.tags || []).some(t => t === 'жизнеугрожающее');
+
+            // ─── CLI Handler ───
+            const handleCommand = (e) => {
+                if (e.key !== 'Enter') return;
+                const cmd = inputValue.trim();
+                const args = cmd.toLowerCase().split(/\s+/);
+                const baseCmd = args[0];
+                const query = args.slice(1).join(' ');
+                let out = [...cliOutput, { type: 'user', text: `psych@enc:~$ ${cmd}` }];
+
+                if (!isDbLoaded && baseCmd !== 'clear' && baseCmd !== 'help') {
+                    out.push({ type: 'error', text: 'DATABASE OFFLINE.' });
+                } else if (baseCmd === 'help') {
+                    out.push({ type: 'info', text:
+                        'КОМАНДЫ:\n  open [alias]    — Открыть запись\n  search [запрос] — Поиск по базе\n  list [кат.]     — Список записей (или по категории)\n  tags            — Все теги\n  favs            — Избранное\n  info [alias]    — Мета-информация\n  home            — Вернуться на dashboard\n  clear           — Очистить терминал'
+                    });
+                } else if (baseCmd === 'open') {
+                    const found = db.find(d => d.cmd_alias === query || d.id === query);
+                    if (found) { setActiveArticle(found); out.push({ type: 'success', text: `→ ${found.title} [${found.type}]` }); }
+                    else out.push({ type: 'error', text: `Node '${query}' not found. Try: search ${query}` });
+                } else if (baseCmd === 'search' || baseCmd === 'find' || baseCmd === 's') {
+                    const results = fuzzySearch(db, query);
+                    if (results.length === 0) out.push({ type: 'error', text: 'Ничего не найдено.' });
+                    else {
+                        out.push({ type: 'info', text: `Найдено ${results.length} результатов:` });
+                        results.slice(0, 8).forEach(r => {
+                            out.push({ type: 'success', text: `  /${r.entry.cmd_alias}  ${r.entry.title}  [${r.entry.category}]` });
+                        });
+                    }
+                } else if (baseCmd === 'list' || baseCmd === 'ls') {
+                    const filtered = query ? db.filter(d => d.category.toLowerCase().includes(query)) : db;
+                    filtered.forEach(d => {
+                        out.push({ type: 'info', text: `  /${d.cmd_alias.padEnd(16)} ${d.title}` });
+                    });
+                    out.push({ type: 'sys', text: `── ${filtered.length} записей ──` });
+                } else if (baseCmd === 'tags') {
+                    out.push({ type: 'info', text: allTags.map(([t, c]) => `${t}(${c})`).join('  ') });
+                } else if (baseCmd === 'favs' || baseCmd === 'favorites') {
+                    const favEntries = db.filter(d => favorites.includes(d.id));
+                    if (favEntries.length === 0) out.push({ type: 'sys', text: 'Избранное пусто.' });
+                    else favEntries.forEach(d => out.push({ type: 'success', text: `  ★ /${d.cmd_alias}  ${d.title}` }));
+                } else if (baseCmd === 'info') {
+                    const found = db.find(d => d.cmd_alias === query || d.id === query);
+                    if (found) {
+                        out.push({ type: 'info', text: `ID: ${found.id}\nType: ${found.type}\nCategory: ${found.category}\nTags: ${(found.tags||[]).join(', ')}\nRelated: ${(found.related||[]).join(', ')}` });
+                    } else out.push({ type: 'error', text: 'Not found.' });
+                } else if (baseCmd === 'home' || baseCmd === 'dashboard') {
+                    setActiveArticle(null);
+                    out.push({ type: 'sys', text: '→ Dashboard' });
+                } else if (baseCmd === 'clear') {
+                    out = [];
+                } else {
+                    const results = fuzzySearch(db, cmd);
+                    if (results.length > 0) {
+                        out.push({ type: 'sys', text: `Неизвестная команда. Возможно, вы искали:` });
+                        results.slice(0, 3).forEach(r => {
+                            out.push({ type: 'success', text: `  open ${r.entry.cmd_alias}  →  ${r.entry.title}` });
+                        });
+                    } else {
+                        out.push({ type: 'error', text: `Команда '${baseCmd}' не найдена. Введите help.` });
+                    }
+                }
+                setCliOutput(out);
+                setInputValue('');
+            };
+
+            // ─── Error state ───
+            if (!isDbLoaded) {
+                return (
+                    <div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh',flexDirection:'column'}}>
+                        <div style={{color:'var(--red)',fontSize:'2rem',fontWeight:700,marginBottom:20}}>[ SYSTEM HALTED ]</div>
+                        <div style={{fontSize:'1.1rem',textAlign:'center',lineHeight:1.8,color:'var(--white)'}}>
+                            database.js не найден или пуст.<br/>
+                            <span style={{color:'var(--g-dim)'}}>Создайте файл database.js в директории терминала.</span>
+                        </div>
+                    </div>
+                );
+            }
+
+            return (
+                <React.Fragment>
+                    {/* ═══ HEADER ═══ */}
+                    <div id="header">
+                        <div className="logo" style={{cursor:'pointer'}} onClick={goToDashboard}>
+                            PSYCH<span>::ENCYCLOPAEDIA</span>
+                        </div>
+                        <div className="header-right">
+                            <div className="stats">{db.length} записей · {SECTIONS.length} разделов</div>
+                            <button className="header-btn" onClick={() => setShowSearch(true)}>
+                                ⌕ Поиск <kbd>Ctrl+K</kbd>
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* ═══ WORKSPACE ═══ */}
+                    <div id="workspace">
+                        {!activeArticle ? (
+                            /* ═══════ DASHBOARD ═══════ */
+                            <div className="dashboard">
+                                {/* Search hero */}
+                                <div className="search-hero">
+                                    <div className="search-hero-title">
+                                        <strong>PSYCH</strong> ENCYCLOPAEDIA · v7.1
+                                    </div>
+                                    <div className="search-bar-wrap">
+                                        <span className="search-icon">⌕</span>
+                                        <input ref={searchRef} className="search-bar"
+                                            placeholder="Поиск: название, тег, препарат, симптом..."
+                                            value={searchQuery}
+                                            onChange={e => { setSearchQuery(e.target.value); if (activeSection) setActiveSection(null); }}
+                                            autoComplete="off" spellCheck="false"
+                                            onKeyDown={e => {
+                                                if (e.key === 'Enter' && dashboardEntries.length === 1) navigateTo(dashboardEntries[0]);
+                                            }}
+                                        />
+                                        <span className="search-bar-hint">Ctrl+K</span>
+                                    </div>
+                                </div>
+
+                                {/* Section buttons */}
+                                <div className="sections-row">
+                                    {SECTIONS.map(sec => (
+                                        <button key={sec.id}
+                                            className={`section-btn ${activeSection === sec.id ? 'active' : ''}`}
+                                            style={{
+                                                color: activeSection === sec.id ? sec.color : 'var(--white)',
+                                                borderColor: activeSection === sec.id ? sec.color : 'var(--border)'
+                                            }}
+                                            onClick={() => toggleSection(sec.id)}>
+                                            <span className="section-icon">{sec.icon}</span>
+                                            {sec.label}
+                                            <span className="section-count">{sectionCounts[sec.id]}</span>
+                                        </button>
+                                    ))}
+                                </div>
+
+                                {/* Favorites strip */}
+                                {favorites.length > 0 && !searchQuery && !activeSection && (
+                                    <div className="favs-strip">
+                                        <div className="favs-strip-title">★ ИЗБРАННОЕ</div>
+                                        <div className="favs-strip-items">
+                                            {db.filter(d => favorites.includes(d.id)).map(item => (
+                                                <button key={item.id} className="fav-chip" onClick={() => navigateTo(item)}>
+                                                    {item.title}
+                                                </button>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+
+                                {/* Results header */}
+                                <div className="results-header">
+                                    <div className="results-title">
+                                        {searchQuery ? `Результаты: "${searchQuery}"` :
+                                         activeSection ? SECTIONS.find(s => s.id === activeSection)?.label :
+                                         'Все записи (по срочности)'}
+                                    </div>
+                                    <div className="results-count">{dashboardEntries.length} записей</div>
+                                </div>
+
+                                {/* Results grid */}
+                                {dashboardEntries.length > 0 ? (
+                                    <div className="results-grid">
+                                        {dashboardEntries.map(entry => {
+                                            const sec = getSectionForCategory(entry.category);
+                                            const urgent = isUrgent(entry);
+                                            return (
+                                                <div key={entry.id}
+                                                    className={`result-card ${urgent ? 'urgent' : ''}`}
+                                                    onClick={() => navigateTo(entry)}>
+                                                    <button className={`card-fav ${favorites.includes(entry.id) ? 'starred' : ''}`}
+                                                        onClick={(e) => toggleFav(entry.id, e)}>
+                                                        {favorites.includes(entry.id) ? '★' : '☆'}
+                                                    </button>
+                                                    <div className="card-top">
+                                                        {typeBadge(entry.type)}
+                                                        {urgent && <span className="card-urgent-badge">УРГЕНТНОЕ</span>}
+                                                    </div>
+                                                    <div className="card-title">{entry.title}</div>
+                                                    <div className="card-category" style={{color: sec?.color || 'var(--g-dim)'}}>
+                                                        {entry.category} · /{entry.cmd_alias}
+                                                    </div>
+                                                    {entry.description && <div className="card-desc">{entry.description}</div>}
+                                                    {entry.tags && entry.tags.length > 0 && (
+                                                        <div className="card-tags">
+                                                            {entry.tags.slice(0, 4).map(tag => (
+                                                                <span key={tag} className="card-tag">{tag}</span>
+                                                            ))}
+                                                            {entry.tags.length > 4 && <span className="card-tag">+{entry.tags.length - 4}</span>}
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                ) : (
+                                    <div className="empty-state">
+                                        <div className="empty-icon">⌕</div>
+                                        <div className="empty-text">Ничего не найдено по запросу "{searchQuery}"</div>
+                                    </div>
+                                )}
+                            </div>
+                        ) : (
+                            /* ═══════ ARTICLE VIEW ═══════ */
+                            <div className="article-view">
+                                <div className="back-bar">
+                                    <button className="back-btn" onClick={goToDashboard}>← Назад</button>
+                                    <span className="back-breadcrumb">
+                                        {activeArticle.category} / {activeArticle.title}
+                                    </span>
+                                    <button className={`card-fav ${favorites.includes(activeArticle.id) ? 'starred' : ''}`}
+                                        style={{position:'static', opacity: favorites.includes(activeArticle.id) ? 1 : 0.4, marginLeft:'auto'}}
+                                        onClick={(e) => toggleFav(activeArticle.id, e)}>
+                                        {favorites.includes(activeArticle.id) ? '★ Избранное' : '☆ В избранное'}
+                                    </button>
+                                </div>
+
+                                <div className="content-title">{activeArticle.title}</div>
+                                <div className="content-meta">
+                                    {activeArticle.category} · /{activeArticle.cmd_alias} · {activeArticle.type.toUpperCase()}
+                                </div>
+
+                                {activeArticle.tags && (
+                                    <div className="content-tags">
+                                        {activeArticle.tags.map(tag => (
+                                            <button key={tag} className="content-tag"
+                                                onClick={() => { setSearchQuery(tag); goToDashboard(); }}>
+                                                {tag}
+                                            </button>
+                                        ))}
+                                    </div>
+                                )}
+
+                                {/* Content renderer by type */}
+                                {activeArticle.type === 'text' && <TextRenderer article={activeArticle} />}
+                                {activeArticle.type === 'matrix' && <MatrixRenderer article={activeArticle} />}
+                                {activeArticle.type === 'table' && <TableRenderer article={activeArticle} />}
+                                {activeArticle.type === 'flowchart' && <FlowchartRenderer key={activeArticle.id} article={activeArticle} />}
+                                {activeArticle.type === 'calculator' && <CalculatorRenderer key={activeArticle.id} article={activeArticle} />}
+                                {activeArticle.type === 'checklist' && <ChecklistRenderer key={activeArticle.id} article={activeArticle} />}
+
+                                {/* Cross-references */}
+                                {activeArticle.related && activeArticle.related.length > 0 && (
+                                    <div className="content-related">
+                                        <div className="content-related-title">Связанные записи</div>
+                                        {activeArticle.related.map(relId => {
+                                            const relEntry = db.find(d => d.id === relId);
+                                            if (!relEntry) return null;
+                                            return (
+                                                <button key={relId} className="related-link" onClick={() => navigateTo(relEntry)}>
+                                                    {relEntry.title}
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                )}
+                            </div>
+                        )}
+
+                        {/* ═══ CLI ═══ */}
+                        <div id="cli-container" className={cliCollapsed ? 'collapsed' : ''}>
+                            {!cliCollapsed && (
+                                <div id="cli-output" ref={outputRef}>
+                                    {cliOutput.map((line, i) => (
+                                        <div key={i} style={{
+                                            color: line.type === 'error' ? 'var(--red)' : line.type === 'sys' ? 'var(--g-dim)' :
+                                                   line.type === 'user' ? '#fff' : line.type === 'success' ? 'var(--g)' : 'var(--white)',
+                                            whiteSpace: 'pre-wrap'
+                                        }}>{line.text}</div>
+                                    ))}
+                                </div>
+                            )}
+                            <div className="cli-prompt-line">
+                                <span className="cli-prompt" style={{cursor:'pointer'}} onClick={() => setCliCollapsed(!cliCollapsed)}>
+                                    {cliCollapsed ? '▸' : '▾'} psych@enc:~$
+                                </span>
+                                <input id="cli-input" type="text" value={inputValue}
+                                    onChange={(e) => setInputValue(e.target.value)}
+                                    onKeyDown={handleCommand}
+                                    onFocus={() => { if (cliCollapsed) setCliCollapsed(false); }}
+                                    autoComplete="off" spellCheck="false" />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* ═══ SEARCH MODAL ═══ */}
+                    {showSearch && <SearchModal db={db} onSelect={navigateTo} onClose={() => setShowSearch(false)} />}
+                </React.Fragment>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>

@@ -27,13 +27,16 @@ if sys.platform == 'win32':
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 CATEGORIES_DIR = os.path.join(SCRIPT_DIR, 'categories')
-# Output goes to the renderer folder where terminal1.html loads it via <script>.
-# Override with PSYCH_RENDERER_DIR env var on other machines.
+# Output goes to:
+#   1) docs/database.js — for GitHub Pages deploy (committed to the repo)
+#   2) Local renderer folder where terminal1.html lives during dev
+# Override the local renderer path with PSYCH_RENDERER_DIR env var on other machines.
 RENDERER_DIR = os.environ.get(
     'PSYCH_RENDERER_DIR',
     '/home/thx1138/Документи/Инструменты_HTML',
 )
 OUTPUT_FILES = [
+    os.path.join(SCRIPT_DIR, 'docs', 'database.js'),
     os.path.join(RENDERER_DIR, 'database.js'),
 ]
 
