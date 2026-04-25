@@ -34,6 +34,46 @@
             --font: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace;
         }
 
+        /* ═══════ LIGHT THEME — paper-terminal aesthetic ═══════ */
+        body.theme-light {
+            --g: #1a7a35; --g-dim: #4a7c5a; --g-dark: #0f5022;
+            --bg: #fafaf6; --panel: #ffffff; --panel-hover: #f3f3ed;
+            --red: #c8202e; --blue: #1567c8; --amber: #a87a00; --orange: #c85f00;
+            --purple: #7530bf; --teal: #008276; --pink: #b03e6c;
+            --white: #1a1a1a; --grey: #888;
+            --border: #c8d4c8;
+        }
+        body.theme-light::after {
+            background: linear-gradient(rgba(255,255,255,0) 50%, rgba(0,0,0,0.04) 50%),
+                        linear-gradient(90deg, rgba(255,0,0,0.012), rgba(0,255,0,0.006), rgba(0,0,255,0.012));
+        }
+        body.theme-light #header {
+            background: linear-gradient(180deg, #f5f5ee, var(--bg));
+        }
+        body.theme-light .header-btn { background: rgba(26,122,53,0.04); }
+        body.theme-light .header-btn:hover { background: rgba(26,122,53,0.10); }
+        body.theme-light .header-btn.active { background: rgba(168,122,0,0.12); }
+        body.theme-light .header-btn kbd { background: #e8e8e0; color: #555; }
+        body.theme-light .badge-matrix { background: #d8ecdc; color: var(--g-dark); }
+        body.theme-light .badge-table { background: #d6e4f5; color: var(--blue); }
+        body.theme-light .badge-flowchart { background: #fbecc6; color: #6b4a00; }
+        body.theme-light .badge-calculator { background: #ece0f5; color: var(--purple); }
+        body.theme-light .badge-checklist { background: #d3ecdf; color: var(--teal); }
+        body.theme-light .badge-text { background: #ececec; color: var(--grey); }
+        body.theme-light .result-card { background: rgba(0,0,0,0.012); border-color: #d6dcd6; }
+        body.theme-light .result-card:hover { background: rgba(26,122,53,0.04); }
+        body.theme-light .section-btn { background: #fff; }
+        body.theme-light .section-btn:hover { background: rgba(0,0,0,0.025); }
+        body.theme-light .section-btn.active { background: rgba(0,0,0,0.05); }
+        body.theme-light .search-hero { background: rgba(26,122,53,0.025); }
+        body.theme-light .search-bar-wrap { background: rgba(0,0,0,0.02); border-color: #d6dcd6; }
+        body.theme-light input.search-bar { background: transparent; }
+        body.theme-light .toolbar-btn { background: rgba(168,122,0,0.04); }
+        body.theme-light .article-section { background: rgba(0,0,0,0.018); border-color: #d6dcd6; }
+        body.theme-light pre, body.theme-light code { background: #f0f0e9; color: #2a2a2a; }
+        body.theme-light .modal-content { background: #fff; border-color: #c8c8c0; box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
+        body.theme-light .modal-overlay { background: rgba(255,255,255,0.85); }
+
         * { box-sizing: border-box; margin: 0; padding: 0; }
         html, body { height: 100%; overflow: hidden; }
         body { font-family: var(--font); background: var(--bg); color: var(--g); }
@@ -1186,8 +1226,39 @@
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(<App />);
     </script>
-    <div style="position:fixed;bottom:4px;right:8px;font-family:'JetBrains Mono',monospace;font-size:0.62rem;color:#008f11;opacity:0.55;z-index:9998;pointer-events:auto;letter-spacing:0.5px;">
-      © 2026 A.Vilenchyk · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" style="color:#008f11;text-decoration:none;">CC BY-NC-ND 4.0</a> · educational use only
+    <div id="psych-footer" style="position:fixed;bottom:4px;right:8px;font-family:'JetBrains Mono',monospace;font-size:0.62rem;color:var(--g-dim);opacity:0.65;z-index:9998;pointer-events:auto;letter-spacing:0.5px;display:flex;gap:10px;align-items:center;">
+      <button id="theme-toggle" title="Toggle light/dark theme" style="background:rgba(0,0,0,0.0);border:1px solid var(--border);color:var(--g-dim);font-family:inherit;font-size:0.62rem;padding:2px 8px;border-radius:3px;cursor:pointer;letter-spacing:0.5px;">
+        <span id="theme-toggle-icon">◐</span> <span id="theme-toggle-label">light</span>
+      </button>
+      <span>© 2026 A.Vilenchyk · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" style="color:inherit;text-decoration:none;">CC BY-NC-ND 4.0</a> · educational use only</span>
     </div>
+    <script>
+      // Theme manager — pure JS, independent of React. Persists in localStorage.
+      (function(){
+        const KEY = 'psych_theme';
+        const btn = document.getElementById('theme-toggle');
+        const icon = document.getElementById('theme-toggle-icon');
+        const label = document.getElementById('theme-toggle-label');
+        function apply(theme) {
+          if (theme === 'light') {
+            document.body.classList.add('theme-light');
+            icon.textContent = '◑';
+            label.textContent = 'dark';
+          } else {
+            document.body.classList.remove('theme-light');
+            icon.textContent = '◐';
+            label.textContent = 'light';
+          }
+        }
+        // Restore on load — default = dark (terminal aesthetic)
+        try { apply(localStorage.getItem(KEY) || 'dark'); } catch(e) { apply('dark'); }
+        btn.addEventListener('click', function(){
+          const isLight = document.body.classList.contains('theme-light');
+          const next = isLight ? 'dark' : 'light';
+          apply(next);
+          try { localStorage.setItem(KEY, next); } catch(e) {}
+        });
+      })();
+    </script>
 </body>
 </html>
