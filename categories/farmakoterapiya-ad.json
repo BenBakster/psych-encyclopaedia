@@ -101,7 +101,12 @@
       ]
     ],
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Antidepressants chapters",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — antidepressants entries",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants (p.1099)",
+      "CANMAT Clinical Guidelines for the Management of Adults with Major Depressive Disorder (2016)"
+    ]
   },
   {
     "id": "flowchart_ad",
@@ -172,7 +177,12 @@
       }
     },
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Antidepressants chapters",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — antidepressants entries",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants (p.1099)",
+      "CANMAT Clinical Guidelines for the Management of Adults with Major Depressive Disorder (2016)"
+    ]
   },
   {
     "id": "ad_side_effects",
@@ -361,6 +371,11 @@
       ]
     ],
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Antidepressants chapters",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — antidepressants entries",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part III Antidepressants (p.1099)",
+      "CANMAT Clinical Guidelines for the Management of Adults with Major Depressive Disorder (2016)"
+    ]
   }
 ]

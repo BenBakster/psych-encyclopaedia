@@ -101,7 +101,11 @@
       ]
     ],
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Bazire S. Psychotropic Drug Directory 2020/21, Lloyd-Reinhold Publications",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part I Basic Principles + Part XIV Implementation"
+    ]
   },
   {
     "id": "preg_overview",
@@ -155,7 +159,11 @@
       ]
     },
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Bazire S. Psychotropic Drug Directory 2020/21, Lloyd-Reinhold Publications",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part I Basic Principles + Part XIV Implementation"
+    ]
   },
   {
     "id": "preg_benzo_anxio",
@@ -180,7 +188,11 @@
     ],
     "content": "БЕНЗОДИАЗЕПИНЫ, СНОТВОРНЫЕ, АНКСИОЛИТИКИ ПРИ БЕРЕМЕННОСТИ\n\n═══ БЕНЗОДИАЗЕПИНЫ ═══\n\nТЕРАТОГЕННОСТЬ:\n• Ранние данные (1970–80-е): сигнал о ↑ расщелины губы/нёба (OR ~1.8). Абсолютный риск: ~0.7% vs 0.06% базовый.\n• Современные мета-анализы (Dolovich et al., BMJ 1998; Enato et al., 2011): СЛАБЫЙ сигнал. Возможно — confounding.\n• Диазепам, хлордиазепоксид — наибольшие данные. Лоразепам, клоназепам — меньше данных.\n\nПЕРИНАТАЛЬНЫЕ РИСКИ:\n• III триместр: «вялый ребёнок» (floppy infant syndrome): гипотония, гипотермия, слабый крик.\n• Неонатальный синдром отмены: тремор, раздражительность, гиперрефлексия, диарея — может длиться НЕДЕЛЯМИ (особенно диазепам с T½ = 100+ ч с активными метаболитами).\n• Респираторная депрессия новорожденного (при введении непосредственно перед родами).\n\nРЕКОМЕНДАЦИИ:\n• ИЗБЕГАТЬ в I триместре (максимальный тератогенный риск).\n• Если необходимы — предпочесть ЛОРАЗЕПАМ (нет активных метаболитов, короткий T½, конъюгация > оксидация).\n• Минимальная доза, минимальный курс. Не для хронического приёма.\n• Отмена за 2–3 нед до родов (если возможно) — снизить неонатальный синдром.\n\n═══ Z-ГИПНОТИКИ (Золпидем, Зопиклон) ═══\n• Ограниченные данные. Нет явного сигнала о мальформациях.\n• Золпидем: отдельные данные о преждевременных родах и низком весе.\n• Не рекомендуются для хронического применения. Если бессонница — предпочесть немедикаментозные подходы или низкие дозы кветиапина.\n\n═══ БУСПИРОН ═══\n• Очень мало данных у человека. У животных — нет тератогенности.\n• Не рекомендуется из-за отсутствия данных.\n\n═══ ГИДРОКСИЗИН ═══\n• Антигистамин. Данные противоречивы: отдельные сообщения о расщелине нёба при раннем применении.\n• В целом считается относительно безопасным во II–III триместре для кратковременного купирования тревоги.\n• Не для хронического применения.\n\n═══ ПРАКТИЧЕСКИЙ ИТОГ ═══\nТревога при беременности → ПЕРВАЯ ЛИНИЯ: СИОЗС (сертралин). Если нужен быстрый эффект (паническая атака) — разовый приём лоразепама. Хронический приём бензодиазепинов при беременности — избегать.",
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Bazire S. Psychotropic Drug Directory 2020/21, Lloyd-Reinhold Publications",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part I Basic Principles + Part XIV Implementation"
+    ]
   },
   {
     "id": "preg_lactation",
@@ -351,7 +363,11 @@
       ]
     ],
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Bazire S. Psychotropic Drug Directory 2020/21, Lloyd-Reinhold Publications",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part I Basic Principles + Part XIV Implementation"
+    ]
   },
   {
     "id": "gero_anticholinergic",
@@ -376,7 +392,11 @@
     ],
     "content": "АНТИХОЛИНЕРГИЧЕСКАЯ НАГРУЗКА (Anticholinergic Cognitive Burden — ACB)\n\n═══ ПОЧЕМУ ВАЖНО ═══\nАнтихолинергические препараты у пожилых:\n• ↑ риск когнитивного снижения (кумулятивно, дозозависимо).\n• ↑ риск делирия (особенно в стационаре).\n• ↑ падений, задержки мочи, запоров, сухости рта, тахикардии, нарушения терморегуляции.\n• Кумулятивный эффект: 3+ препарата с ACB ≥1 = значимый риск.\nBazire: холинергический дефицит при деменции делает мозг ОСОБЕННО уязвимым.\n\n═══ ШКАЛА ACB (Anticholinergic Cognitive Burden Scale) ═══\n\nACB = 1 (лёгкое антихолинергическое действие):\n• Фуросемид, дигоксин, нифедипин, варфарин, метопролол, кодеин, преднизолон, ранитидин, церебролизин, гидрокортизон, тразодон.\n\nACB = 2 (умеренное):\n• Карбамазепин, циклобензаприн, локсапин, баклофен, пимозид.\n\nACB = 3 (выраженное — ИЗБЕГАТЬ у пожилых):\n• ТЦА: амитриптилин, кломипрамин, имипрамин, доксепин.\n• АП: хлорпромазин, левомепромазин, тиоридазин.\n• Атропин, скополамин, бензтропин, тригексифенидил.\n• Антигистамины: дифенгидрамин, гидроксизин, прометазин.\n• Урологические: оксибутинин, толтеродин, солифенацин.\n• Пароксетин (СИОЗС с максимальной антихолинергической активностью!).\n\n═══ ПРАКТИЧЕСКИЙ АЛГОРИТМ ═══\n1) Подсчитать суммарный ACB-балл всех ЛС пациента.\n2) ACB ≥3 → ПЕРЕСМОТРЕТЬ назначения.\n3) Замены:\n   • Амитриптилин → сертралин, дулоксетин, миртазапин.\n   • Пароксетин → сертралин, эсциталопрам.\n   • Оксибутинин → мирабегрон (β3-агонист, без ACB).\n   • Дифенгидрамин → мелатонин, тразодон (для сна).\n   • Хлорпромазин → кветиапин (ACB значительно ниже).\n4) При назначении ИХЭ (донепезил и др.) — ОБЯЗАТЕЛЬНО снизить антихолинергическую нагрузку (иначе ИХЭ «воюют» с антихолинергиками, нулевой эффект).\n\n═══ ФОРМУЛА ВРЕДА ═══\nДефицит ACh (деменция) + блокада ACh (лекарства) + возраст (↓ резерв) = ДЕЛИРИЙ, КОГНИТИВНАЯ КАТАСТРОФА.\n\n⚠ До 50% пожилых на 5+ ЛС получают хотя бы один препарат с ACB ≥3.",
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Bazire S. Psychotropic Drug Directory 2020/21, Lloyd-Reinhold Publications",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part I Basic Principles + Part XIV Implementation"
+    ]
   },
   {
     "id": "gero_polypharmacy",
@@ -497,6 +517,10 @@
       ]
     },
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed.",
+      "Bazire S. Psychotropic Drug Directory 2020/21, Lloyd-Reinhold Publications",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part I Basic Principles + Part XIV Implementation"
+    ]
   }
 ]

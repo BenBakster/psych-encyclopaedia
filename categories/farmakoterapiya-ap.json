@@ -111,7 +111,12 @@
       ]
     ],
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Antipsychotics chapters",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — antipsychotics entries",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part V Antipsychotics (p.1687)",
+      "Hiemke C. et al. Consensus guidelines for therapeutic drug monitoring in neuropsychopharmacology: update 2017. Pharmacopsychiatry 2018;51:9–62"
+    ]
   },
   {
     "id": "calc_cpz",
@@ -335,7 +340,12 @@
       ]
     },
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Antipsychotics chapters",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — antipsychotics entries",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part V Antipsychotics (p.1687)",
+      "Hiemke C. et al. Consensus guidelines for therapeutic drug monitoring in neuropsychopharmacology: update 2017. Pharmacopsychiatry 2018;51:9–62"
+    ]
   },
   {
     "id": "preg_antipsychotics",
@@ -410,7 +420,12 @@
       ]
     ],
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Antipsychotics chapters",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — antipsychotics entries",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part V Antipsychotics (p.1687)",
+      "Hiemke C. et al. Consensus guidelines for therapeutic drug monitoring in neuropsychopharmacology: update 2017. Pharmacopsychiatry 2018;51:9–62"
+    ]
   },
   {
     "id": "drug_quetiapine",
@@ -456,7 +471,12 @@
       ]
     },
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Antipsychotics chapters",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — antipsychotics entries",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part V Antipsychotics (p.1687)",
+      "Hiemke C. et al. Consensus guidelines for therapeutic drug monitoring in neuropsychopharmacology: update 2017. Pharmacopsychiatry 2018;51:9–62"
+    ]
   },
   {
     "id": "drug_aripiprazole",
@@ -482,7 +502,12 @@
     ],
     "content": "АРИПИПРАЗОЛ: КАРТОЧКА ПРЕПАРАТА (Bazire PDD 2020/21; Stahl 2021)\n\n═══ ФАРМАКОЛОГИЯ ═══\nПАРЦИАЛЬНЫЙ АГОНИСТ D2 + 5-HT1A, антагонист 5-HT2A. «Стабилизатор дофамина».\nПри избытке DA → антагонизм; при дефиците → частичная стимуляция.\nМетаболизм: CYP2D6 (основной) + CYP3A4. Активный метаболит: дегидро-арипипразол.\nT½: 75 ч + 94 ч (метаболит) — ОЧЕНЬ длинный. Белковое связывание: >99%.\n\n═══ ДОЗИРОВАНИЕ ═══\n• Шизофрения: 10–30 мг. Старт 10–15 мг.\n• Мания: 15–30 мг.\n• TRD (аугментация): 2–5 мг → до 15 мг (FDA). Часто достаточно 2–5 мг.\n• ОКР (аугментация, off-label): 5–15 мг.\n• LAI: Maintena® 400 мг каждые 4 нед.\n\n═══ АКАТИЗИЯ — ГЛАВНАЯ ПРОБЛЕМА ═══\nЧастота до 25%. Может имитировать тревогу/ажитацию → ошибочное ↑ дозы → порочный круг.\n⚠ Акатизия ↑ риск суицидальности в начале.\nЛечение: ↓ дозу, пропранолол 20–80 мг, бензодиазепины, миртазапин.\n\n═══ ПОБОЧНЫЕ ═══\n• Метаболический профиль: МИНИМАЛЬНЫЙ ↑ веса (лучший в классе).\n• Пролактин: НЕ повышает (может ↓). Преимущество при гиперпролактинемии.\n• ЭПС: акатизия >> ригидность. QTc: не удлиняет.\n• Компульсивное поведение (gambling, shopping, hypersexuality): РЕДКО, FDA warning 2016.\n• Инсомния, тошнота, головная боль — в начале.\n\n═══ ВЗАИМОДЕЙСТВИЯ (Bazire) ═══\n⛔ КАРБАМАЗЕПИН: ↓ AUC на 70% (CYP3A4). Bazire: УДВОИТЬ дозу.\n⚠ CYP2D6-ингибиторы (флуоксетин, пароксетин): ↑ уровень → ↓ дозу на 50%.\n⚠ CYP3A4-ингибиторы (кетоконазол): ↑ → ↓ дозу.\n✅ Литий: нет взаимодействия (Bazire: Boulton 2012).\n\nCYP2D6 POOR METABOLIZERS: уровень ↑ ~60% → рассмотреть ↓ дозу.\n\n═══ БЕРЕМЕННОСТЬ ═══\nМало данных. ГВ: RID ~1–8%. Кветиапин предпочтительнее.",
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Antipsychotics chapters",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — antipsychotics entries",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part V Antipsychotics (p.1687)",
+      "Hiemke C. et al. Consensus guidelines for therapeutic drug monitoring in neuropsychopharmacology: update 2017. Pharmacopsychiatry 2018;51:9–62"
+    ]
   },
   {
     "id": "alg_clozapine_initiation",

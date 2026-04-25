@@ -132,7 +132,12 @@
       ]
     },
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Mood stabilizers chapter",
+      "CANMAT and ISBD 2018 Guidelines for the Management of Patients with Bipolar Disorder (Yatham L.N. et al. Bipolar Disord 2018;20:97–170)",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part IV Mood Stabilizers (p.1425)",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — mood stabilizer entries"
+    ]
   },
   {
     "id": "lithium_interactions",
@@ -263,7 +268,12 @@
       ]
     },
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Mood stabilizers chapter",
+      "CANMAT and ISBD 2018 Guidelines for the Management of Patients with Bipolar Disorder (Yatham L.N. et al. Bipolar Disord 2018;20:97–170)",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part IV Mood Stabilizers (p.1425)",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — mood stabilizer entries"
+    ]
   },
   {
     "id": "drug_lithium",
@@ -317,7 +327,12 @@
       ]
     },
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Mood stabilizers chapter",
+      "CANMAT and ISBD 2018 Guidelines for the Management of Patients with Bipolar Disorder (Yatham L.N. et al. Bipolar Disord 2018;20:97–170)",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part IV Mood Stabilizers (p.1425)",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — mood stabilizer entries"
+    ]
   },
   {
     "id": "drug_valproate",
@@ -343,7 +358,12 @@
     ],
     "content": "ВАЛЬПРОАТ: КАРТОЧКА ПРЕПАРАТА (Bazire PDD 2020/21; Stahl 2021)\n\n═══ ФАРМАКОЛОГИЯ ═══\nМеханизм: ↑ ГАМК (ингибирование ГАМК-трансаминазы), блокада Na⁺-каналов, модуляция гистондеацетилазы.\nМетаболизм: печёночный (глюкуронизация, β-окисление, CYP2C9/2C19). T½: 8–20 ч. Белковое связывание: 90%.\n⚠ У пожилых: T½ удвоен, белковое связывание может меняться → осторожность в интерпретации уровней (Bazire: Lampon 2012).\n\n═══ ПОКАЗАНИЯ ═══\n• Острая мания: в/в нагрузка 20 мг/кг эффективна как галоперидол в/м (Bazire).\n• Профилактика БАР (слабее лития head-to-head; Hayes 2016).\n• Эпилепсия, мигрень (профилактика), агрессия.\n\n═══ ДОЗИРОВАНИЕ И УРОВНИ ═══\nОстрая мания: нагрузка 20 мг/кг/день per os или в/в.\nПрофилактика: 750–2000 мг/день. Целевой уровень: 50–100 мкг/мл (350–700 мкмоль/л), trough.\nПожилые: дозы на ~25% ниже.\n\n═══ МОНИТОРИНГ ═══\nДО: ОАК + тромбоциты, печёночные ферменты (АЛТ/АСТ/ГГТ), вес, тест на беременность (⛔!).\nТЕКУЩИЙ: уровень каждые 3–6 мес, ОАК + тромбоциты каждые 6 мес, печёночные ферменты каждые 6 мес, вес, амилаза/липаза при абдоминальной боли (панкреатит!).\n\n═══ ПОБОЧНЫЕ ═══\n• Вес: ↑↑ (до 10+ кг), дозозависимо.\n• Тромбоцитопения: дозозависимая (чаще при >100 мкг/мл).\n• Тремор, седация, алопеция (обратимая; цинк/селен могут помочь).\n• СПКЯ-подобный синдром: гиперандрогения, нерегулярные менструации.\n• Гипераммониемическая энцефалопатия: даже при НОРМАЛЬНЫХ печёночных ферментах! Проверить аммиак при спутанности.\n\n⚠ ГЕПАТОТОКСИЧНОСТЬ: идиосинкразическая, чаще <2 лет на политерапии. ↑ АЛТ >3N + рвота + вялость → НЕМЕДЛЕННАЯ ОТМЕНА.\n\n═══ ВЗАИМОДЕЙСТВИЯ (Bazire) ═══\n⛔ Карбамазепин: ↑ токсического CBZ-E, ↓ уровня вальпроата.\n⚠ ЛАМОТРИДЖИН: вальпроат УДВАИВАЕТ уровень → ↓ дозу ламотриджина вдвое!\n⚠ Аспирин (высокие дозы): ↑ свободной фракции. Индукторы CYP (фенитоин, рифампицин): ↓ уровень.\n• Нет значимого взаимодействия с ЭКГ (Bazire: Kurt 2009; может даже стабилизировать проводимость).\n\n═══ ТЕРАТОГЕННОСТЬ ═══\n⛔ АБСОЛЮТНО ПРОТИВОПОКАЗАН ПРИ БЕРЕМЕННОСТИ.\nSpina bifida 5–9%, ↓ IQ на 7–10 пунктов (NEAD Study), аутизм OR 3–5, фетальный вальпроатный синдром.\nPregnancy Prevention Programme (EMA 2018): ЗАПРЕЩЁН без контрацепции + подписанной формы.\nПарадокс лактации: безопасен при ГВ (проникновение ~1–3%).",
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Mood stabilizers chapter",
+      "CANMAT and ISBD 2018 Guidelines for the Management of Patients with Bipolar Disorder (Yatham L.N. et al. Bipolar Disord 2018;20:97–170)",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part IV Mood Stabilizers (p.1425)",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — mood stabilizer entries"
+    ]
   },
   {
     "id": "drug_lamotrigine",
@@ -369,6 +389,11 @@
     ],
     "content": "ЛАМОТРИДЖИН: КАРТОЧКА ПРЕПАРАТА (Bazire PDD 2020/21; Stahl 2021)\n\n═══ ФАРМАКОЛОГИЯ ═══\nМеханизм: блокада Na⁺-каналов → ↓ глутамата. НЕ CYP450 — глюкуронизация (UGT1A4).\nT½: ~29 ч (монотерапия). Белковое связывание: ~55%.\n\n═══ ПОКАЗАНИЯ ═══\n• БАР — профилактика ДЕПРЕССИВНЫХ эпизодов (лучше, чем против мании).\n• Самый безопасный нормотимик при беременности.\n• Эпилепсия. Не удлиняет QTc до 400 мг/день (Bazire: Dixon 2008).\n\n═══ ТИТРАЦИЯ (⚠ КРИТИЧНО — РИСК SJS!) ═══\n\nМОНОТЕРАПИЯ:\nНед 1–2: 25 мг/день → Нед 3–4: 50 → Нед 5: 100 → Нед 6+: 200 мг (макс 400).\n\nС ВАЛЬПРОАТОМ (удваивает уровень!):\nНед 1–2: 25 мг через день → 3–4: 25 мг/день → 5: 50 → 6+: 100 мг (макс 200).\n\nС КАРБАМАЗЕПИНОМ/ФЕНИТОИНОМ (↓ уровень вдвое):\nНед 1–2: 50 мг → 3–4: 100 → 5+: 200×2 р/день (макс 500–700).\n\n⚠ Пропуск >6 дней → ПЕРЕТИТРОВАТЬ ЗАНОВО!\n\n═══ SJS/TEN ═══\nЧастота ~0.08% (1:1000–1:3000). Фатально 5–12%. Факторы: быстрая титрация, ↑ стартовая доза, комбинация с вальпроатом, HLA-B*1502 (азиаты — скрининг!).\nПик: 2–5 нед. ЛЮБАЯ СЫПЬ → ОТМЕНА + дерматолог.\nДоброкачественная сыпь (до 10%): макулопапулёзная, без слизистых — НЕ SJS, но требует оценки.\n\n═══ ПОБОЧНЫЕ ═══\nГоловная боль, головокружение, тошнота, бессонница. НЕТ: значимого ↑ веса, седации, когнитивного притупления — «чистый» профиль.\n\n═══ ВЗАИМОДЕЙСТВИЯ (Bazire) ═══\n⛔ Вальпроат: ×2 уровень → ПОЛОВИНА дозы!\n⛔ Карбамазепин: ↓ T½ с 29 до ~15 ч → ДВОЙНАЯ доза. Bazire: ↑ CBZ-E не подтверждено.\n⚠ КОК (эстрогены): ↓ уровень на 50%. В pill-free неделю — ↑ → побочные.\n⚠ Рифампицин, диета Аткинса: ↓ уровень до 46%.\n✅ Литий: нет взаимодействия.\n\n═══ БЕРЕМЕННОСТЬ ═══\n✅ Первая линия. Нет ↑ мальформаций при <300 мг. Нет ↓ IQ.\nКлиренс ↑ 50–100% к III триместру → уровень ежемесячно. После родов: ↓ доза за 2 нед.\nГВ: RID ~9–18%. С осторожностью. Мониторинг сыпи у младенца.",
     "lastUpdated": "2026-04-03",
-    "sources": []
+    "sources": [
+      "Maudsley Prescribing Guidelines in Psychiatry, 14th ed. — Mood stabilizers chapter",
+      "CANMAT and ISBD 2018 Guidelines for the Management of Patients with Bipolar Disorder (Yatham L.N. et al. Bipolar Disord 2018;20:97–170)",
+      "Riederer P., Laux G. (eds.). NeuroPsychopharmacotherapy. Springer, 2022 — Part IV Mood Stabilizers (p.1425)",
+      "Stahl S.M. Prescriber's Guide, 7th ed. (2021) — mood stabilizer entries"
+    ]
   }
 ]
