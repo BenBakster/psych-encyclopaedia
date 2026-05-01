@@ -13,7 +13,7 @@
     <meta name="author" content="Anton Vilenchyk">
     <meta name="copyright" content="© 2026 Anton Vilenchyk. CC BY-NC-ND 4.0">
     <meta name="description" content="PSYCH :: ENCYCLOPAEDIA OS — clinical reference for practicing psychiatrists. Educational use only.">
-    <title>PSYCH :: ENCYCLOPAEDIA OS v7.1</title>
+    <title>PSYCH :: ENCYCLOPAEDIA OS v7.1 :: ACID EDITION (1000 µg)</title>
     
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
@@ -34,96 +34,8 @@
             --font: 'JetBrains Mono', 'IBM Plex Mono', 'Courier New', monospace;
         }
 
-        /* ═══════ LIGHT THEME — Solarized Light by Ethan Schoonover ═══════ */
-        /* Palette: https://ethanschoonover.com/solarized/
-           base3 (BG default):    #fdf6e3
-           base2 (BG highlight):  #eee8d5
-           base1 (comments):      #93a1a1
-           base0 (body text):     #839496
-           base00 (primary text): #657b83
-           base01 (emphasis):     #586e75
-           Accents: yellow #b58900, orange #cb4b16, red #dc322f, magenta #d33682,
-                    violet #6c71c4, blue #268bd2, cyan #2aa198, green #859900 */
-        body.theme-light {
-            --g: #6a7a00; /* darkened green for any text use (was #859900, too low contrast) */
-            --g-dim: #3a4a50; /* secondary text: darker than base01 #586e75 for better contrast */
-            --g-dark: #002b36; /* base04 — even darker than base03 for max emphasis */
-            --bg: #fdf6e3; --panel: #ffffff; --panel-hover: #eee8d5;
-            --red: #b8252b; --blue: #1f6fa8; --amber: #8e6900; --orange: #a04510;
-            --purple: #5258a6; --teal: #006c63; --pink: #a82c5a;
-            --white: #002b36; /* base04 — primary text, max contrast */
-            --grey: #6c7a7a;  /* darkened from #93a1a1 for placeholders */
-            --border: #a89e80;  /* much darker borders for visible separation */
-        }
-        /* Override body color: in dark theme it's neon-green; on cream that's barely readable. */
-        body.theme-light { color: var(--white) !important; }
-        /* All places where var(--g) was used as PRIMARY text — switch to base03 for legibility */
-        body.theme-light .search-hero-title strong { color: var(--g-dark) !important; }
-        body.theme-light .search-bar { color: var(--g-dark) !important; }
-        body.theme-light .search-bar-wrap:focus-within .search-icon { color: var(--g-dark) !important; }
-        body.theme-light .search-bar-hint { color: var(--g-dim) !important; }
-        body.theme-light .search-bar::placeholder { color: var(--grey) !important; }
-        body.theme-light .badge-matrix { color: #4a5800; } /* Solarized green darkened for contrast on light bg */
-        body.theme-light .data-table th { background: rgba(133,153,0,0.10); color: var(--g-dark) !important; }
-        body.theme-light .flow-step-question { color: var(--g-dark) !important; }
-        body.theme-light .flow-info { color: var(--g-dim); }
-        body.theme-light .flow-option:hover { color: var(--g-dark) !important; background: rgba(133,153,0,0.10); border-color: var(--g); }
-        body.theme-light .flow-result-title { color: var(--g-dark) !important; }
-        body.theme-light .calc-result-big { color: var(--g-dark) !important; }
-        body.theme-light .calc-select, body.theme-light .calc-input { background: #fff; color: var(--g-dark); border-color: #d8d3bf; }
-        body.theme-light .back-btn { color: var(--g-dim); }
-        body.theme-light .back-btn:hover { color: var(--g-dark); border-color: var(--g); }
-        body.theme-light .content-tag { color: var(--g-dim); }
-        body.theme-light .content-tag:hover { color: var(--g-dark); border-color: var(--g); }
-        body.theme-light .node-current { box-shadow: 0 0 12px rgba(133,153,0,0.30); }
-        body.theme-light .header-btn { color: var(--g-dim); }
-        body.theme-light #header .logo { color: var(--g-dark); }
-        body.theme-light #header .logo span { color: var(--g-dim); }
-        body.theme-light #header .stats { color: var(--g-dim); }
-        body.theme-light .results-title { color: var(--g-dim); }
-        body.theme-light .results-count { color: var(--grey); }
-        body.theme-light .card-title { color: var(--g-dark); }
-        body.theme-light .card-desc, body.theme-light .card-category { color: var(--g-dim); }
-        body.theme-light .section-btn { color: var(--g-dim); }
-        body.theme-light .section-btn:hover { color: var(--g-dark); }
-        body.theme-light .section-btn.active { color: var(--amber); }
-        body.theme-light .content-meta, body.theme-light .content-desc, body.theme-light .content-related-title { color: var(--g-dim); }
-        body.theme-light a { color: var(--blue); }
-        body.theme-light a:hover { color: #155a96; }
-        body.theme-light::after {
-            /* Subtle scanlines, much lighter than dark theme */
-            background: linear-gradient(rgba(253,246,227,0) 50%, rgba(0,43,54,0.025) 50%),
-                        linear-gradient(90deg, rgba(220,50,47,0.008), rgba(133,153,0,0.004), rgba(38,139,210,0.008));
-        }
-        body.theme-light #header {
-            background: linear-gradient(180deg, #f5efd8, var(--bg));
-            border-bottom-color: #d8d3bf;
-        }
-        body.theme-light .header-btn { background: rgba(133,153,0,0.06); }
-        body.theme-light .header-btn:hover { background: rgba(133,153,0,0.14); color: var(--g-dark); border-color: var(--g); }
-        body.theme-light .header-btn.active { background: rgba(181,137,0,0.18); border-color: var(--amber); color: var(--amber); }
-        body.theme-light .header-btn kbd { background: #eee8d5; color: var(--g-dim); }
-        body.theme-light .badge-matrix { background: rgba(133,153,0,0.18); color: #5a6b00; }
-        body.theme-light .badge-table { background: rgba(38,139,210,0.18); color: #1a5e94; }
-        body.theme-light .badge-flowchart { background: rgba(181,137,0,0.20); color: #7d5e00; }
-        body.theme-light .badge-calculator { background: rgba(108,113,196,0.18); color: #4a4f8f; }
-        body.theme-light .badge-checklist { background: rgba(42,161,152,0.18); color: #1d706a; }
-        body.theme-light .badge-text { background: rgba(147,161,161,0.20); color: var(--g-dim); }
-        body.theme-light .result-card { background: #f5efd0; border-color: #b8ac8e; }
-        body.theme-light .result-card:hover { background: #ede6c0; border-color: var(--g); }
-        body.theme-light .section-btn { background: #fff; border-color: #b8ac8e; color: var(--g-dim); }
-        body.theme-light .section-btn:hover { background: #f5efd0; color: var(--g-dark); }
-        body.theme-light .section-btn.active { background: #f0e4b8; border-color: var(--amber); color: var(--amber); }
-        body.theme-light .search-hero { background: #f5efd0; }
-        body.theme-light .search-bar-wrap { background: #fff; border-color: var(--g-dim); }
-        body.theme-light input.search-bar { background: transparent; color: var(--g-dark); }
-        body.theme-light input.search-bar::placeholder { color: var(--grey); }
-        body.theme-light .toolbar-btn { background: #f5efd0; border-color: #b8ac8e; color: var(--g-dim); }
-        body.theme-light .toolbar-btn:hover { background: #ede6c0; color: var(--g-dark); }
-        body.theme-light .article-section { background: #f5efd0; border-color: #b8ac8e; }
-        body.theme-light pre, body.theme-light code { background: #ede6c0; color: var(--g-dark); border: 1px solid #b8ac8e; }
-        body.theme-light .modal-content { background: #fdf6e3; border-color: #a89e80; box-shadow: 0 8px 32px rgba(0,43,54,0.30); }
-        body.theme-light .modal-overlay { background: rgba(0,43,54,0.30); }
+        /* ═══════ LIGHT THEME — REMOVED FOR ACID EDITION (1000 µg) ═══════ */
+        /* Solarized Light gutted intentionally. There is no light. There is only the trip. */
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
         html, body { height: 100%; overflow: hidden; }
@@ -505,6 +417,382 @@
             .article-view { padding: 16px 16px 30px; }
             .sections-row { gap: 6px; }
             .section-btn { padding: 7px 10px; font-size: 0.72rem; }
+        }
+
+        /* ═════════════════════════════════════════════════════════════════
+           ACID OVERLAY — 1000 µg edition.
+           Matrix-green core kept. Light tones banished.
+           Everything below this comment is psychoactive CSS.
+           ═════════════════════════════════════════════════════════════════ */
+
+        :root {
+            --g: #00ff88;
+            --g-dim: #00cc66;
+            --g-dark: #008844;
+            --bg: #03000a;
+            --panel: #0a0018;
+            --panel-hover: #14002a;
+            --magenta: #ff00ff;
+            --cyan: #00ffff;
+            --yellow: #fffb00;
+            --pink: #ff1493;
+            --violet: #b266ff;
+            --orange: #ff6a00;
+            --red: #ff003c;
+            --acid-amber: #ffaa00;
+            --white: #d6f8e8;
+            --grey: #4a3060;
+            --border: #5a008a;
+        }
+
+        @keyframes acid-flow {
+            0%   { background-position:   0% 50%,  100% 50%,   50% 50%; }
+            50%  { background-position: 100% 50%,    0% 50%,   50% 50%; }
+            100% { background-position:   0% 50%,  100% 50%,   50% 50%; }
+        }
+        @keyframes acid-mandala {
+            0%   { transform: rotate(0deg)   scale(1.00); opacity: 0.55; }
+            50%  { transform: rotate(180deg) scale(1.12); opacity: 0.80; }
+            100% { transform: rotate(360deg) scale(1.00); opacity: 0.55; }
+        }
+        @keyframes acid-jitter {
+            0%   { text-shadow: -2px 0 var(--magenta), 2px 0 var(--cyan), 0 0 8px var(--g); }
+            20%  { text-shadow:  2px 0 var(--magenta), -2px 0 var(--cyan), 0 0 12px var(--yellow); }
+            40%  { text-shadow: -1px 0 var(--yellow), 1px 0 var(--magenta), 0 0 10px var(--violet); }
+            60%  { text-shadow:  1px 0 var(--cyan), -1px 0 var(--yellow), 0 0 12px var(--pink); }
+            80%  { text-shadow: -3px 0 var(--pink), 3px 0 var(--g), 0 0 14px var(--orange); }
+            100% { text-shadow: -2px 0 var(--magenta), 2px 0 var(--cyan), 0 0 8px var(--g); }
+        }
+        @keyframes acid-pulse-border {
+            0%   { border-color: var(--magenta); box-shadow: 0 0 14px var(--magenta), inset 0 0 14px rgba(255,0,255,0.10); }
+            20%  { border-color: var(--cyan);    box-shadow: 0 0 14px var(--cyan),    inset 0 0 14px rgba(0,255,255,0.10); }
+            40%  { border-color: var(--yellow);  box-shadow: 0 0 14px var(--yellow),  inset 0 0 14px rgba(255,251,0,0.10); }
+            60%  { border-color: var(--pink);    box-shadow: 0 0 14px var(--pink),    inset 0 0 14px rgba(255,20,147,0.10); }
+            80%  { border-color: var(--violet);  box-shadow: 0 0 14px var(--violet),  inset 0 0 14px rgba(178,102,255,0.10); }
+            100% { border-color: var(--g);       box-shadow: 0 0 14px var(--g),       inset 0 0 14px rgba(0,255,136,0.10); }
+        }
+        @keyframes acid-hue {
+            0%   { filter: hue-rotate(0deg)   saturate(1.4); }
+            100% { filter: hue-rotate(360deg) saturate(1.4); }
+        }
+        @keyframes acid-breathe {
+            0%, 100% { transform: scale(1.000); }
+            50%      { transform: scale(1.015); }
+        }
+        @keyframes acid-tracer {
+            0%   { letter-spacing: normal; }
+            50%  { letter-spacing: 0.06em; }
+            100% { letter-spacing: normal; }
+        }
+
+        /* Animated psychedelic backdrop on body itself */
+        body {
+            background:
+                radial-gradient(ellipse 60% 40% at 20% 25%, rgba(255,0,255,0.22), transparent 60%),
+                radial-gradient(ellipse 60% 40% at 80% 75%, rgba(0,255,255,0.20), transparent 60%),
+                radial-gradient(ellipse 50% 50% at 50% 50%, rgba(178,102,255,0.14), transparent 70%),
+                #03000a !important;
+            background-size: 200% 200%, 200% 200%, 300% 300%, auto !important;
+            background-attachment: fixed !important;
+            animation: acid-flow 22s ease-in-out infinite;
+            color: var(--g) !important;
+        }
+
+        /* If theme-light gets toggled — ignore. The light is gone. */
+        body.theme-light { /* deliberately empty */ }
+
+        /* Spinning mandala overlay — sits ABOVE the existing scanlines */
+        body::before {
+            content: "";
+            position: fixed; top: -50%; left: -50%; width: 200%; height: 200%;
+            background:
+                repeating-conic-gradient(from 0deg at 50% 50%,
+                    rgba(255,0,255,0.05)  0deg,
+                    rgba(0,255,255,0.05)  18deg,
+                    rgba(255,251,0,0.05)  36deg,
+                    rgba(255,20,147,0.05) 54deg,
+                    rgba(178,102,255,0.05) 72deg,
+                    rgba(0,255,136,0.05)  90deg);
+            mix-blend-mode: screen;
+            pointer-events: none;
+            z-index: 9998;
+            animation: acid-mandala 90s linear infinite;
+        }
+
+        /* Crank existing CRT scanlines into harder RGB shimmer */
+        body::after {
+            background:
+                linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.40) 50%),
+                linear-gradient(90deg, rgba(255,0,255,0.10), rgba(0,255,255,0.06), rgba(255,251,0,0.10), rgba(255,20,147,0.08)) !important;
+            background-size: 100% 2px, 4px 100% !important;
+            mix-blend-mode: screen !important;
+        }
+
+        /* Headline / brand text — chromatic aberration jitter */
+        #header .logo,
+        .search-hero-title,
+        .search-hero-title strong,
+        .results-title,
+        .card-title,
+        .article-title,
+        h1, h2, h3 {
+            animation: acid-jitter 700ms steps(5) infinite, acid-tracer 6s ease-in-out infinite;
+            color: var(--g) !important;
+        }
+
+        /* Pulsing rainbow borders on every container */
+        .search-bar-wrap,
+        .result-card,
+        .section-btn,
+        .article-section,
+        .toolbar-btn,
+        .header-btn,
+        .modal-content,
+        pre, code {
+            animation: acid-pulse-border 5s linear infinite;
+            border-width: 2px !important;
+            background-color: rgba(20, 0, 40, 0.35) !important;
+        }
+
+        /* Cards breathe gently. */
+        .result-card {
+            animation: acid-pulse-border 5s linear infinite, acid-breathe 4s ease-in-out infinite;
+        }
+        .result-card:hover {
+            background: rgba(60, 0, 90, 0.55) !important;
+            box-shadow: 0 0 28px var(--magenta), 0 0 48px var(--cyan), inset 0 0 28px rgba(255,0,255,0.18) !important;
+            transform: scale(1.02);
+        }
+
+        /* Badges — all neon now */
+        .badge-matrix    { background: rgba(0,255,136,0.20)  !important; color: var(--g)        !important; box-shadow: 0 0 8px var(--g); }
+        .badge-table     { background: rgba(0,255,255,0.20)  !important; color: var(--cyan)     !important; box-shadow: 0 0 8px var(--cyan); }
+        .badge-flowchart { background: rgba(255,251,0,0.20)  !important; color: var(--yellow)   !important; box-shadow: 0 0 8px var(--yellow); }
+        .badge-calculator{ background: rgba(178,102,255,0.20)!important; color: var(--violet)   !important; box-shadow: 0 0 8px var(--violet); }
+        .badge-checklist { background: rgba(255,20,147,0.20) !important; color: var(--pink)     !important; box-shadow: 0 0 8px var(--pink); }
+        .badge-text      { background: rgba(255,0,255,0.18)  !important; color: var(--magenta)  !important; box-shadow: 0 0 8px var(--magenta); }
+
+        /* Section pills — full-time hue rotation */
+        .section-btn {
+            color: var(--cyan) !important;
+            text-shadow: 0 0 6px var(--cyan);
+        }
+        .section-btn.active {
+            color: var(--yellow) !important;
+            background: rgba(255,251,0,0.18) !important;
+            text-shadow: 0 0 10px var(--yellow), 0 0 20px var(--orange);
+        }
+        .section-btn:hover {
+            color: var(--magenta) !important;
+            text-shadow: 0 0 10px var(--magenta);
+        }
+
+        /* Body text — keep matrix green but glow it */
+        .card-desc, .card-category, .content-meta, .content-desc, .content-related-title,
+        .results-count, .search-bar-hint, .stats {
+            color: var(--g-dim) !important;
+            text-shadow: 0 0 4px rgba(0,255,136,0.5);
+        }
+
+        /* Search bar — hot magenta aura */
+        .search-bar-wrap {
+            background: rgba(20, 0, 40, 0.55) !important;
+            border-color: var(--magenta) !important;
+        }
+        .search-bar {
+            color: var(--cyan) !important;
+            text-shadow: 0 0 6px var(--cyan);
+        }
+        .search-bar::placeholder { color: var(--violet) !important; opacity: 0.7; }
+        .search-bar-wrap:focus-within {
+            box-shadow: 0 0 24px var(--magenta), 0 0 48px var(--cyan), inset 0 0 24px rgba(255,0,255,0.20) !important;
+        }
+
+        /* Header logo — scream */
+        #header {
+            background: linear-gradient(180deg, rgba(60,0,90,0.55), rgba(3,0,10,0.0)) !important;
+            border-bottom: 1px solid var(--magenta) !important;
+            box-shadow: 0 0 24px rgba(255,0,255,0.35);
+        }
+        #header .logo { color: var(--g) !important; }
+        #header .logo span { color: var(--magenta) !important; text-shadow: 0 0 8px var(--magenta); }
+
+        /* Tables — neon grid */
+        .data-table th { background: rgba(255,0,255,0.18) !important; color: var(--yellow) !important; text-shadow: 0 0 6px var(--yellow); }
+        .data-table td { color: var(--g) !important; }
+        .data-table tr:hover td { background: rgba(0,255,255,0.10) !important; }
+
+        /* Flowchart — every option glows differently */
+        .flow-step-question { color: var(--cyan) !important; text-shadow: 0 0 8px var(--cyan); }
+        .flow-option { animation: acid-pulse-border 5s linear infinite; }
+        .flow-option:hover { background: rgba(255,0,255,0.18) !important; color: var(--yellow) !important; }
+        .flow-result-title { color: var(--yellow) !important; text-shadow: 0 0 12px var(--yellow), 0 0 24px var(--orange); }
+        .calc-result-big { color: var(--yellow) !important; text-shadow: 0 0 16px var(--yellow), 0 0 32px var(--magenta); }
+
+        /* Modal — tunnel */
+        .modal-content {
+            background: rgba(10, 0, 25, 0.92) !important;
+            box-shadow: 0 0 40px var(--magenta), 0 0 80px var(--cyan), inset 0 0 40px rgba(178,102,255,0.20) !important;
+        }
+        .modal-overlay { background: rgba(20, 0, 40, 0.60) !important; backdrop-filter: blur(2px); }
+
+        /* Links — full rainbow rotation */
+        a { animation: acid-hue 8s linear infinite; color: var(--cyan) !important; }
+        a:hover { color: var(--yellow) !important; text-shadow: 0 0 12px var(--magenta); }
+
+        /* Selection — highlight is a flashbulb */
+        ::selection { background: var(--magenta); color: var(--yellow); text-shadow: 0 0 8px var(--cyan); }
+
+        /* Scrollbar (WebKit) — make it part of the trip */
+        ::-webkit-scrollbar { width: 10px; height: 10px; }
+        ::-webkit-scrollbar-track { background: #0a0018; }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, var(--magenta), var(--cyan), var(--yellow), var(--g));
+            border-radius: 5px;
+            box-shadow: 0 0 8px var(--magenta);
+        }
+
+        /* ═══════ BIGGER BUTTONS — finger-friendly ═══════ */
+        #header { height: 56px !important; padding: 0 28px !important; }
+        #workspace { top: 56px !important; }
+        #header .logo { font-size: 1.15rem !important; letter-spacing: 2.5px !important; }
+        #header .stats { font-size: 0.85rem !important; }
+
+        .header-btn {
+            padding: 10px 18px !important;
+            font-size: 0.92rem !important;
+            min-height: 38px;
+            border-radius: 6px !important;
+        }
+        .header-btn kbd { font-size: 0.78rem !important; padding: 2px 7px !important; }
+
+        .section-btn {
+            padding: 14px 22px !important;
+            font-size: 0.95rem !important;
+            min-height: 46px;
+            border-radius: 6px !important;
+            font-weight: 500;
+        }
+        .section-btn .section-icon { font-size: 1.1rem; margin-right: 6px; }
+        .section-btn .section-count { font-size: 0.85rem; margin-left: 8px; opacity: 0.85; }
+
+        .toolbar-btn {
+            padding: 12px 20px !important;
+            font-size: 0.9rem !important;
+            min-height: 42px;
+            border-radius: 6px !important;
+        }
+        .back-btn {
+            padding: 10px 18px !important;
+            font-size: 0.92rem !important;
+            min-height: 40px;
+            border-radius: 6px !important;
+        }
+        .fav-chip {
+            padding: 10px 16px !important;
+            font-size: 0.88rem !important;
+            min-height: 38px;
+            border-radius: 6px !important;
+        }
+        .content-tag {
+            padding: 6px 12px !important;
+            font-size: 0.82rem !important;
+            border-radius: 14px !important;
+        }
+        .flow-option {
+            padding: 14px 18px !important;
+            font-size: 0.95rem !important;
+            min-height: 48px;
+            border-radius: 6px !important;
+        }
+        .search-bar { font-size: 1.2rem !important; }
+        .search-bar-wrap { padding: 18px 24px !important; }
+
+        /* On mobile keep the buttons tap-friendly */
+        @media (max-width: 768px) {
+            .section-btn { padding: 12px 16px !important; font-size: 0.88rem !important; min-height: 44px; }
+            .header-btn { padding: 9px 14px !important; font-size: 0.85rem !important; }
+        }
+
+        /* ═══════ GLITCH TOGGLE — kill all motion when off ═══════ */
+        body.no-glitch,
+        body.no-glitch *,
+        body.no-glitch *::before,
+        body.no-glitch *::after {
+            animation: none !important;
+        }
+        body.no-glitch {
+            background:
+                radial-gradient(ellipse 60% 40% at 20% 25%, rgba(255,0,255,0.18), transparent 60%),
+                radial-gradient(ellipse 60% 40% at 80% 75%, rgba(0,255,255,0.16), transparent 60%),
+                #03000a !important;
+            background-attachment: fixed !important;
+        }
+        body.no-glitch #header .logo,
+        body.no-glitch .search-hero-title,
+        body.no-glitch .search-hero-title strong,
+        body.no-glitch .results-title,
+        body.no-glitch .card-title,
+        body.no-glitch .article-title,
+        body.no-glitch h1, body.no-glitch h2, body.no-glitch h3 {
+            text-shadow: 0 0 8px var(--g) !important;
+        }
+        body.no-glitch .search-bar-wrap,
+        body.no-glitch .result-card,
+        body.no-glitch .section-btn,
+        body.no-glitch .article-section,
+        body.no-glitch .toolbar-btn,
+        body.no-glitch .header-btn,
+        body.no-glitch .modal-content,
+        body.no-glitch .flow-option,
+        body.no-glitch pre, body.no-glitch code {
+            border-color: var(--magenta) !important;
+            box-shadow: 0 0 10px rgba(255,0,255,0.30) !important;
+        }
+        body.no-glitch .result-card:hover {
+            transform: none !important;
+            box-shadow: 0 0 18px var(--cyan) !important;
+            border-color: var(--cyan) !important;
+        }
+        body.no-glitch ::-webkit-scrollbar-thumb {
+            background: var(--magenta) !important;
+        }
+
+        /* ═══════ FLOATING ACID CONTROL FAB ═══════ */
+        #acid-controls {
+            position: fixed; bottom: 18px; right: 18px;
+            z-index: 99999; display: flex; gap: 10px;
+            font-family: var(--font);
+        }
+        .acid-fab {
+            background: rgba(20,0,40,0.85);
+            color: var(--magenta);
+            border: 2px solid var(--magenta);
+            border-radius: 8px;
+            padding: 12px 18px;
+            font-family: var(--font);
+            font-size: 0.92rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 0 16px var(--magenta), inset 0 0 12px rgba(255,0,255,0.18);
+            backdrop-filter: blur(4px);
+            transition: 0.2s;
+            letter-spacing: 0.5px;
+        }
+        .acid-fab:hover {
+            color: var(--yellow);
+            border-color: var(--yellow);
+            box-shadow: 0 0 24px var(--yellow), inset 0 0 12px rgba(255,251,0,0.18);
+        }
+        body.no-glitch .acid-fab {
+            color: var(--cyan);
+            border-color: var(--cyan);
+            box-shadow: 0 0 12px var(--cyan), inset 0 0 8px rgba(0,255,255,0.15);
+        }
+        body.no-glitch .acid-fab:hover {
+            color: var(--yellow);
+            border-color: var(--yellow);
+            box-shadow: 0 0 18px var(--yellow);
         }
     </style>
 </head>
@@ -1315,6 +1603,44 @@
           const next = isLight ? 'dark' : 'light';
           apply(next);
           try { localStorage.setItem(KEY, next); } catch(e) {}
+        });
+      })();
+
+      // ═══════ ACID GLITCH TOGGLE — floating FAB, persists in localStorage ═══════
+      (function(){
+        const KEY = 'psych_glitch';
+        const wrap = document.createElement('div');
+        wrap.id = 'acid-controls';
+        const btn = document.createElement('button');
+        btn.id = 'acid-glitch-toggle';
+        btn.className = 'acid-fab';
+        btn.title = 'Toggle psychedelic glitch (animations + neon flicker)';
+        wrap.appendChild(btn);
+        document.body.appendChild(wrap);
+
+        function render() {
+          const off = document.body.classList.contains('no-glitch');
+          btn.textContent = off ? '░ glitch: OFF' : '▓ glitch: ON';
+        }
+        function apply(state) {
+          if (state === 'off') document.body.classList.add('no-glitch');
+          else document.body.classList.remove('no-glitch');
+          render();
+        }
+        try { apply(localStorage.getItem(KEY) || 'on'); } catch(e) { apply('on'); }
+        btn.addEventListener('click', function(){
+          const off = document.body.classList.contains('no-glitch');
+          const next = off ? 'on' : 'off';
+          apply(next);
+          try { localStorage.setItem(KEY, next); } catch(e) {}
+        });
+        // Hotkey: Shift+G toggles glitch
+        document.addEventListener('keydown', function(e){
+          if (e.shiftKey && (e.key === 'G' || e.key === 'g') && !e.ctrlKey && !e.metaKey && !e.altKey) {
+            const tag = (e.target && e.target.tagName) || '';
+            if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+            btn.click();
+          }
         });
       })();
     </script>
